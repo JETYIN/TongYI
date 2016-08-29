@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/PaddingXLarge"
+        android:orientation="vertical" >
+
+        <ExpandableListView
+            android:id="@android:id/list"
+            style="@style/listview"
+            android:divider="@null"
+            android:dividerHeight="0dip"
+            android:groupIndicator="@null"
+            android:scrollbars="none"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/account_setting_top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <CheckBox
+                android:id="@+id/account_setting_checkbox"
+                style="@style/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/PaddingLarge"
+                android:layout_marginRight="@dimen/PaddingMedium"
+                android:button="@drawable/switch_bg"
+                android:focusableInTouchMode="true" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/PaddingMedium"
+                android:text="勿扰模式"
+                android:textColor="@color/text_textcolor_gray1"
+                android:textSize="@dimen/TextSizeBigSmall" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/account_setting_aboutus"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <ImageView
+                android:id="@+id/account_setting_arrow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/PaddingMedium"
+                android:paddingRight="@dimen/PaddingLarge"
+                android:src="@drawable/arrow_right_pink_n"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/PaddingLarge"
+                android:layout_toLeftOf="@id/account_setting_arrow2"
+                android:text="286"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/TextSizeMedium"
+                android:visibility="gone" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/PaddingMedium"
+                android:text="关于我们"
+                android:textColor="@color/text_textcolor_gray1"
+                android:textSize="@dimen/TextSizeBigSmall" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_below="@id/item_layout"
+                android:layout_marginBottom="@dimen/PaddingLarge"
+                android:background="@color/help_button_view" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/account_setting_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/help_button_view" />
+
+            <ImageView
+                android:id="@+id/account_setting_arrow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/PaddingMedium"
+                android:paddingRight="@dimen/PaddingLarge"
+                android:src="@drawable/arrow_right_pink_n"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/PaddingLarge"
+                android:layout_toLeftOf="@id/account_setting_arrow3"
+                android:text="286"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/TextSizeMedium"
+                android:visibility="gone" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/PaddingMedium"
+                android:text="意见反馈"
+                android:textColor="@color/text_textcolor_gray1"
+                android:textSize="@dimen/TextSizeBigSmall" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_below="@id/item_layout"
+                android:layout_marginBottom="@dimen/PaddingLarge"
+                android:background="@color/help_button_view" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/account_setting_clear_cash"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/help_button_view" />
+
+            <ImageView
+                android:id="@+id/account_setting_arrow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/PaddingMedium"
+                android:paddingRight="@dimen/PaddingLarge"
+                android:src="@drawable/arrow_right_pink_n"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/account_setting_cash_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/PaddingLarge"
+                android:layout_toLeftOf="@id/account_setting_arrow4"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/TextSizeBigSmall" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/PaddingMedium"
+                android:text="清除缓存"
+                android:textColor="@color/text_textcolor_gray1"
+                android:textSize="@dimen/TextSizeBigSmall" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_below="@id/item_layout"
+                android:layout_marginBottom="@dimen/PaddingLarge"
+                android:background="@color/help_button_view" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/account_setting_update"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/help_button_view" />
+
+            <ImageView
+                android:id="@+id/account_setting_arrow5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/PaddingMedium"
+                android:paddingRight="@dimen/PaddingLarge"
+                android:src="@drawable/arrow_right_pink_n"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/account_setting_version_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/PaddingLarge"
+                android:layout_toLeftOf="@id/account_setting_arrow5"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/TextSizeBigSmall" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/PaddingMedium"
+                android:text="版本更新"
+                android:textColor="@color/text_textcolor_gray1"
+                android:textSize="@dimen/TextSizeBigSmall" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_below="@id/item_layout"
+                android:layout_marginBottom="@dimen/PaddingLarge"
+                android:background="@color/help_button_view" />
+        </RelativeLayout>
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@+id/account_logout_button"
+            android:layout_width="match_parent"
+            android:layout_height="38dip"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_semicircle_selector"
+            android:text="@string/account_logout"
+            android:textColor="@color/white"
+            android:textSize="@dimen/TextSizeMedium" />
+    </LinearLayout>
+
+</RelativeLayout>

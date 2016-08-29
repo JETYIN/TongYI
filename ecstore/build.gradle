@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "cn.shopex.ecstore"
+        minSdkVersion 11
+        targetSdkVersion 19
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:19.1.0'
+    compile files('libs/alipaySDK-20150602.jar')
+    compile files('libs/bugly_1.2.8_release.jar')
+    compile files('libs/core-2.3.0.jar')
+    compile files('libs/jg_filter_sdk_1.1.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/mid-sdk-2.10.jar')
+    compile files('libs/MobTools.jar')
+    compile files('libs/ShareSDK-Core-2.6.0.jar')
+    compile files('libs/ShareSDK-QQ-2.6.0.jar')
+    compile files('libs/ShareSDK-QZone-2.6.0.jar')
+    compile files('libs/ShareSDK-ShortMessage-2.6.0.jar')
+    compile files('libs/ShareSDK-SinaWeibo-2.6.0.jar')
+    compile files('libs/ShareSDK-TencentWeibo-2.6.0.jar')
+    compile files('libs/ShareSDK-Wechat-2.6.0.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.6.0.jar')
+    compile files('libs/ShareSDK-Wechat-Favorite-2.6.0.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.6.0.jar')
+    compile files('libs/universal-image-loader-1.9.3.jar')
+    compile files('libs/volley.jar')
+    compile files('libs/wup-1.0.0.E-SNAPSHOT.jar')
+    compile files('libs/Xg_sdk_v2.40_20150616_1030.jar')
+    compile project(':cropper')
+}

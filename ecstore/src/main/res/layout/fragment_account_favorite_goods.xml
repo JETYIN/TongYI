@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_page_bgcolor" >
+
+    <com.qianseit.westore.ui.PromotionCategoryView
+        android:id="@+id/fragment_favourite_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+
+    <com.qianseit.westore.ui.pulltorefresh.lib.PullToRefreshListView
+        android:id="@android:id/list"
+        style="@style/listview"
+        android:layout_below="@id/fragment_favourite_category" />
+
+    <LinearLayout
+        android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_favourite_category"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="60dip"
+        android:visibility="gone" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/PaddingLarge"
+            android:paddingTop="@dimen/PaddingXXLarge"
+            android:text="@string/account_favorites_empty"
+            android:textColor="@color/westore_secondary_textcolor"
+            android:textSize="@dimen/TextSizeMedium" />
+    </LinearLayout>
+
+</RelativeLayout>

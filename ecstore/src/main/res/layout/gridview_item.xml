@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/PaddingMedium"
+        android:orientation="vertical">
+    
+    <ImageView
+        android:id="@+id/goods_detail_images"
+         android:layout_width="fill_parent"
+        android:layout_height="120dip"
+        android:adjustViewBounds="true"
+        android:contentDescription="descr_image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ycb_crlinear_filter"/>
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/PaddingMedium"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/PaddingLarge"
+        android:paddingRight="@dimen/PaddingLarge" >
+
+        <TextView
+            android:id="@+id/textview_titles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="细致生活"
+            android:singleLine="true"
+			android:ellipsize="end"
+            android:textColor="@color/text_textcolor_gray1" 
+            android:textSize="@dimen/TextSizeLarge" />
+
+        
+    </LinearLayout>
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/PaddingSmall"
+        android:layout_marginTop="@dimen/PaddingSmall"
+        android:paddingLeft="@dimen/PaddingLarge"
+        android:paddingRight="@dimen/PaddingLarge" >
+
+       <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/textview_times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2015/6/13"
+                android:textColor="@color/text_textcolor_gray1" 
+            android:textSize="@dimen/TextSizeSmall" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/button_related"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

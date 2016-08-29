@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/account_login_bgcolor" >
+
+    <!-- 标题栏 -->
+
+    <FrameLayout
+        android:id="@+id/action_bar_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/action_bar_titlebar"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/action_titlebar_height"
+            android:background="@drawable/navigation_bar_new"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/fragment_search_cancel"
+                android:layout_width="@dimen/action_titlebar_height"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="center"
+                android:src="@drawable/button_back"
+                android:textSize="@dimen/TextSizeMedium" />
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip" >
+
+                <com.qianseit.westore.ui.CommonEditText
+                    android:id="@android:id/edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/actionbar_searchbar"
+                    android:gravity="center_vertical"
+                    android:hint="@string/actionbar_search_keywords"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/goods_list_secondary_textcolor"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <com.qianseit.westore.ui.CommonButton
+                android:id="@+id/fragment_search_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="center"
+                android:minWidth="@dimen/action_titlebar_height"
+                android:text="@string/search"
+                android:textColor="@color/actionbar_button_textcolor"
+                android:textSize="@dimen/TextSizeMedium" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/action_bar_topbar"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/PaddingLarge"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/search_hot_goods"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/search_left_radiobutton"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/search_hot_goods"
+                android:textColor="@color/search_radiobutton_textcolor"
+                android:textSize="@dimen/TextSizeMedium" />
+
+            <RadioButton
+                android:id="@+id/search_history"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/search_right_radiobutton"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/search_history"
+                android:textColor="@color/search_radiobutton_textcolor"
+                android:textSize="@dimen/TextSizeMedium" />
+        </RadioGroup>
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/search_history_closely_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/PaddingLarge"
+            android:text="@string/search_history_closely"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.qianseit.westore.ui.MyGroupContainer
+                android:id="@android:id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/PaddingLarge" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/PaddingLarge" >
+
+            <com.qianseit.westore.ui.CommonButton
+                android:id="@+id/search_history_clear"
+                style="@style/account_orders_button"
+                android:layout_centerInParent="true"
+                android:paddingLeft="@dimen/PaddingLarge"
+                android:paddingRight="@dimen/PaddingLarge"
+                android:text="@string/search_history_clear"
+                android:visibility="gone" />
+
+            <com.qianseit.westore.ui.CommonButton
+                android:id="@+id/search_hot_goods_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:drawableLeft="@drawable/refresh_hot_search"
+                android:text="@string/search_hot_goods_refresh"
+                android:textColor="@color/text_textcolor_gray1"
+                android:textSize="@dimen/TextSizeMedium" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        style="@style/listview"
+        android:layout_below="@id/action_bar_topbar"
+        android:background="@color/white"
+        android:visibility="invisible" />
+
+</RelativeLayout>

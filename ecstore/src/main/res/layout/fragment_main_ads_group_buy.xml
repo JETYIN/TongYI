@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/PaddingXLarge" >
+
+    <RelativeLayout
+        android:id="@+id/fragment_main_ads_group_buy_title_bg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white" >
+        
+        <FrameLayout 
+            android:id="@+id/fragment_main_ads_group_buy_title_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <com.qianseit.westore.ui.NewCountDownView
+            android:id="@+id/fragment_main_ads_group_buy_countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_main_ads_group_buy_goods_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical" />
+
+</LinearLayout>

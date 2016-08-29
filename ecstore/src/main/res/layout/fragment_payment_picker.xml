@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/account_login_bgcolor" >
+
+    <com.qianseit.westore.ui.CommonButton
+        android:id="@+id/payment_picker_submit"
+        style="@style/button_pink"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/PaddingXMedium"
+        android:padding="@dimen/PaddingLarge"
+        android:text="@string/ok" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/payment_picker_submit" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/PaddingLarge"
+            android:layout_marginTop="@dimen/PaddingLarge"
+            android:background="@drawable/account_header_buttons_bgimage"
+            android:orientation="vertical"
+            android:paddingBottom="1dip"
+            android:paddingLeft="@dimen/PaddingLarge"
+            android:paddingRight="@dimen/PaddingLarge"
+            android:paddingTop="@dimen/PaddingLarge" >
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/payment_picker_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm_order_paytype"
+                android:textColor="@color/westore_dark_textcolor"
+                android:textSize="@dimen/TextSizeLarge" />
+
+            <RadioGroup
+                android:id="@+id/payment_picker_radios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/PaddingLarge"
+                android:paddingTop="@dimen/PaddingLarge"
+                android:visibility="gone" >
+
+                <RadioButton
+                    android:id="@+id/payment_picker_online"
+                    android:background="@drawable/express_radiobutton"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/PaddingLarge"
+                    android:paddingRight="@dimen/PaddingLarge"
+                    android:text="@string/confirm_order_paytype_online"
+                    android:textColor="@color/westore_dark_textcolor"
+                    android:textSize="@dimen/TextSizeMedium" />
+
+                <RadioButton
+                    android:id="@+id/payment_picker_offline"
+                    android:layout_marginLeft="@dimen/PaddingLarge"
+                    android:background="@drawable/express_radiobutton"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/PaddingLarge"
+                    android:paddingRight="@dimen/PaddingLarge"
+                    android:text="@string/confirm_order_paytype_offline"
+                    android:textColor="@color/westore_dark_textcolor"
+                    android:textSize="@dimen/TextSizeMedium" />
+            </RadioGroup>
+
+
+
+            <LinearLayout
+                android:id="@+id/confirm_order_pay_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/PaddingLarge"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

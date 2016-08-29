@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    android:padding="@dimen/PaddingXLarge" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingTop="@dimen/PaddingMedium"
+            android:text="@string/account_address_name"
+            android:textColor="@color/default_scanner_bgcolor"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <com.qianseit.westore.ui.CommonEditText
+            android:id="@+id/fragment_add_reciver_address_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center_vertical|right"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingTop="@dimen/PaddingMedium"
+            android:textColor="@color/text_textcolor_gray1"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/PaddingMedium"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingTop="@dimen/PaddingMedium"
+            android:src="@drawable/account_address_icon"
+            android:visibility="invisible" >
+        </ImageView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/westore_divider_bgcolor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingTop="@dimen/PaddingLarge"
+            android:text="@string/account_address_tel"
+            android:textColor="@color/default_scanner_bgcolor"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <EditText
+            android:id="@+id/fragment_add_reciver_address_tel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="phone"
+            android:background="@color/transparent"
+            android:gravity="center_vertical|right"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingTop="@dimen/PaddingLarge"
+            android:textColor="@color/text_textcolor_gray1"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/PaddingMedium"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingTop="@dimen/PaddingLarge"
+            android:src="@drawable/account_address_icon"
+            android:visibility="invisible" >
+        </ImageView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/westore_divider_bgcolor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/fragment_add_reciver_address_province_tit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingTop="@dimen/PaddingLarge"
+            android:text="@string/account_address_province"
+            android:textColor="@color/default_scanner_bgcolor"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/fragment_add_reciver_address_province"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center_vertical|right"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingTop="@dimen/PaddingLarge"
+            android:textColor="@color/text_textcolor_gray1"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/PaddingMedium"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingTop="@dimen/PaddingLarge"
+            android:src="@drawable/account_address_icon" >
+        </ImageView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/westore_divider_bgcolor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/fragment_add_reciver_address_city_tit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingTop="@dimen/PaddingLarge"
+            android:text="@string/account_address_city"
+            android:textColor="@color/default_scanner_bgcolor"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/fragment_add_reciver_address_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center_vertical|right"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingTop="@dimen/PaddingLarge"
+            android:textColor="@color/text_textcolor_gray1"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/PaddingMedium"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingTop="@dimen/PaddingLarge"
+            android:src="@drawable/account_address_icon"
+            android:visibility="visible" >
+        </ImageView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/westore_divider_bgcolor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/fragment_add_reciver_address_town_tit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingTop="@dimen/PaddingLarge"
+            android:text="@string/account_address_town"
+            android:textColor="@color/default_scanner_bgcolor"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/fragment_add_reciver_address_town"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center_vertical|right"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingTop="@dimen/PaddingLarge"
+            android:textColor="@color/text_textcolor_gray1"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/PaddingMedium"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingTop="@dimen/PaddingLarge"
+            android:src="@drawable/account_address_icon" >
+        </ImageView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/westore_divider_bgcolor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/fragment_add_reciver_address_detail_tit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingTop="@dimen/PaddingLarge"
+            android:text="@string/account_address_detailed"
+            android:textColor="@color/default_scanner_bgcolor"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <com.qianseit.westore.ui.CommonEditText
+            android:id="@+id/fragment_add_reciver_address_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center_vertical|right"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingTop="@dimen/PaddingLarge"
+            android:textColor="@color/text_textcolor_gray1"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/PaddingMedium"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingTop="@dimen/PaddingLarge"
+            android:src="@drawable/account_address_icon"
+            android:visibility="invisible" >
+        </ImageView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/westore_divider_bgcolor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" 
+        android:visibility="gone">
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/fragment_add_reciver_address_id_tit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingTop="@dimen/PaddingLarge"
+            android:text="@string/account_address_id_name"
+            android:textColor="@color/default_scanner_bgcolor"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <EditText
+            android:id="@+id/fragment_add_reciver_address_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center_vertical|right"
+            android:inputType="text"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingTop="@dimen/PaddingLarge"
+            android:textColor="@color/text_textcolor_gray1"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/PaddingMedium"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingTop="@dimen/PaddingLarge"
+            android:src="@drawable/account_address_icon"
+            android:visibility="invisible" >
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/PaddingSmall"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/PaddingLarge" 
+        android:visibility="gone">
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/fragment_add_reciver_address_ss"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/account_address_id_prompt"
+            android:textColor="@color/text_textcolor_gray2"
+            android:textSize="@dimen/TextSizeBigSmall" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/PaddingMedium"
+            android:src="@drawable/account_address_icon"
+            android:visibility="invisible" >
+        </ImageView>
+    </LinearLayout>
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/account_save_address_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="@dimen/PaddingXXLarge"
+        android:background="@drawable/bg_address_add"
+        android:gravity="center"
+        android:padding="@dimen/PaddingLarge"
+        android:text="@string/account_address_save_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/TextSizeLarge" />
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/PaddingMedium"
+        android:background="@drawable/shape_bg"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="@dimen/PaddingMedium" >
+
+        <ImageView
+            android:id="@+id/account_shared_xinlang"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_share_weibo" />
+
+        <ImageView
+            android:id="@+id/account_shared_qq"
+              android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/PaddingLarge"
+            android:src="@drawable/icon_share_qq" />
+
+        <ImageView
+            android:id="@+id/account_shared_wechat"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/PaddingLarge"
+            android:src="@drawable/icon_share_wechat" />
+
+        <ImageView
+            android:id="@+id/account_shared_wechat_circle"
+               android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/PaddingLarge"
+            android:src="@drawable/icon_share_wechat_circle" />
+    </LinearLayout>
+
+</FrameLayout>

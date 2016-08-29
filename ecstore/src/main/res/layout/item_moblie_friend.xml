@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/fragment_friend_invite_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp"
+        android:visibility="gone" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/fragment_friend_invite_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="XX"
+            android:textSize="15sp" />
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@+id/fragment_friend_invite_yaoqing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_semicircle_white_gray"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:textSize="12sp"
+            android:text="邀请"
+            android:textColor="@color/theme_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_friend_invited_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp"
+        android:visibility="gone" >
+
+        <com.qianseit.westore.ui.CircleImageView
+            android:id="@+id/fragment_friend_invited_avator"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/fragment_friend_invited_avator"
+            android:orientation="vertical" >
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/fragment_friend_invited_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_textcolor_gray1"
+                android:textSize="13sp" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/fragment_friend_invited_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_textcolor_gray2"
+                android:layout_marginTop="8dp"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@+id/fragment_friend_invited_guanzhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_semicircle_white_gray"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+             android:textSize="12sp"
+            android:text="关注"
+            android:textColor="@color/theme_color" />
+    </RelativeLayout>
+
+</LinearLayout>

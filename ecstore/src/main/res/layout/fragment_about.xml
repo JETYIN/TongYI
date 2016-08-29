@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="50dip" >
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="136dp"
+            android:src="@drawable/ic_launcher" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/about_version_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/PaddingLarge"
+            android:layout_marginTop="@dimen/PaddingLarge"
+            android:textColor="@color/westore_secondary_textcolor"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/about_version_qrcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/about_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/about_tel"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:paddingBottom="@dimen/PaddingMedium"
+            android:paddingTop="@dimen/PaddingMedium"
+            android:text="客服电话:400 888 9739"
+            android:textColor="@color/westore_dark_textcolor"
+            android:textSize="@dimen/TextSizeBigSmall" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/about_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/about_wechat"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:paddingBottom="@dimen/PaddingMedium"
+            android:paddingTop="@dimen/PaddingMedium"
+            android:text="微信公众号:同蚁商城"
+            android:textColor="@color/westore_dark_textcolor"
+            android:textSize="@dimen/TextSizeBigSmall" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/about_webo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/about_webo"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="微博:3228823428@qq.com"
+            android:paddingBottom="@dimen/PaddingMedium"
+            android:paddingTop="@dimen/PaddingMedium"
+            android:textColor="@color/westore_dark_textcolor"
+            android:textSize="@dimen/TextSizeBigSmall" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/about_copyright"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dip"
+            android:gravity="center"
+            android:paddingBottom="@dimen/PaddingMedium"
+            android:text="Copyright©2015\nAll Rights Reserved"
+            android:textColor="@color/text_textcolor_gray1"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <com.qianseit.westore.ui.ShareView
+        android:id="@+id/share_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</RelativeLayout>

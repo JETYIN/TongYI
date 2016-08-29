@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shopping_car_toolbar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="#EFEFEF"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/PaddingLarge"
+    android:paddingLeft="@dimen/PaddingMedium"
+    android:paddingRight="13dp"
+    android:paddingTop="@dimen/PaddingLarge" >
+
+    <com.qianseit.westore.ui.CommonButton
+        android:id="@+id/shopping_car_select_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/transparent"
+        android:drawableLeft="@drawable/order_detail_status4_ok"
+        android:drawablePadding="@dimen/PaddingMedium"
+        android:paddingLeft="9dp"
+        android:text="@string/select_all"
+        android:textColor="@color/black"
+        android:textSize="@dimen/TextSizeBigSmall" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:paddingLeft="@dimen/PaddingLarge"
+                android:singleLine="true"
+                android:text="合计:"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/shopping_car_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/PaddingSmall"
+                android:paddingRight="@dimen/PaddingSmall"
+                android:singleLine="true"
+                android:textColor="@color/westore_red"
+                android:textSize="15sp" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/PaddingLarge"
+                android:singleLine="true"
+                android:text="(不含邮费)"
+                android:textColor="#666666"
+                android:textSize="@dimen/TextSizeSmall" />
+        </LinearLayout>
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/shopping_car_save_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/PaddingLarge"
+            android:paddingRight="@dimen/PaddingLarge"
+            android:singleLine="true"
+            android:textColor="@color/westore_secondary_textcolor"
+            android:textSize="@dimen/TextSizeBigSmall"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <com.qianseit.westore.ui.CommonButton
+        android:id="@+id/shopping_car_checkout"
+        style="@style/button_pink_small_radius"
+        android:layout_width="wrap_content"
+        android:background="@drawable/bg_semicircle_selector"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:paddingTop="4dp"
+        android:text="结算"
+        android:textColor="@color/white"
+        android:textSize="@dimen/TextSizeBigSmall" />
+
+</LinearLayout>

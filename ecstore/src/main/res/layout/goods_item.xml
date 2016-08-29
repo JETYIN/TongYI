@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/PaddingMedium"
+    android:paddingRight="@dimen/PaddingMedium" >
+
+    <FrameLayout
+        android:id="@+id/fragment_goods_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/fragment_goods_item_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitXY"
+            />
+
+        <ImageView
+            android:id="@+id/fragment_goods_item_sold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/goods_item_sold_out"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment_goods_item_image"
+        android:layout_marginTop="-8dp"
+        android:background="@drawable/goods_item_text_bg"
+        android:paddingBottom="@dimen/PaddingMedium"
+        android:paddingTop="@dimen/PaddingMedium" >
+
+        <RelativeLayout
+            android:id="@+id/fragment_goods_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingTop="@dimen/PaddingMedium"
+            android:visibility="gone" >
+
+        	  <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/fragment_goods_item_time_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/goods_item_time"
+                android:drawablePadding="5dp"
+                android:singleLine="true"
+                android:layout_marginLeft="@dimen/PaddingSmall"
+                android:textColor="#999999"
+                android:text="距离结束还有"
+                android:textSize="10sp" />
+
+            <com.qianseit.westore.ui.RushBuyCountDownTimerView
+                android:id="@+id/fragment_goods_item_time_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_alignRight="@+id/fragment_goods_item_time_title"
+                android:layout_below="@+id/fragment_goods_item_time_title" />
+        </RelativeLayout>
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/fragment_goods_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/fragment_goods_item_time"
+            android:layout_marginTop="@dimen/PaddingMedium"
+            android:layout_marginLeft="@dimen/PaddingLarge"
+            android:layout_marginRight="55dp"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textStyle="bold"
+            android:textSize="@dimen/TextSizeSmall" />
+
+        <LinearLayout
+            android:id="@+id/fragment_goods_item_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/fragment_goods_item_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/PaddingMedium"
+            android:layout_marginTop="@dimen/PaddingMedium"
+             android:layout_marginLeft="@dimen/PaddingLarge"
+            android:layout_marginRight="55dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/fragment_goods_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fragment_top_bg"
+                android:textSize="@dimen/TextSizeSmall" />
+
+            <TextView
+                android:id="@+id/fragment_goods_item_mark_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/PaddingMedium"
+                android:textColor="#999999"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <com.qianseit.westore.ui.CommonButton
+            android:layout_below="@+id/fragment_goods_item_linear"
+            android:id="@+id/add_car"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_marginLeft="@dimen/PaddingMedium"
+            android:layout_marginRight="@dimen/PaddingMedium"
+            android:background="@drawable/login_register"
+            android:text="加入购物车"
+            android:textColor="@color/white"
+            android:textSize="@dimen/TextSizeBigSmall"
+            android:focusable="false"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/fragment_goods_item_status"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fragment_goods_item_image"
+        android:layout_marginRight="@dimen/PaddingXMedium"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/goods_item_status"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/fragment_goods_item_status2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fragment_goods_item_image"
+        android:layout_marginRight="@dimen/PaddingXMedium"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/goods_item_status"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+</RelativeLayout>
+</LinearLayout>

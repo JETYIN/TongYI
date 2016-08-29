@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/action_bar_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/action_bar_titlebar"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/action_titlebar_height"
+            android:background="@drawable/navigation_bar_new"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/fragment_main_search"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/PaddingMedium"
+                android:paddingRight="@dimen/PaddingMedium" >
+
+                <com.qianseit.westore.ui.CommonTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/actionbar_searchbar"
+                    android:gravity="center_vertical"
+                    android:text="@string/actionbar_search_keywords"
+                    android:textColor="@color/goods_list_secondary_textcolor"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <com.qianseit.westore.ui.CommonButton
+                android:id="@+id/fragment_main_button_scan"
+                android:layout_width="@dimen/action_titlebar_button_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:drawablePadding="1dip"
+                android:drawableTop="@drawable/actionbar_button_scanner"
+                android:gravity="center"
+                android:text="@string/actionbar_button_scanner"
+                android:textColor="@color/actionbar_button_textcolor"
+                android:textSize="@dimen/TextSizeSmall" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/fragment_category_level1"
+            style="@style/listview"
+            android:layout_width="120dip"
+            android:layout_weight="0"
+            android:background="@drawable/category_toplevel_bgimage"
+            android:scrollbars="none" />
+
+        <ListView
+            android:id="@+id/fragment_category_level2"
+            style="@style/listview"
+            android:layout_weight="1"
+            android:background="#FBFBFB"
+            android:dividerHeight="1dip"
+            android:scrollbars="none"
+            android:visibility="gone" />
+        <ExpandableListView 
+            android:id="@+id/fragment_category_level3"
+            style="@style/listview"
+            android:layout_weight="1"
+            android:background="#FBFBFB"
+            android:dividerHeight="1dip"
+            android:scrollbars="none"
+            android:groupIndicator="@null"
+            />
+        
+    </LinearLayout>
+
+</LinearLayout>

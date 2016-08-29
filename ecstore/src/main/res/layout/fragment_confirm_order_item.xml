@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/confimr_order_item_bgimage"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/PaddingXXLarge"
+    android:paddingLeft="@dimen/PaddingXLarge"
+    android:paddingRight="@dimen/PaddingXLarge"
+    android:paddingTop="@dimen/PaddingXXLarge" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/account_orders_item_thumb"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_marginRight="@dimen/PaddingMedium" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/account_orders_item_oldprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/account_orders_item_thumb"
+            android:paddingLeft="@dimen/PaddingMedium"
+            android:textColor="@color/goods_detail_primary_textcolor"
+            android:textSize="@dimen/TextSizeSmall"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/account_orders_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@+id/account_orders_item_title"
+            android:layout_below="@id/account_orders_item_oldprice"
+            android:paddingLeft="@dimen/PaddingMedium"
+            android:textColor="@color/westore_red"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <TextView
+            android:id="@+id/account_orders_item_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/account_orders_item_price"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/goods_detail_secondary_textcolor"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/account_orders_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/account_orders_item_thumb"
+            android:layout_toLeftOf="@id/account_orders_item_price"
+            android:layout_toRightOf="@id/account_orders_item_thumb"
+            android:lineSpacingExtra="5dp"
+            android:maxLines="2"
+            android:paddingRight="@dimen/PaddingLarge"
+            android:textColor="@color/goods_detail_primary_textcolor"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <TextView
+            android:id="@+id/account_orders_item_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/account_orders_item_title"
+            android:layout_below="@id/account_orders_item_title"
+            android:layout_toLeftOf="@id/account_orders_item_price"
+            android:paddingRight="@dimen/PaddingLarge"
+            android:textColor="@color/goods_detail_secondary_textcolor"
+            android:textSize="@dimen/TextSizeSmall" />
+    </RelativeLayout>
+
+</LinearLayout>

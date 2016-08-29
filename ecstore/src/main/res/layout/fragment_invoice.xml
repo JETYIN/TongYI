@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/account_login_bgcolor"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/PaddingLarge"
+        android:background="@drawable/account_header_buttons_bgimage"
+        android:orientation="vertical"
+        android:padding="@dimen/PaddingLarge" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/invoice_type"
+            android:textColor="@color/westore_dark_textcolor"
+            android:textSize="@dimen/TextSizeLarge" />
+
+        <RadioGroup
+            android:id="@+id/express_picker_radios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingTop="@dimen/PaddingLarge" >
+
+            <RadioButton
+                android:id="@+id/invoice_null_radio"
+                android:button="@drawable/account_profile_radiobutton"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/invoice_type_null"
+                android:textColor="@color/westore_dark_textcolor"
+                android:textSize="@dimen/TextSizeMedium" />
+
+            <RadioButton
+                android:id="@+id/invoice_person_radio"
+                android:layout_marginLeft="@dimen/PaddingLarge"
+                android:button="@drawable/account_profile_radiobutton"
+                android:gravity="center"
+                android:tag="personal"
+                android:text="@string/invoice_type_personal"
+                android:textColor="@color/westore_dark_textcolor"
+                android:textSize="@dimen/TextSizeMedium" />
+
+            <RadioButton
+                android:id="@+id/invoice_company_radio"
+                android:layout_marginLeft="@dimen/PaddingLarge"
+                android:button="@drawable/account_profile_radiobutton"
+                android:gravity="center"
+                android:tag="company"
+                android:text="@string/invoice_type_company"
+                android:textColor="@color/westore_dark_textcolor"
+                android:textSize="@dimen/TextSizeMedium" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/invoice_title_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/PaddingLarge"
+        android:layout_marginTop="@dimen/PaddingLarge"
+        android:background="@drawable/account_header_buttons_bgimage"
+        android:orientation="vertical"
+        android:padding="@dimen/PaddingLarge"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/invoice_title"
+                android:textColor="@color/westore_dark_textcolor"
+                android:textSize="@dimen/TextSizeLarge" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/PaddingMedium"
+                android:text="@string/invoice_title_summary"
+                android:textColor="@color/text_textcolor_gray1"
+                android:textSize="@dimen/TextSizeBigSmall" />
+        </LinearLayout>
+
+        <com.qianseit.westore.ui.CommonEditText
+            android:id="@+id/invoice_title"
+            android:layout_width="match_parent"
+            android:layout_height="32dip"
+            android:layout_marginTop="@dimen/PaddingLarge"
+            android:background="@drawable/invoice_edittext_bgimage"
+            android:padding="@dimen/PaddingMedium"
+            android:textColor="@color/text_textcolor_gray1"
+            android:textSize="@dimen/TextSizeMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/invoice_content_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/PaddingLarge"
+        android:layout_marginTop="@dimen/PaddingLarge"
+        android:background="@drawable/account_header_buttons_bgimage"
+        android:orientation="vertical"
+        android:padding="@dimen/PaddingLarge"
+        android:visibility="gone" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/invoice_content"
+            android:textColor="@color/westore_dark_textcolor"
+            android:textSize="@dimen/TextSizeLarge" />
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@+id/invoice_content"
+            android:layout_width="match_parent"
+            android:layout_height="32dip"
+            android:layout_marginTop="@dimen/PaddingLarge"
+            android:background="@drawable/invoice_spinner_bgimage"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/text_textcolor_gray1"
+            android:textSize="@dimen/TextSizeMedium" />
+    </LinearLayout>
+
+    <com.qianseit.westore.ui.CommonButton
+        android:id="@+id/invoice_submit"
+        style="@style/button_pink"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/PaddingLarge"
+        android:padding="@dimen/PaddingXMedium"
+        android:text="@string/ok" />
+
+</LinearLayout>

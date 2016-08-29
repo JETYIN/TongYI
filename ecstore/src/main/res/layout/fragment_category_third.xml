@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/invoice_bgimage"
+    android:orientation="vertical"
+    android:padding="@dimen/PaddingLarge" >
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/fragment_category_topgoods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ListView
+        android:id="@+id/fragment_category_level1"
+        style="@style/listview"
+        android:divider="@drawable/divider_horizontal"
+        android:dividerHeight="1dip"
+        android:scrollbars="none" />
+
+</LinearLayout>

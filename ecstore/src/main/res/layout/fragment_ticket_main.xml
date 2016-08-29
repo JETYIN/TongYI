@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ticket_add_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.qianseit.westore.ui.CommonEditText
+            android:id="@+id/ticket_add_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/PaddingXXLarge"
+            android:layout_marginRight="@dimen/PaddingXXLarge"
+            android:layout_marginTop="@dimen/PaddingXXLarge"
+            android:background="@drawable/bg_ticket_num"
+            android:hint="@string/account_ticket_add_num_hint"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingLeft="@dimen/PaddingXLarge"
+            android:paddingTop="@dimen/PaddingLarge"
+            android:textColor="@color/default_scanner_bgcolor"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@+id/ticket_add_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_marginTop="@dimen/PaddingXLarge"
+            android:background="@drawable/bg_address_add"
+            android:paddingLeft="@dimen/PaddingXXLarge"
+            android:paddingRight="@dimen/PaddingXXLarge"
+            android:text="@string/account_ticket_get"
+            android:textColor="@color/white"
+            android:textSize="16.5sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="@dimen/PaddingLarge"
+            android:background="@color/westore_divider_bgcolor" />
+    </LinearLayout>
+
+    <com.qianseit.westore.ui.pulltorefresh.lib.PullToRefreshListView
+        android:id="@android:id/list"
+        style="@style/listview"
+        android:layout_below="@+id/ticket_add_top" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/ticket_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingBottom="@dimen/PaddingLarge"
+        android:paddingTop="@dimen/PaddingXLarge"
+        android:text="@string/account_ticket_history"
+        android:textColor="@color/goods_list_primary_textcolor"
+        android:textSize="@dimen/TextSizeMedium" />
+
+    <ImageView
+        android:id="@+id/fragment_ticket_goto_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/goto_top"
+        android:visibility="gone" />
+</RelativeLayout>

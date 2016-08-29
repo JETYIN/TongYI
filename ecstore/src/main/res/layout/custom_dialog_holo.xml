@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center" >
+
+    <!-- 半透明背景层 -->
+
+    <View
+        android:id="@+id/custom_dialog_panelLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <FrameLayout
+        android:id="@+id/custom_dialog_animView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/custom_dialog_parentPanel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="25dip"
+            android:background="@drawable/dialog_full_holo_light"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/custom_dialog_topPanel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:gravity="center_vertical|left"
+                    android:minHeight="@dimen/alert_dialog_title_height"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/custom_dialog_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dip"
+                        android:adjustViewBounds="true"
+                        android:maxHeight="28dip"
+                        android:maxWidth="28dip"
+                        android:scaleType="center"
+                        android:visibility="gone" />
+
+                    <com.qianseit.westore.ui.CommonTextView
+                        android:id="@+id/custom_dialog_title"
+                        style="?android:attr/textAppearanceLarge"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:autoLink="none"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:paddingLeft="4dip"
+                        android:shadowColor="@color/white"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:singleLine="true"
+                        android:textColor="@color/custom_dialog_holo_blue" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/custom_dialog_titleDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dip"
+                    android:background="@color/custom_dialog_holo_blue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/custom_dialog_middlePanel"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <ScrollView
+                    android:id="@+id/custom_dialog_scrollView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false" >
+
+                    <com.qianseit.westore.ui.CommonTextView
+                        android:id="@+id/custom_dialog_message"
+                        style="?android:attr/textAppearanceMedium"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:autoLink="none"
+                        android:gravity="top|left"
+                        android:padding="12dip"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+                </ScrollView>
+
+                <ListView
+                    android:id="@+id/custom_dialog_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#00000000"
+                    android:cacheColorHint="#00000000"
+                    android:divider="#cccccc"
+                    android:dividerHeight="1px"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/custom_dialog_bottomPanel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/custom_dialog_bottomDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@drawable/list_divider_holo_light" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <com.qianseit.westore.ui.CommonButton
+                        android:id="@+id/custom_dialog_cancel"
+                        style="@style/Widget_Holo_Button_light"
+                        android:background="@drawable/dialog_btn_left_holo_light"
+                        android:visibility="gone" />
+
+                    <View
+                        android:id="@+id/custom_dialog_mid_divider"
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/dialog_button_divider_light"
+                        android:visibility="gone" />
+
+                    <com.qianseit.westore.ui.CommonButton
+                        android:id="@+id/custom_dialog_mid_button"
+                        style="@style/Widget_Holo_Button_light"
+                        android:background="@drawable/dialog_btn_middle_holo_light"
+                        android:visibility="gone" />
+
+                    <View
+                        android:id="@+id/custom_dialog_ok_divider"
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent"
+                        android:background="#d0d0d0"
+                        android:visibility="gone" />
+
+                    <com.qianseit.westore.ui.CommonButton
+                        android:id="@+id/custom_dialog_ok"
+                        style="@style/Widget_Holo_Button_light"
+                        android:background="@drawable/dialog_btn_right_holo_light"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

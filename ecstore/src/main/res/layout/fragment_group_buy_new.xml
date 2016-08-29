@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/westore_color" >
+
+        <LinearLayout
+            android:id="@+id/fragment_groupbuy_timeline_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ListView
+        android:id="@+id/fragment_groupbuy_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <RelativeLayout
+        android:id="@+id/fragment_groupbuy_ads_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <com.qianseit.westore.ui.FlowView
+            android:id="@+id/fragment_groupbuy_top_adsview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.qianseit.westore.ui.CircleFlowIndicator
+            android:id="@+id/fragment_groupbuy_top_adsview_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingLeft="@dimen/PaddingLarge"
+            android:visibility="gone"  />
+    </RelativeLayout>
+
+    <!-- <com.qianseit.westore.ui.FlowScrollView
+        android:id="@+id/fragment_groupbuy_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/fragment_groupbuy_content_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+             <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:visibility="gone" >
+
+                <com.qianseit.westore.ui.FlowView
+                    android:id="@+id/fragment_groupbuy_top_adsview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.qianseit.westore.ui.CircleFlowIndicator
+                    android:id="@+id/fragment_groupbuy_top_adsview_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="@dimen/PaddingLarge"
+                    android:paddingLeft="@dimen/PaddingLarge" />
+            </RelativeLayout> 
+
+            <LinearLayout
+                android:id="@+id/fragment_groupbuy_ads_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </com.qianseit.westore.ui.FlowScrollView> -->
+
+</LinearLayout>

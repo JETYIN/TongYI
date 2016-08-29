@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/fragment_top_bg" />
+
+            <RadioGroup
+                android:id="@+id/maintab_tab_radiogroup"
+                android:layout_width="fill_parent"
+                android:layout_height="46dip"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/PaddingMedium" >
+
+                <com.qianseit.westore.ui.CommonRadioButton
+                    android:id="@+id/tabbar1"
+                    style="@style/tabbar_menu"
+                    android:drawableTop="@drawable/tabbar_logo1"
+                    android:text="@string/tabbar_title1" />
+
+                <com.qianseit.westore.ui.CommonRadioButton
+                    android:id="@+id/tabbar2"
+                    style="@style/tabbar_menu"
+                    android:drawableTop="@drawable/tabbar_logo2"
+                    android:text="@string/tabbar_title2" />
+
+                <com.qianseit.westore.ui.CommonRadioButton
+                    android:id="@+id/tabbar3"
+                    style="@style/tabbar_menu"
+                    android:drawableTop="@drawable/tabbar_logo3"
+                    android:text="@string/tabbar_title3" />
+
+                <com.qianseit.westore.ui.CommonRadioButton
+                    android:id="@+id/tabbar4"
+                    style="@style/tabbar_menu"
+                    android:drawableTop="@drawable/tabbar_logo4"
+                    android:text="@string/tabbar_title4" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="bottom"
+        android:layout_height="match_parent" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:gravity="center"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/maintab_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/reddot"
+                android:text="1"
+                android:layout_marginLeft="25sp"
+                android:layout_marginBottom="15sp"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+  
+</TabHost>

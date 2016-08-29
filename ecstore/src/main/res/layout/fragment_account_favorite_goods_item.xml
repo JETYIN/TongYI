@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/PaddingLarge" >
+
+        <ImageView
+            android:id="@android:id/icon"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_marginRight="@dimen/PaddingMedium"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@android:id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:paddingRight="@dimen/PaddingLarge"
+                android:textColor="@color/goods_detail_primary_textcolor"
+                android:textSize="@dimen/TextSizeMedium" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@android:id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/westore_red"
+                android:textSize="@dimen/TextSizeLarge" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@android:id/toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingLeft="@dimen/PaddingXLarge"
+            android:paddingTop="@dimen/PaddingLarge"
+            android:src="@drawable/shopping_car_remove" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/westore_divider_bgcolor" />
+
+</LinearLayout>

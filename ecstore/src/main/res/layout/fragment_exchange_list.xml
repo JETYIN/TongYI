@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical" >
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/fragment_exchange_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="请选择要退货的商品" />
+    
+    <LinearLayout
+        android:id="@+id/fragment_exchange_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shopping_car_bottom_bar_bgimage"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/PaddingMedium"
+        android:paddingRight="@dimen/PaddingMedium"
+        android:paddingTop="@dimen/PaddingSmall" >
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@+id/fragment_exchange_select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transparent"
+            android:drawableLeft="@drawable/shopping_car_selected"
+            android:paddingLeft="10dp"
+            android:drawablePadding="1dip"
+            android:text="@string/select_all"
+            android:textColor="@color/text_textcolor_gray1"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/fragment_exchange_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/PaddingLarge"
+                android:paddingRight="@dimen/PaddingLarge"
+                android:singleLine="true"
+                android:textColor="@color/westore_red"
+                android:textSize="@dimen/TextSizeMedium" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/fragment_exchange_save_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/PaddingLarge"
+                android:paddingRight="@dimen/PaddingLarge"
+                android:singleLine="true"
+                android:textColor="@color/westore_secondary_textcolor"
+                android:textSize="@dimen/TextSizeBigSmall" />
+        </LinearLayout>
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@+id/fragment_exchange_submit"
+            style="@style/button_pink_small_radius"
+            android:layout_width="72dp"
+            android:text="@string/submit" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/fragment_exchange_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_exchange_subtitle"
+        android:layout_above="@id/fragment_exchange_toolbar"
+        android:divider="@null"
+        android:scrollbars="none" >
+    </ListView>
+
+</RelativeLayout>

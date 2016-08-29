@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/PaddingLarge"
+        android:paddingTop="@dimen/PaddingLarge" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#999999" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/PaddingXXLarge"
+            android:layout_marginTop="10dp"
+            android:text="意见反馈类型"
+            android:textSize="14sp"
+            android:textColor="@color/text_textcolor_gray1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/PaddingXXLarge"
+            android:paddingRight="@dimen/PaddingXXLarge" >
+
+            <com.qianseit.westore.ui.CommonRadioButton
+                android:id="@+id/feedback_radiobtn1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/feedback_bg_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="软件体验"
+                android:textColor="@color/feedback_textcolor_selector"
+                android:textSize="12sp" />
+
+            <com.qianseit.westore.ui.CommonRadioButton
+                android:id="@+id/feedback_radiobtn2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/feedback_bg_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="商品问题"
+                android:textColor="@color/feedback_textcolor_selector"
+                android:textSize="12sp" />
+
+            <com.qianseit.westore.ui.CommonRadioButton
+                android:id="@+id/feedback_radiobtn3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/feedback_bg_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="物流问题"
+                android:textColor="@color/feedback_textcolor_selector"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/PaddingXXLarge"
+            android:paddingRight="@dimen/PaddingXXLarge" >
+
+            <com.qianseit.westore.ui.CommonRadioButton
+                android:id="@+id/feedback_radiobtn4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/feedback_bg_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="售后问题"
+                android:textColor="@color/feedback_textcolor_selector"
+                android:textSize="12sp" />
+
+            <com.qianseit.westore.ui.CommonRadioButton
+                android:id="@+id/feedback_radiobtn5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/feedback_bg_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="其他问题"
+                android:textColor="@color/feedback_textcolor_selector"
+                android:textSize="12sp" />
+
+            <com.qianseit.westore.ui.CommonRadioButton
+                android:id="@+id/feedback_radiobtn6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/feedback_bg_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="投诉"
+                android:textColor="@color/feedback_textcolor_selector"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#999999" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="255dip"
+            android:orientation="vertical" >
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/PaddingXXLarge"
+                android:layout_marginTop="10dp"
+                android:text="反馈内容"
+                android:textSize="14sp"
+                android:textColor="@color/text_textcolor_gray1" />
+
+            <com.qianseit.westore.ui.CommonEditText
+                android:id="@+id/feedback_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_marginLeft="@dimen/PaddingXXLarge"
+                android:layout_marginRight="@dimen/PaddingXXLarge"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/feed_content_bg"
+                android:gravity="top|left"
+                android:textSize="14sp"
+                android:hint="@string/feedback_message_hint"
+                android:padding="@dimen/PaddingMedium"
+                android:textColor="@color/text_textcolor_gray2" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#999999" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/PaddingXXLarge"
+                android:layout_marginTop="10dp"
+                android:text="联系方式"
+                android:textSize="14sp"
+                android:textColor="@color/text_textcolor_gray1" />
+
+            <com.qianseit.westore.ui.CommonEditText
+                android:id="@+id/feedback_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="36dip"
+                android:layout_marginLeft="@dimen/PaddingXXLarge"
+                android:layout_marginRight="@dimen/PaddingXXLarge"
+                android:layout_marginTop="@dimen/PaddingLarge"
+                android:background="@drawable/feed_content_bg"
+                android:gravity="center_vertical"
+                android:hint="@string/feedback_phone_hint"
+                android:padding="@dimen/PaddingMedium"
+                android:singleLine="true"
+                android:textColor="@color/goods_detail_secondary_textcolor"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="10dp" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/feedback_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:gravity="center_horizontal"
+            android:text="您也可以直接致电客服电话：400-888-9739" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/theme_color" />
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@+id/feedback_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/PaddingLarge"
+            android:background="@drawable/bg_semicircle_selector"
+            android:paddingBottom="10dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:id="@+id/content"
+    android:layout_height="fill_parent" >
+
+    <!-- 标题栏 -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="50dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/action_bar_home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_launcher" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/action_bar_tabbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/src_pic"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="matrix" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!-- 标题栏 -->
+
+        <LinearLayout
+            android:id="@+id/action_bar_titlebar"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/action_titlebar_height"
+            android:background="@drawable/navigation_bar_new"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:id="@+id/action_bar_titlebar_left_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" >
+
+                <ImageButton
+                    android:id="@+id/action_bar_titlebar_lefts"
+                    android:layout_width="@dimen/action_titlebar_height"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/transparent"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/button_back"
+                    android:textColor="@color/actionbar_button_textcolor"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/action_bar_titlebar_titleview"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/action_bar_titlebar_title"
+                    style="@style/actionbar_titlebar_title"
+                    android:shadowColor="@color/actionbar_title_shadowcolor"
+                    android:text="@string/goods_ptotoss"
+                    android:textColor="@color/actionbar_title_textcolor" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/action_bar_titlebar_right_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" >
+
+                <ImageButton
+                    android:id="@+id/action_bar_titlebar_right_ib"
+                    android:layout_width="@dimen/action_titlebar_height"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/button_back"
+                    android:textColor="@color/actionbar_button_textcolor"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/action_bar_titlebar_right"
+                    android:layout_width="@dimen/action_titlebar_button_width"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:paddingRight="4dip"
+                    android:textColor="@color/actionbar_button_textcolor"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:gravity="center"
+            android:layout_weight="1" >
+            <com.edmodo.cropper.CropImageView
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/CropImageView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whites"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/fragment_top_bg" />
+
+            <ImageButton
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/PaddingMedium"
+                android:layout_marginTop="@dimen/PaddingMedium"
+                android:background="#00000000"
+                android:src="@drawable/xaiyibu" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

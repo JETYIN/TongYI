@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/item_myscore_divider_t"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginTop="15dp"
+        android:background="#aaaaaaaa" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/item_myscore_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="213"
+            android:textSize="@dimen/TextSizeLarge" />
+
+        <ImageView
+            android:id="@+id/item_myscore_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            android:src="@drawable/arrow_right_pink"
+            android:tint="@color/westore_secondary_textcolor"
+            />
+        
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/item_myscore_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/item_myscore_arrow"
+            android:layout_marginLeft="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginRight="24dp"
+            android:textSize="@dimen/TextSizeLarge" />
+        
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/item_myscore_divider_b2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="#aaaaaaaa"
+        android:visibility="visible" />
+
+</LinearLayout>

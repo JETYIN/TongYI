@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.qianseit.westore.ui.pulltorefresh.lib.PullToRefreshListView
+        android:id="@+id/flash_sentiment_listviewsss"
+        style="@style/listview"
+        android:layout_marginLeft="@dimen/PaddingMedium"
+        android:layout_marginRight="@dimen/PaddingMedium"
+        android:layout_marginTop="@dimen/PaddingMedium"
+        android:background="@null"
+        android:divider="#F8F9FB"
+        android:dividerHeight="10dip" />
+
+    <TextView
+        android:id="@+id/account_no_loging_null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/flash_sentiment_listviewsss"
+        android:paddingTop="@dimen/PaddingLarge"
+        android:textColor="#999999"
+        android:textSize="@dimen/TextSizeMedium"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/account_loging_null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/PaddingLarge"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/account_null_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/no_recommend" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/account_null_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/PaddingLarge"
+            android:text="暂无推荐内容"
+            android:textColor="#666666"
+            android:textSize="@dimen/TextSizeBigSmall" />
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@+id/account_loging_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/PaddingLarge"
+            android:background="@drawable/bg_verify_code_red"
+            android:padding="@dimen/PaddingMedium"
+            android:paddingTop="@dimen/PaddingLarge"
+            android:text="去关注达人"
+            android:textColor="@color/white"
+            android:textSize="@dimen/TextSizeMedium" />
+    </RelativeLayout>
+
+</RelativeLayout>

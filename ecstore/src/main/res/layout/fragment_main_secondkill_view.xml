@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_main_ads_secondskill"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    >
+
+    <Gallery
+        android:id="@+id/fragment_main_secondkill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:spacing="10dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="152dp"
+        android:background="@drawable/second_kill" >
+        
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/fragment_main_ads_secondskill_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="限时特卖"
+             />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/fragment_main_ads_secondskill_remaintime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fragment_main_ads_secondskill_title"
+            android:textColor="#ffffff"
+            android:text="123"
+            />
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_main_ads_secondskill_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_main_secondkill"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <ImageView
+        android:id="@+id/item_recomend_img1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:background="@color/press_color"
+        />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/item_recomend_title"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/TextSizeSmall"
+        android:text="12"
+        android:textColor="@color/text_textcolor_gray2" />
+
+    <TextView
+        android:id="@+id/item_recomend_price1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:textSize="@dimen/TextSizeBigSmall"
+        android:textColor="@color/theme_color"
+        android:text="12" />
+
+</LinearLayout>

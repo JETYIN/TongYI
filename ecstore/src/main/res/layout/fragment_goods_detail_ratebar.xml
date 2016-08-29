@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/PaddingMedium" >
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/goods_detail_ratebar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textColor="@color/westore_secondary_textcolor"
+        android:textSize="@dimen/TextSizeMedium" />
+
+    <RatingBar
+        android:id="@+id/goods_detail_ratebar_point_ratebar"
+        style="@style/small_rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/PaddingSmall"
+        android:numStars="5" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/goods_detail_ratebar_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/PaddingMedium"
+        android:paddingRight="@dimen/PaddingMedium"
+        android:textColor="@color/westore_red"
+        android:textSize="@dimen/TextSizeMedium" />
+
+</TableRow>

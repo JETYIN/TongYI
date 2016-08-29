@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="15dp" >
+    
+    <ImageView 
+        android:id="@+id/item_receive_pc_title_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+    
+    <com.qianseit.westore.ui.CircleImageView 
+        android:id="@+id/item_receive_pc_user_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        />
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_receive_pc_user_img"
+        android:layout_toLeftOf="@id/item_receive_pc_title_img"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:orientation="vertical">
+        
+        <com.qianseit.westore.ui.CommonTextView 
+            android:id="@+id/item_receive_pc_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_textcolor_gray2"
+            android:textSize="13sp"
+            android:text="komie"/>
+        
+        <com.qianseit.westore.ui.CommonTextView 
+            android:id="@+id/item_receive_pc_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_textcolor_gray1"
+            android:layout_marginTop="7dp"
+            android:textSize="13sp"
+            android:visibility="gone"
+            android:text="komie"/>
+        
+        <ImageView 
+	        android:id="@+id/item_receive_pc_praise"
+	        android:layout_width="15dp"
+	        android:layout_height="13dp"
+	        android:layout_marginTop="7dp"
+	        android:src="@drawable/my_new_fans"
+	        android:visibility="gone"/>
+        
+         <com.qianseit.westore.ui.CommonTextView 
+            android:id="@+id/item_receive_pc_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_textcolor_gray2"
+            android:layout_marginTop="7dp"
+            android:textSize="13sp"
+            android:text="komie"/>
+        
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FB"
+    android:padding="@dimen/PaddingLarge" >
+
+    <LinearLayout
+        android:id="@+id/account_regist_step1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/PaddingLarge" >
+
+         <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_enter_view" >
+            
+            <com.qianseit.westore.ui.CommonButton
+                android:id="@+id/account_regist_get_verify_code_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="75dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bg_verify_code_red"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/account_regist_get_verify_code"
+                android:textColor="@color/white"
+                />
+
+            <EditText
+                android:id="@+id/account_regist_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/account_regist_get_verify_code_button"
+                android:background="@null"
+                android:drawableLeft="@drawable/login_user"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/account_regist_input_phone_number"
+                android:inputType="number"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:textColor="@color/account_login_primary_textcolor"
+                android:textSize="@dimen/TextSizeMedium" />
+        </RelativeLayout>
+
+            <EditText
+                android:id="@+id/account_regist_verify_code"
+                style="@style/account_regist_edittext"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/PaddingLarge"
+                android:padding="15dp"
+                android:background="@drawable/bg_enter_view"
+                android:drawableLeft="@drawable/register_msg"
+                android:drawablePadding="10dp"
+                android:hint="@string/account_regist_input_verify_code" />
+
+        <RelativeLayout
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/PaddingLarge"
+            android:background="@drawable/bg_enter_view" >
+
+            <com.qianseit.westore.ui.CommonCheckBox
+                android:id="@+id/account_register_password_visible"
+                style="@style/checkbox"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:button="@drawable/password_check_box_selector"
+                android:checked="true"
+                android:paddingBottom="15dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp" />
+
+            <EditText
+                android:id="@+id/account_regist_passwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/account_register_password_visible"
+                android:background="@null"
+                android:drawableLeft="@drawable/login_password"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/account_login_passwd"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:textColor="@color/account_login_primary_textcolor"
+                android:textSize="@dimen/TextSizeMedium" />
+
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/account_regist_inv_code"
+            style="@style/account_regist_edittext"
+            android:layout_weight="1"
+            android:layout_below="@id/pass"
+            android:layout_marginTop="@dimen/PaddingLarge"
+            android:padding="15dp"
+            android:background="@drawable/bg_enter_view"
+            android:drawableLeft="@drawable/yqm"
+            android:drawablePadding="10dp"
+            android:hint="@string/account_regist_input_inv_code" />
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@+id/account_regist_next_button"
+            style="@style/button_pink"
+            android:layout_width="match_parent"
+            android:layout_height="46dip"
+            android:layout_marginTop="@dimen/PaddingXXLarge"
+            android:background="@drawable/login_register"
+            android:layout_marginLeft="@dimen/PaddingSmall"
+            android:layout_marginRight="@dimen/PaddingSmall"
+            android:textSize="@dimen/TextSizeLarge"
+            android:text="@string/account_login_regist" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/account_regist_xieyi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/account_login_primary_textcolor"
+            android:layout_marginLeft="@dimen/PaddingLarge"
+            android:layout_marginTop="@dimen/PaddingXLarge"
+            />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/account_regist_step2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/PaddingLarge"
+        android:visibility="gone" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/PaddingMedium"
+            android:paddingTop="@dimen/PaddingMedium"
+            android:text="@string/account_regist_upgrade_profile"
+            android:textColor="@color/westore_dark_textcolor"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <EditText
+            android:id="@+id/account_regist_uname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/account_login_name_bgimage"
+            android:gravity="center_vertical"
+            android:hint="@string/username"
+            android:singleLine="true"
+            android:textColor="@color/account_login_primary_textcolor"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <EditText
+            android:id="@+id/account_regist_passwd2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/account_regist_passwd_input_bgimage"
+            android:gravity="center_vertical"
+            android:hint="@string/account_regist_passwd_hint"
+            android:singleLine="true"
+            android:textColor="@color/account_login_primary_textcolor"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <EditText
+            android:id="@+id/account_regist_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/account_regist_email_input_bgimage"
+            android:gravity="center_vertical"
+            android:hint="@string/account_regist_email"
+            android:singleLine="true"
+            android:textColor="@color/account_login_primary_textcolor"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@+id/account_regist_submit_button"
+            style="@style/button_pink"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_marginTop="@dimen/PaddingXXLarge"
+            android:text="@string/complete" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/account_regist_step0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/PaddingLarge"
+        android:visibility="gone" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/PaddingMedium"
+            android:paddingTop="@dimen/PaddingMedium"
+            android:text="@string/account_regist_offline_member"
+            android:textColor="@color/westore_dark_textcolor"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <EditText
+            android:id="@+id/account_regist_offline_passwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/account_login_input_text"
+            android:gravity="center_vertical"
+            android:hint="@string/account_regist_passwd_hint"
+            android:paddingLeft="@dimen/PaddingLarge"
+            android:paddingRight="@dimen/PaddingLarge"
+            android:singleLine="true"
+            android:textColor="@color/account_login_primary_textcolor"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@+id/account_regist_offline_submit"
+            style="@style/button_pink"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_marginTop="@dimen/PaddingXXLarge"
+            android:text="@string/account_login_submit" />
+    </LinearLayout>
+
+</RelativeLayout>

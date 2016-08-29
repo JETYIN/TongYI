@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/translucent"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/share_view_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:id="@+id/share_view_zone"
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/PaddingLarge"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/PaddingXLarge"
+            android:background="@drawable/icon_share_bg1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/PaddingLarge"
+                android:text="@string/choose_share_platform"
+                android:textColor="@color/text_textcolor_gray1"
+                android:textSize="@dimen/TextSizeMedium"
+                android:visibility="gone" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                     >
+
+                    <com.qianseit.westore.ui.CommonTextView
+                        android:id="@+id/share_weibo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="4dp"
+                        android:drawableTop="@drawable/icon_share_weibo" />
+
+                    <com.qianseit.westore.ui.CommonTextView
+                        android:id="@+id/share_qq"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="4dp"
+                        android:drawableTop="@drawable/icon_share_qq" />
+
+                    <com.qianseit.westore.ui.CommonTextView
+                        android:id="@+id/share_wechat_chat"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="4dp"
+                        android:drawableTop="@drawable/icon_share_wechat" />
+
+                    <com.qianseit.westore.ui.CommonTextView
+                        android:id="@+id/share_wechat_circle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="4dp"
+                        android:drawableTop="@drawable/icon_share_wechat_circle" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/PaddingXLarge"
+                    android:visibility="gone" >
+
+                    <com.qianseit.westore.ui.CommonTextView
+                        android:id="@+id/share_qqblog"
+                        style="@style/share_item_view"
+                        android:drawableTop="@drawable/share_qqblog"
+                        android:text="@string/share_qqblog"
+                        android:visibility="invisible" />
+
+                    <com.qianseit.westore.ui.CommonTextView
+                        android:id="@+id/share_copy"
+                        style="@style/share_item_view"
+                        android:drawableTop="@drawable/share_sms"
+                        android:text="@string/share_copy" />
+
+                    <com.qianseit.westore.ui.CommonTextView
+                        android:id="@+id/share_qzone"
+                        style="@style/share_item_view"
+                        android:text="@string/share_qzone"
+                        android:visibility="invisible" />
+
+                    <com.qianseit.westore.ui.CommonTextView
+                        android:id="@+id/share_save"
+                        style="@style/share_item_view"
+                        android:text="@string/share_save"
+                        android:visibility="invisible" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/PaddingLarge"
+            android:src="@drawable/share_view_close"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

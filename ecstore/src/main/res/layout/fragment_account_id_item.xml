@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="@dimen/PaddingXMedium"
+        android:background="@color/westore_divider_bgcolor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/my_id_item_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/PaddingXLarge"
+            android:src="@drawable/my_address_book_not_default" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/PaddingMedium"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingTop="@dimen/PaddingXLarge" >
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/my_id_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/westore_dark_textcolor"
+                android:textSize="16sp" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/my_id_item_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/my_id_item_name"
+                android:layout_marginTop="@dimen/PaddingLarge"
+                android:textColor="@color/text_textcolor_gray1"
+                android:textSize="@dimen/TextSizeMedium" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_id_item_num"
+                android:gravity="center_vertical"
+                android:paddingTop="@dimen/PaddingLarge" >
+
+                <FrameLayout
+                    android:layout_width="60dp"
+                    android:layout_height="40dp" >
+
+                    <ImageView
+                        android:id="@+id/my_id_item_front"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/tv_uploading_front"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.8"
+                        android:background="@drawable/shape_no_color"
+                        android:gravity="center"
+                        android:text="樱淘社\n清关专用"
+                        android:textColor="#D4D1CA"
+                        android:visibility="gone"
+                        android:textSize="@dimen/TextSizeBigSmall"
+                        android:textStyle="bold"
+                        />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/PaddingLarge" >
+
+                    <ImageView
+                        android:id="@+id/my_id_item_contrary"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/tv_uploading_front"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.8"
+                        android:background="@drawable/shape_no_color"
+                        android:gravity="center"
+                        android:text="樱淘社\n清关专用"
+                        android:textColor="#D4D1CA"
+                        android:textSize="@dimen/TextSizeLarge"
+                        android:visibility="gone"
+                        android:textStyle="bold"
+                       />
+                </FrameLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/my_id_item_delect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/PaddingXXLarge"
+            android:src="@drawable/account_id_delect" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/westore_divider_bgcolor" />
+
+</LinearLayout>

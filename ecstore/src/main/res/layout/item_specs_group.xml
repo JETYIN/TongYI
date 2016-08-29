@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/PaddingLarge"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <com.qianseit.westore.ui.CircleImageView
+        android:id="@+id/goods_detail_buy_specs"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:background="@drawable/icon_circle_bg_gray_small"
+        android:scaleType="centerCrop" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/tv_color_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sdasdas"
+        android:textSize="@dimen/TextSizeSmall"
+        android:textColor="#999999" />
+
+</LinearLayout>

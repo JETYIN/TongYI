@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/invoice_bgimage"
+    android:padding="@dimen/PaddingLarge" >
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="42dip"
+            android:background="@drawable/account_header_buttons_bgimage"
+            android:gravity="center_vertical"
+            >
+
+            <com.qianseit.westore.ui.CommonEditText
+                android:id="@+id/charge_count"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/charge_amt_hint"
+                android:inputType="numberDecimal"
+                android:paddingLeft="@dimen/PaddingLarge"
+                android:paddingRight="@dimen/PaddingLarge"
+                android:singleLine="true"
+                android:textSize="@dimen/TextSizeMedium" />
+        </LinearLayout>
+
+    <com.qianseit.westore.ui.CommonButton
+        android:id="@+id/charge_submit"
+        style="@style/button_pink_small_radius"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="@dimen/PaddingLarge"
+        android:text="@string/charge" />
+
+</LinearLayout>

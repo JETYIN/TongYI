@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/account_login_bgcolor"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/PaddingLarge"
+        android:layout_marginTop="@dimen/PaddingLarge"
+        android:background="@drawable/account_header_buttons_bgimage"
+        android:orientation="vertical"
+        android:padding="@dimen/PaddingLarge" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm_order_express"
+            android:textColor="@color/westore_dark_textcolor"
+            android:textSize="@dimen/TextSizeLarge" />
+
+        <RadioGroup
+            android:id="@+id/express_picker_radios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingTop="@dimen/PaddingLarge" >
+
+            <RadioButton
+                android:id="@+id/express_picker_delvery"
+                android:background="@drawable/express_radiobutton"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="@dimen/PaddingLarge"
+                android:paddingRight="@dimen/PaddingLarge"
+                android:text="@string/confirm_order_express_delivery"
+                android:textColor="@color/westore_dark_textcolor"
+                android:textSize="@dimen/TextSizeMedium" />
+
+            <RadioButton
+                android:id="@+id/express_picker_self"
+                android:layout_marginLeft="@dimen/PaddingLarge"
+                android:background="@drawable/express_radiobutton"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="@dimen/PaddingLarge"
+                android:paddingRight="@dimen/PaddingLarge"
+                android:text="@string/confirm_order_express_self"
+                android:textColor="@color/westore_dark_textcolor"
+                android:textSize="@dimen/TextSizeMedium" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/express_picker_time_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/westore_divider_bgcolor" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/express_picker_time_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/PaddingLarge"
+                android:layout_marginTop="@dimen/PaddingLarge"
+                android:text="@string/confirm_order_express_delivery_time"
+                android:textColor="@color/text_textcolor_gray1"
+                android:textSize="@dimen/TextSizeMedium" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/express_picker_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/PaddingLarge"
+                android:drawableRight="@drawable/express_time_marker"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_textcolor_gray1"
+                android:textSize="@dimen/TextSizeBigSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/express_picker_shop_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/westore_divider_bgcolor" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/express_picker_shop_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/PaddingLarge"
+                android:layout_marginTop="@dimen/PaddingLarge"
+                android:text="@string/confirm_order_express_delivery_shop"
+                android:textColor="@color/text_textcolor_gray1"
+                android:textSize="@dimen/TextSizeMedium" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/express_picker_shop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_textcolor_gray1"
+                android:textSize="@dimen/TextSizeMedium" />
+            
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/express_picker_shop_addr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_textcolor_gray1"
+                android:textSize="@dimen/TextSizeSmall" />
+            
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.qianseit.westore.ui.CommonButton
+        android:id="@+id/express_picker_submit"
+        style="@style/button_pink"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/PaddingLarge"
+        android:paddingBottom="@dimen/PaddingLarge"
+        android:paddingTop="@dimen/PaddingLarge"
+        android:text="@string/ok" />
+
+</LinearLayout>

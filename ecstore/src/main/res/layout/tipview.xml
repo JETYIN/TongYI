@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+  <RelativeLayout
+      android:id="@+id/loTag"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/bg_picturetagview_tagview_left" >
+
+      
+      <com.qianseit.westore.ui.CommonButton 
+               android:id="@+id/iv_tip"
+          android:background="@drawable/tip_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="点击标签可以改变方向哦"
+          android:gravity="center"
+          android:textSize="@dimen/TextSizeMedium"
+          android:paddingBottom="10dp"
+          android:textColor="#999999"
+          />
+
+    </RelativeLayout>
+
+</LinearLayout>

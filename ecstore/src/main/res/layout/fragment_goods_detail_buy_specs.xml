@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/PaddingXLarge"
+    android:paddingRight="@dimen/PaddingXLarge"
+    android:paddingTop="@dimen/PaddingXLarge"
+    android:paddingBottom="@dimen/PaddingXLarge"
+     >
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/goods_detai_buy_specs_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#666666"
+        android:textSize="@dimen/TextSizeBigSmall" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/PaddingLarge"
+        android:scrollbars="none" >
+
+        <RadioGroup
+            android:id="@+id/goods_detai_buy_specs_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+        </RadioGroup>
+    </HorizontalScrollView>
+
+</LinearLayout>

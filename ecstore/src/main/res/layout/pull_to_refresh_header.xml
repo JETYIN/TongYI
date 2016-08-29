@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pull_to_refresh_header"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="10dip"
+    android:paddingTop="10dip" >
+
+    <ProgressBar
+        android:id="@+id/pull_to_refresh_progress"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="18dip"
+        android:layout_marginRight="5dip"
+        android:indeterminateDrawable="@drawable/refresh_rotal"
+        android:indeterminateOnly="true"
+        android:indeterminateBehavior="repeat"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/pull_to_refresh_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="10dip"
+        android:visibility="gone"
+        android:src="@drawable/ic_pulltorefresh_arrow" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/pull_to_refresh_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="left"
+        android:singleLine="true"
+        android:textSize="12sp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#676767" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/pull_to_refresh_updated_at"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="left"
+        android:textColor="#676767"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:visibility="gone" />
+
+</LinearLayout>

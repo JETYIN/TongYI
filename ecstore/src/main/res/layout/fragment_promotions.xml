@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.qianseit.westore.ui.PromotionCategoryView
+        android:id="@+id/fragment_promotion_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.qianseit.westore.ui.pulltorefresh.lib.PullToRefreshListView
+            android:id="@+id/fragment_promotion_listview"
+            style="@style/listview"
+            android:dividerHeight="0dip" />
+    
+        <RelativeLayout
+            android:id="@+id/fragment_promotion_adsview_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.qianseit.westore.ui.FlowView
+                android:id="@+id/fragment_promotion_adsview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.qianseit.westore.ui.CircleFlowIndicator
+                android:id="@+id/fragment_promotion_adsview_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="@dimen/PaddingLarge"
+                android:paddingLeft="@dimen/PaddingLarge"
+                android:visibility="gone" />
+        </RelativeLayout>
+        
+</LinearLayout>

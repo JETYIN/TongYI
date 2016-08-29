@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/PaddingLarge"
+    android:paddingRight="@dimen/PaddingLarge"
+    android:paddingTop="@dimen/PaddingXLarge" >
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@android:id/text1"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/text_textcolor_gray1"
+        android:textSize="@dimen/TextSizeMedium" />
+
+    <View
+        android:layout_width="@dimen/PaddingMedium"
+        android:layout_height="0dip" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@android:id/text2"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/text_textcolor_gray1"
+        android:textSize="@dimen/TextSizeMedium" />
+
+</LinearLayout>

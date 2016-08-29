@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+  <com.qianseit.westore.ui.CommonButton 
+      android:id="@+id/accout_dialog_photo"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="相机"
+      android:textSize="@dimen/TextSizeLarge"
+      android:gravity="center"
+      android:textColor="@color/white"
+      android:background="#666666"
+      android:padding="@dimen/PaddingLarge"
+      />   
+  <com.qianseit.westore.ui.CommonButton 
+      android:id="@+id/accout_dialog_photo_album"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="相册"
+      android:textSize="@dimen/TextSizeLarge"
+      android:gravity="center"
+      android:textColor="@color/white"
+      android:background="#666666"
+      android:layout_marginTop="0.5dp"     
+      android:padding="@dimen/PaddingLarge"
+      />   
+  <com.qianseit.westore.ui.CommonButton 
+      android:id="@+id/accout_dialog_calcel"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="取消"
+      android:layout_marginTop="30dp"
+      android:textSize="@dimen/TextSizeLarge"
+      android:gravity="center"
+     android:textColor="@color/white"
+      android:background="#666666"
+      android:padding="@dimen/PaddingLarge"
+      />   
+ 
+</LinearLayout>

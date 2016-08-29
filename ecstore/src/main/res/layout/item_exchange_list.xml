@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/PaddingXLarge"
+    android:paddingRight="@dimen/PaddingXLarge"
+    android:paddingTop="@dimen/PaddingXLarge"
+    android:background="@drawable/shopping_car_bottom_bar_bgimage" >
+    
+    <ImageButton
+        android:id="@+id/item_exchange_list_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/transparent"
+        android:padding="@dimen/PaddingXLarge"
+        android:src="@drawable/shopping_car_selected" />
+
+    <ImageView
+        android:id="@+id/item_exchange_list_thumb"
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:layout_marginRight="@dimen/PaddingMedium" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/item_exchange_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="123"
+            android:textColor="@color/text_textcolor_gray1"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/item_exchange_list_info1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/PaddingSmall"
+            android:paddingTop="@dimen/PaddingSmall"
+            android:singleLine="true"
+            android:textColor="@color/goods_detail_secondary_textcolor"
+            android:textSize="@dimen/TextSizeSmall" />
+	
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <com.qianseit.westore.ui.CommonButton
+                android:id="@+id/shopping_car_item_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shopping_car_minus" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/shopping_car_item_quantity"
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shopping_car_numbg"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/text_textcolor_gray1"
+                android:textSize="@dimen/TextSizeBigSmall" />
+
+            <com.qianseit.westore.ui.CommonButton
+                android:id="@+id/shopping_car_item_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shopping_car_plus" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/PaddingMedium" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/item_exchange_list_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="￥14.00"
+            android:textColor="@color/westore_red"
+            android:textSize="@dimen/TextSizeLarge" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/item_exchange_list_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="x1"
+            android:textColor="@color/text_textcolor_gray1"
+            android:textSize="@dimen/TextSizeSmall" />
+
+    </LinearLayout>
+
+</LinearLayout>

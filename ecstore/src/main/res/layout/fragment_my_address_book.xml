@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/account_add_address_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="@dimen/PaddingXXLarge"
+        android:background="@drawable/bg_address_add"
+        android:gravity="center"
+        android:padding="@dimen/PaddingLarge"
+        android:text="@string/account_address_add_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/TextSizeMedium" />
+
+</LinearLayout>

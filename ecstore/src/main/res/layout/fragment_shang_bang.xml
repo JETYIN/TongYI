@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/action_titlebar_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/navigation_bar_new"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:id="@+id/fragment_my_yingbang_back"
+                android:layout_width="@dimen/action_titlebar_height"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/transparent"
+                android:gravity="center_vertical"
+                android:src="@drawable/button_back"
+                android:textColor="@color/actionbar_button_textcolor"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fragment_my_yingbang_titleview"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/fragment_my_yingbang_titlebar_title"
+                style="@style/actionbar_titlebar_title"
+                android:shadowColor="@color/actionbar_title_shadowcolor"
+                android:textColor="@color/actionbar_title_textcolor" />
+        </FrameLayout>
+
+        <com.qianseit.westore.ui.CommonButton
+            android:layout_width="@dimen/action_titlebar_button_width"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingRight="4dip"
+            android:textColor="@color/actionbar_button_textcolor"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_my_yingbang_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll1"
+        android:background="@color/theme_color"
+        android:minHeight="100dp"
+        android:orientation="vertical" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/fragment_my_yingbang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:text="我目前拥有999积分"
+            android:textColor="@color/white" />
+
+        <RadioGroup
+            android:id="@+id/goods_detail_action_radios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <com.qianseit.westore.ui.CommonRadioButton
+                android:id="@+id/fragment_my_yingbang_history"
+                style="@style/tab_radio_button_new"
+                android:layout_marginLeft="1dip"
+                android:layout_marginTop="1dip"
+                android:drawableBottom="@drawable/order_radio_selector"
+                android:drawablePadding="10dp"
+                android:checked="true"
+                android:paddingTop="@dimen/PaddingMedium"
+                android:text="积分记录"
+                android:textColor="@color/goods_detail_tab_radio_button_textcolor" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="9dp"
+                android:background="@drawable/icon_red_line_vertical" />
+
+            <com.qianseit.westore.ui.CommonRadioButton
+                android:id="@+id/fragment_my_yingbang_rule"
+                style="@style/tab_radio_button_new"
+                android:layout_marginRight="1dip"
+                android:layout_marginTop="1dip"
+                android:drawableBottom="@drawable/order_radio_selector"
+                android:drawablePadding="10dp"
+                android:paddingTop="@dimen/PaddingMedium"
+                android:text="积分规则"
+                android:textColor="@color/goods_detail_tab_radio_button_textcolor" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/rule_webView_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_my_yingbang_layout" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <WebView
+                android:id="@+id/rule_webView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:scrollbars="@null" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/fragment_my_yingbang_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rule_webView_scrollview"
+        android:background="@color/white"
+        android:cacheColorHint="@color/white"
+        android:drawSelectorOnTop="false"
+        android:fadingEdgeLength="0sp"
+        android:listSelector="@color/white"
+        android:scrollbars="@null"
+        android:visibility="gone" />
+
+</RelativeLayout>

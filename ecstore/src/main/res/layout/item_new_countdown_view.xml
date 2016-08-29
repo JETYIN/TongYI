@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/item_new_countdown_view_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_countdown_view"
+        android:paddingBottom="2dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:textSize="12sp" 
+        android:visibility="gone"/>
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/item_new_countdown_view_dayname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="天"
+        android:visibility="gone" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/item_new_countdown_view_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_countdown_view"
+        android:paddingBottom="2dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:text="15"
+        android:textSize="12sp" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/item_new_countdown_view_minute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_countdown_view"
+        android:paddingBottom="2dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:text="17"
+        android:textSize="12sp" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/item_new_countdown_view_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_countdown_view"
+        android:paddingBottom="2dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:text="19"
+        android:textSize="12sp" />
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp" >
+
+    <TextView
+        android:id="@+id/item_yingbang_history_coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/history_coin_bg"
+        android:textSize="@dimen/TextSizeBigSmall"
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:text="+10积分"
+        android:textColor="@color/white" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/item_yingbang_history_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_yingbang_history_coin"
+        android:layout_marginTop="5dp"
+        android:textSize="@dimen/TextSizeBigSmall"
+        android:text="+10积分"
+        android:textColor="#999999" />
+
+    <TextView
+        android:id="@+id/item_yingbang_history_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="2015-07-29"
+        android:textSize="@dimen/TextSizeBigSmall"
+        android:textColor="#999999" />
+
+</RelativeLayout>

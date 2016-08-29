@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/ads_view_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="秒杀专区"
+            android:textColor="@color/theme_color"
+            android:textSize="15sp" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/ads_view_title_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/ads_view_title_name"
+            android:text=" · 秒杀专区"
+            android:textSize="12sp" />
+
+        <com.qianseit.westore.ui.NewCountDownView
+            android:id="@+id/ads_view_title_countdown_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/ads_view_title_title" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/ads_view_title_decs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:text="19块起卖"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</FrameLayout>

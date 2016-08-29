@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/all_settings_radios"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/ticket_topbar_bgimage"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <RadioButton
+            android:id="@+id/ticket_unused"
+            style="@style/ticket_topbar_tab"
+            android:checked="true"
+            android:text="@string/ticket_unused"
+            android:textSize="@dimen/TextSizeLarge" />
+
+        <RadioButton
+            android:id="@+id/ticket_used"
+            style="@style/ticket_topbar_tab"
+            android:text="@string/ticket_used"
+            android:textSize="@dimen/TextSizeLarge" />
+
+        <RadioButton
+            android:id="@+id/ticket_expired"
+            style="@style/ticket_topbar_tab"
+            android:text="@string/ticket_expired"
+            android:textSize="@dimen/TextSizeLarge" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.qianseit.westore.ui.pulltorefresh.lib.PullToRefreshListView
+            android:id="@android:id/list"
+            style="@style/listview" />
+
+        <LinearLayout
+            android:id="@android:id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="40dip"
+            android:paddingBottom="20dp"
+            android:background="@color/white"
+            android:visibility="visible" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/counpon_empty" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/PaddingLarge"
+                android:paddingTop="@dimen/PaddingXXLarge"
+                android:text="@string/ticket_empty"
+                android:textColor="@color/westore_secondary_textcolor"
+                android:textSize="@dimen/TextSizeMedium"
+                android:visibility="gone" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/ticket_how_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/PaddingLarge"
+                android:text="@string/ticket_how_to"
+                android:textColor="@color/westore_red"
+                android:textSize="@dimen/TextSizeMedium"
+                android:visibility="visible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

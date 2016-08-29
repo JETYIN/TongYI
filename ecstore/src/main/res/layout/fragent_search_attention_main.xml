@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/fragment_attention_search"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/fragment_top_bg" >
+
+        <ImageView
+            android:id="@+id/attention_search_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/PaddingXLarge"
+            android:paddingLeft="@dimen/PaddingXLarge"
+            android:paddingRight="@dimen/PaddingXLarge"
+            android:paddingTop="@dimen/PaddingXLarge"
+            android:src="@drawable/button_back" />
+
+        <com.qianseit.westore.ui.CommonEditText
+            android:id="@+id/attention_search_edittext"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_personal_attention"
+            android:drawableLeft="@drawable/account_add_search"
+            android:drawablePadding="@dimen/PaddingSmall"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="输入你要搜索的用户"
+            android:imeActionLabel="@string/search"
+            android:imeOptions="actionSend"
+            android:padding="@dimen/PaddingMedium"
+            android:textColor="#999999"
+            android:textSize="@dimen/TextSizeBigSmall" >
+
+            <requestFocus />
+        </com.qianseit.westore.ui.CommonEditText>
+    </RelativeLayout>
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/tv_empty_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="暂无搜索结果"
+        android:textColor="#999999"
+        android:padding="@dimen/PaddingLarge"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="@dimen/TextSizeBigSmall" />
+
+    <ListView
+        android:id="@+id/attention_search_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:listSelector="@color/white" >
+    </ListView>
+
+</LinearLayout>

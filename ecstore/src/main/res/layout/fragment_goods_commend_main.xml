@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 标题栏 -->
+
+    <LinearLayout
+        android:id="@+id/action_bar_titlebarss"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/action_titlebar_height"
+        android:background="@drawable/navigation_bar_new"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" 
+        android:visibility="gone"
+        >
+
+        <FrameLayout
+            android:id="@+id/action_bar_titlebar_left_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:id="@+id/action_bar_titlebar_lefts"
+                android:layout_width="@dimen/action_titlebar_height"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/transparent"
+                android:gravity="center_vertical"
+                android:src="@drawable/button_back"
+                android:textColor="@color/actionbar_button_textcolor"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/action_bar_titlebar_titleview"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/action_bar_titlebar_title"
+                style="@style/actionbar_titlebar_title"
+                android:layout_marginLeft="@dimen/PaddingMedium"
+                android:shadowColor="@color/actionbar_title_shadowcolor"
+                android:text="@string/tabbar_comment"
+                android:textColor="@color/actionbar_title_textcolor" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/action_bar_titlebar_right_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:id="@+id/action_bar_titlebar_right_ib"
+                android:layout_width="@dimen/action_titlebar_height"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:src="@drawable/button_back"
+                android:textColor="@color/actionbar_button_textcolor"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/action_bar_titlebar_right"
+                android:layout_width="@dimen/action_titlebar_button_width"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:gravity="center"
+                android:paddingRight="4dip"
+                android:textColor="@color/actionbar_button_textcolor"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/goods_comment_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/picturess"
+                android:layout_width="fill_parent"
+                android:layout_height="320dp" >
+
+                <RelativeLayout
+                    android:id="@+id/ll_position"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:id="@+id/imgfilter"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/photo_topss"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:id="@+id/sure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginRight="25dp"
+                        android:background="#00000000"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/photo_album_linear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/PaddingMedium"
+                android:orientation="vertical" >
+
+                <com.qianseit.westore.ui.CommonTextView
+                    android:id="@+id/photo_album_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/PaddingMedium"
+                    android:lineSpacingExtra="3dp"
+                    android:paddingBottom="@dimen/PaddingLarge"
+                    android:paddingTop="@dimen/PaddingLarge"
+                    android:textColor="@color/text_textcolor_gray1"
+                    android:textSize="@dimen/TextSizeBigSmall" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/PaddingLarge"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/ll_dianzan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_account_button"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="4dp" >
+
+                    <ImageView
+                        android:id="@+id/textview_likes_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/my_msg_praise" />
+
+                    <TextView
+                        android:id="@+id/textview_likes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/PaddingMedium"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="120"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/TextSizeSmall" />
+                </LinearLayout>
+
+                <com.qianseit.westore.ui.CommonTextView
+                    android:id="@+id/textview_shareads"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/bg_account_button"
+                    android:drawableLeft="@drawable/fencxiang_lift"
+                    android:drawablePadding="6dp"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="3dp"
+                    android:text="分享"
+                    android:textColor="@color/westore_red"
+                    android:textSize="@dimen/TextSizeBigSmall" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/PaddingLarge"
+                android:paddingRight="@dimen/PaddingLarge"
+                android:paddingTop="@dimen/PaddingLarge" />
+
+            <TextView
+                android:id="@+id/pingpai_rating_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingLeft="@dimen/PaddingXLarge"
+                android:paddingTop="@dimen/PaddingMedium"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/TextSizeBigSmall" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/comment_goods_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rr_comm"
+        android:layout_below="@+id/action_bar_titlebarss"
+        android:listSelector="@color/white"
+        android:scrollbars="none" />
+
+    
+    <View
+        android:id="@+id/view_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar_titlebarss"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/rr_comm"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/fragment_top_bg" />
+
+        <LinearLayout
+            android:id="@+id/ll_comment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <com.qianseit.westore.ui.CommonEditText
+                android:id="@+id/et_comment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_account_button"
+                android:hint="添加评论"
+                android:maxLength="140"
+                android:paddingLeft="@dimen/PaddingLarge"
+                android:textSize="@dimen/TextSizeBigSmall" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/PaddingMedium"
+                android:layout_marginTop="@dimen/PaddingMedium"
+                android:background="@color/westore_divider_bgcolor" />
+
+            <com.qianseit.westore.ui.CommonButton
+                android:id="@+id/send"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="发送"
+                android:textColor="#ff0000"
+                android:textSize="@dimen/TextSizeMedium" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/account_login_bgcolor"
+    android:orientation="vertical"
+    android:padding="@dimen/PaddingXLarge" >
+
+    <EditText
+        android:id="@+id/account_reset_passwd_oldpass"
+        android:layout_width="match_parent"
+        android:layout_height="42dip"
+        android:background="@drawable/account_regist_edittext_normal"
+        android:gravity="center_vertical"
+        android:hint="@string/account_reset_passwd_old"
+        android:paddingLeft="@dimen/PaddingLarge"
+        android:paddingRight="@dimen/PaddingLarge"
+        android:singleLine="true"
+        android:textColor="@color/westore_secondary_textcolor"
+        android:textSize="@dimen/TextSizeMedium" />
+
+    <EditText
+        android:id="@+id/account_reset_passwd_newpass"
+        android:layout_width="match_parent"
+        android:layout_height="42dip"
+        android:layout_marginTop="@dimen/PaddingLarge"
+        android:background="@drawable/account_regist_edittext_normal"
+        android:gravity="center_vertical"
+        android:hint="@string/account_reset_passwd_new"
+        android:paddingLeft="@dimen/PaddingLarge"
+        android:paddingRight="@dimen/PaddingLarge"
+        android:singleLine="true"
+        android:textColor="@color/westore_secondary_textcolor"
+        android:textSize="@dimen/TextSizeMedium" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/PaddingSmall"
+        android:text="@string/account_reset_passwd_message"
+        android:textColor="@color/westore_secondary_textcolor"
+        android:textSize="@dimen/TextSizeSmall" />
+
+    <CheckBox
+        android:id="@+id/account_reset_passwd_visibility"
+        style="@style/checkbox"
+        android:layout_marginTop="@dimen/PaddingLarge"
+        android:checked="true"
+        android:text="@string/account_reset_passwd_visible"
+        android:textColor="@color/text_textcolor_gray1" />
+
+    <EditText
+        android:id="@+id/account_reset_passwd_renewpass"
+        android:layout_width="match_parent"
+        android:layout_height="42dip"
+        android:background="@drawable/account_regist_edittext_normal"
+        android:gravity="center_vertical"
+        android:hint="@string/account_reset_passwd_renew"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/PaddingLarge"
+        android:paddingRight="@dimen/PaddingLarge"
+        android:singleLine="true"
+        android:textColor="@color/account_login_primary_textcolor"
+        android:textSize="@dimen/TextSizeMedium"
+        android:visibility="gone" />
+
+    <com.qianseit.westore.ui.CommonButton
+        android:id="@+id/account_reset_passwd_submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="42dip"
+        android:layout_marginTop="@dimen/PaddingXLarge"
+        android:background="@drawable/account_login_button"
+        android:text="@string/account_reset_passwd"
+        android:textColor="@color/white"
+        android:textSize="@dimen/TextSizeLarge" />
+
+</LinearLayout>

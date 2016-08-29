@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/goods_detail_action_radios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.qianseit.westore.ui.CommonRadioButton
+            android:id="@+id/fragment_friend_invited"
+            style="@style/tab_radio_button_new"
+            android:layout_marginRight="1dip"
+            android:layout_marginTop="1dip"
+            android:drawableBottom="@drawable/order_radio_selector"
+            android:drawablePadding="15dp"
+            android:paddingTop="15dp"
+            android:text="已加入"
+            android:textSize="13sp"
+            android:textColor="@color/goods_detail_tab_radio_button_textcolor" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="9dp"
+            android:background="@drawable/icon_red_line_vertical" />
+
+        <com.qianseit.westore.ui.CommonRadioButton
+            android:id="@+id/fragment_friend_invite"
+            style="@style/tab_radio_button_new"
+            android:layout_marginLeft="1dip"
+            android:layout_marginTop="1dip"
+            android:drawableBottom="@drawable/order_radio_selector"
+            android:drawablePadding="15dp"
+            android:paddingTop="15dp"
+                 android:textSize="13sp"
+            android:text="邀请加入"
+            android:textColor="@color/goods_detail_tab_radio_button_textcolor" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="-1dp"
+        android:background="@color/westore_divider_bgcolor" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ListView
+        android:id="@+id/fragment_friend_invite_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:cacheColorHint="@color/white"
+        android:drawSelectorOnTop="false"
+        android:fadingEdgeLength="0sp"
+        android:listSelector="@color/white" />
+     <ListView
+        android:id="@+id/fragment_friend_invite_list2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:cacheColorHint="@color/white"
+        android:drawSelectorOnTop="false"
+        android:fadingEdgeLength="0sp"
+        android:listSelector="@color/white" />
+      </RelativeLayout>
+
+</LinearLayout>

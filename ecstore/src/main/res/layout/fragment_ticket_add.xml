@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/ticket_remove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="不使用优惠券"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </RelativeLayout>
+
+    <com.qianseit.westore.ui.pulltorefresh.lib.PullToRefreshListView
+        android:id="@android:id/list"
+        style="@style/listview" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/account_header_buttons_bgimage"
+        android:padding="@dimen/PaddingLarge" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/ticket_add_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/PaddingXXLarge"
+            android:paddingRight="@dimen/PaddingMedium"
+            android:text="@string/ticket_add_message"
+            android:textColor="@color/account_login_primary_textcolor"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <com.qianseit.westore.ui.CommonEditText
+            android:id="@+id/ticket_add_number"
+            style="@style/edittext_ticket_add"
+            android:layout_width="200dip"
+            android:layout_below="@id/ticket_add_message"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/PaddingLarge" />
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@+id/ticket_add_submit"
+            style="@style/button_pink"
+            android:layout_width="200dip"
+            android:layout_below="@id/ticket_add_number"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/PaddingXLarge"
+            android:text="@string/ticket_add_useit" />
+    </RelativeLayout>
+
+</LinearLayout>

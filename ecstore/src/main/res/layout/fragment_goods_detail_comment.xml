@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/PaddingXLarge" >
+
+    <ImageView
+        android:id="@+id/goods_detail_comment_avatar"
+        android:layout_width="42dip"
+        android:layout_height="42dip"
+        android:background="@drawable/goods_detail_comment_avatar" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/goods_detail_comment_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/goods_detail_comment_avatar"
+        android:layout_marginLeft="@dimen/PaddingLarge"
+        android:textColor="@color/westore_secondary_textcolor"
+        android:textSize="@dimen/TextSizeBigSmall" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/goods_detail_comment_uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/goods_detail_comment_avatar"
+        android:layout_marginLeft="@dimen/PaddingLarge"
+        android:layout_toLeftOf="@id/goods_detail_comment_date"
+        android:layout_toRightOf="@id/goods_detail_comment_avatar"
+        android:textColor="@color/westore_red"
+        android:textSize="@dimen/TextSizeMedium" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/goods_detail_comment_specs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goods_detail_comment_uname"
+        android:layout_marginLeft="@dimen/PaddingLarge"
+        android:layout_toRightOf="@id/goods_detail_comment_avatar"
+        android:textColor="@color/westore_secondary_textcolor"
+        android:textSize="@dimen/TextSizeMedium" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/goods_detail_comment_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goods_detail_comment_specs"
+        android:layout_marginLeft="@dimen/PaddingLarge"
+        android:layout_toRightOf="@id/goods_detail_comment_avatar"
+        android:textColor="@color/text_textcolor_gray1"
+        android:textSize="@dimen/TextSizeMedium" />
+
+</RelativeLayout>

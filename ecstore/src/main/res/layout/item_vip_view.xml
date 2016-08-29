@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp" >
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/item_vip_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#d30212"
+        android:textStyle="bold"
+        android:text="会员等级" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/item_vip_range"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:textColor="#737373"
+        android:textStyle="bold"
+        android:text="成长记范围" />
+
+</LinearLayout>

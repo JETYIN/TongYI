@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f9fb"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/fragment_main_search"
+        android:layout_width="match_parent"
+        android:layout_height="46dip"
+        android:background="@color/fragment_top_bg" >
+
+        <ImageView
+            android:id="@+id/fragment_category_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingRight="@dimen/PaddingXLarge"
+            android:paddingTop="@dimen/PaddingLarge"
+            android:paddingLeft="@dimen/PaddingXLarge" 
+            android:src="@drawable/button_back"/>
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingRight="@dimen/PaddingXLarge"
+            android:paddingTop="@dimen/PaddingLarge"
+            android:text="@string/actionbar_button_assort"
+            android:textColor="@color/white"
+            android:textSize="@dimen/TextSizeLarge"
+            android:paddingLeft="@dimen/PaddingXLarge" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/fragment_category_lisetview"
+            style="@style/listview"
+            android:layout_width="120dip"
+            android:layout_weight="0"
+            android:background="@drawable/transparent"
+            android:scrollbars="none" />
+
+        <GridView
+            android:id="@+id/fragment_category_gridview"
+            style="@style/listview"
+            android:layout_marginRight="@dimen/PaddingLarge"
+            android:layout_weight="1"
+            android:numColumns="3"
+            android:background="@drawable/white"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</LinearLayout>

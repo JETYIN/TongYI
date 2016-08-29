@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp" >
+
+    <ImageView
+        android:id="@+id/item_recomend_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/goods_detail_like" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/item_recomend_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_recomend_img"
+        android:layout_marginLeft="10dp"
+        android:text=" 1234" />
+    
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/item_recomend_favorite_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/item_recomend_img"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:text=" 1234" />
+    
+    <ImageView
+        android:id="@+id/item_recomend_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/item_recomend_favorite_count"
+        android:layout_below="@id/item_recomend_img"
+        android:src="@drawable/goods_detail_like" />
+
+</RelativeLayout>

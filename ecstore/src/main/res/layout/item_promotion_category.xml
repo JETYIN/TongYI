@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/item_promotion_category_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="@dimen/PaddingLarge"
+        android:text="蔬菜"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/item_promotion_category_state"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_alignLeft="@id/item_promotion_category_tv"
+        android:layout_alignRight="@id/item_promotion_category_tv"
+        android:layout_below="@id/item_promotion_category_tv"
+        android:layout_marginTop="@dimen/PaddingLarge"
+        android:background="@drawable/dotted_line" />
+
+</RelativeLayout>

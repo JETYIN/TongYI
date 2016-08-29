@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.qianseit.westore.ui.pulltorefresh.lib.PullToRefreshListView
+        android:id="@+id/shopping_car_listview"
+        style="@style/listview"
+        android:divider="@color/white"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false" />
+
+    <ProgressBar
+        android:id="@android:id/progress"
+        style="@android:style/Widget.ProgressBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/PaddingXLarge"
+        android:visibility="gone" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@android:id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goods_list_topbar"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/PaddingXXLarge"
+        android:text="@string/shopping_car_empty"
+        android:textColor="@color/goods_list_secondary_textcolor"
+        android:visibility="gone" />
+
+   
+
+</RelativeLayout>

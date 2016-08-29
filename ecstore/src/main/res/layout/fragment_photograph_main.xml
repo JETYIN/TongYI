@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/photo_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fragment_top_bg" >
+
+        <ImageView
+            android:id="@+id/photo_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingLeft="@dimen/PaddingXLarge"
+            android:paddingRight="@dimen/PaddingXLarge"
+            android:paddingTop="@dimen/PaddingLarge"
+            android:src="@drawable/button_back" />
+
+        <LinearLayout
+            android:id="@+id/photo_album_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/photo_album_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/PaddingLarge"
+                
+                android:paddingTop="@dimen/PaddingLarge"
+                android:text="@string/photo_album_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/TextSizeLarge" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/PaddingMedium"
+                android:src="@drawable/album_list" />
+        </LinearLayout>
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/photo_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/PaddingXLarge"
+            android:paddingTop="@dimen/PaddingMedium"
+            android:paddingBottom="@dimen/PaddingMedium"
+            android:paddingLeft="@dimen/PaddingMedium"
+            android:textSize="@dimen/TextSizeLarge"
+            android:textColor="@color/white"
+            android:text="拍照" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/id_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/photo_top"
+        android:layout_marginTop="@dimen/PaddingSmall"
+        android:cacheColorHint="@android:color/transparent"
+        android:clipChildren="true"
+        android:gravity="center"
+        android:horizontalSpacing="3dip"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="3dip" >
+    </GridView>
+
+</RelativeLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@+id/unlogin_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/PaddingLarge"
+        android:paddingLeft="@dimen/PaddingLarge"
+        android:paddingRight="@dimen/PaddingLarge" >
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="@dimen/y20"
+            android:visibility="gone"
+            android:src="@drawable/ic_launcher" />
+
+        <com.qianseit.westore.ui.CommonEditText
+            android:id="@+id/account_login_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_enter_view"
+            android:drawableLeft="@drawable/login_user"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:hint="@string/account_login_username_hint"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColor="@color/account_login_primary_textcolor"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_enter_view" >
+
+            <CheckBox
+                android:id="@+id/account_login_password_visible"
+                style="@style/checkbox"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:button="@drawable/password_check_box_selector"
+                android:checked="false"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp" />
+
+            <com.qianseit.westore.ui.CommonEditText
+                android:id="@+id/account_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/account_login_password_visible"
+                android:background="@null"
+                android:drawableLeft="@drawable/login_password"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/account_login_passwd"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:textColor="@color/account_login_primary_textcolor"
+                android:textSize="@dimen/TextSizeMedium" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/account_login_vcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="@dimen/PaddingLarge"
+            android:gravity="center_vertical"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_enter_view"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp" >
+
+                <com.qianseit.westore.ui.CommonEditText
+                    android:id="@+id/account_login_vcode_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="输入验证码"
+                    android:maxLength="6"
+                    android:paddingLeft="@dimen/PaddingLarge"
+                    android:paddingRight="@dimen/PaddingLarge"
+                    android:singleLine="true"
+                    android:textColor="@color/account_login_primary_textcolor"
+                    android:textSize="@dimen/TextSizeMedium" />
+
+                <ImageView
+                    android:id="@+id/account_login_vcode_image"
+                    android:layout_width="60dip"
+                    android:layout_height="20dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/PaddingLarge" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/login_button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.qianseit.westore.ui.CommonButton
+                android:id="@+id/account_login_forget_passwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/transparent"
+                android:padding="@dimen/PaddingLarge"
+                android:text="@string/account_login_forget_passwd"
+                android:textColor="@color/text_textcolor_gray1"
+                android:textSize="@dimen/TextSizeMedium" />
+        </RelativeLayout>
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@+id/account_login_submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/login_btn_bg"
+            android:text="@string/account_login_submit"
+            android:textColor="@color/theme_color"
+            android:textSize="@dimen/TextSizeLarge" />
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@+id/account_login_fast_regist"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="@dimen/PaddingXLarge"
+            android:background="@drawable/login_register"
+            android:text="@string/account_login_regist"
+            android:textColor="@color/white"
+            android:textSize="@dimen/TextSizeLarge" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/PaddingXXLarge"
+            android:gravity="center|bottom"
+            android:visibility="visible" >
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="1dip"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="24dp"
+                android:layout_weight="1"
+                android:background="@color/account_login_thirdparty_line_bgcolor" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/PaddingSmall"
+                android:text="@string/account_login_third_party_account"
+                android:textColor="@color/account_login_primary_textcolor"
+                android:textSize="@dimen/TextSizeMedium" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="1dip"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="24dp"
+                android:layout_weight="1"
+                android:background="@color/account_login_thirdparty_line_bgcolor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/account_login_user_wechat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/PaddingLarge"
+                android:src="@drawable/account_login_use_wechat" />
+
+            <ImageView
+                android:id="@+id/account_login_user_alipay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/PaddingLarge"
+                android:src="@drawable/account_login_use_alipay"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/account_login_user_weibo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/PaddingLarge"
+                android:src="@drawable/account_login_use_weibo" />
+
+            <ImageView
+                android:id="@+id/account_login_user_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/PaddingLarge"
+                android:src="@drawable/account_login_use_qq" />
+        </LinearLayout>
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_login_third_party_message"
+            android:textColor="@color/westore_dark_textcolor"
+            android:textSize="@dimen/TextSizeMedium"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#efefef" />
+    <RelativeLayout
+        android:id="@+id/account_orders_item_go_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/PaddingLarge"
+        android:paddingLeft="@dimen/PaddingXLarge"
+        android:paddingRight="@dimen/PaddingXLarge"
+        android:paddingTop="@dimen/PaddingLarge" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/account_orders_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/PaddingSmall"
+            android:text="@string/account_orders_order_number"
+            android:textColor="@color/default_scanner_bgcolor"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/account_orders_item_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+             android:layout_toRightOf="@+id/account_orders_item_title"
+            android:paddingLeft="@dimen/PaddingSmall"
+            android:paddingRight="@dimen/PaddingSmall"
+            android:textColor="@color/default_scanner_bgcolor"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/account_orders_item_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/PaddingXLarge"
+            android:background="@drawable/bg_orders_stuta"
+            android:layout_toRightOf="@+id/account_orders_item_number"
+            android:padding="@dimen/PaddingMedium"
+            android:textColor="@color/fragment_top_bg"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/account_orders_right" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/westore_divider_bgcolor" />
+    <LinearLayout
+        android:id="@+id/account_orders_item_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/PaddingXLarge"
+        android:paddingRight="@dimen/PaddingXLarge" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/westore_divider_bgcolor" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/PaddingLarge"
+        android:paddingLeft="@dimen/PaddingXLarge"
+        android:paddingRight="@dimen/PaddingXLarge"
+        android:paddingTop="@dimen/PaddingLarge" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/orders_freight_title"
+                android:textColor="@color/text_textcolor_gray1"
+                android:textSize="@dimen/TextSizeBigSmall" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/account_orders_item_freight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fragment_top_bg"
+                android:textSize="@dimen/TextSizeBigSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="共"
+                android:textColor="@color/text_textcolor_gray1"
+                android:textSize="@dimen/TextSizeBigSmall" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/account_orders_item_goods_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fragment_top_bg"
+                android:textSize="@dimen/TextSizeBigSmall" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/PaddingLarge"
+                android:text="件"
+                android:textColor="@color/text_textcolor_gray1"
+                android:textSize="@dimen/TextSizeBigSmall" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/orders_total_price"
+                android:textColor="@color/text_textcolor_gray1"
+                android:textSize="@dimen/TextSizeBigSmall" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/account_orders_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fragment_top_bg"
+                android:textSize="@dimen/TextSizeBigSmall" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:paddingBottom="@dimen/PaddingMedium"
+        android:paddingRight="@dimen/PaddingXLarge" >
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@+id/account_orders_item_cancel_complete"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/bg_orders"
+            android:paddingBottom="@dimen/PaddingMedium"
+            android:paddingTop="@dimen/PaddingMedium"
+            android:text="@string/orders_cancel_complete"
+            android:textColor="@color/text_textcolor_gray1"
+            android:textSize="@dimen/TextSizeMedium"
+            android:visibility="gone" />
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@+id/account_orders_item_cancel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/PaddingLarge"
+            android:background="@drawable/bg_orders"
+            android:paddingBottom="@dimen/PaddingMedium"
+            android:paddingTop="@dimen/PaddingMedium"
+            android:text="@string/orders_cancel"
+            android:textColor="@color/text_textcolor_gray1"
+            android:textSize="@dimen/TextSizeMedium"
+            android:visibility="gone" />
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@+id/account_orders_item_logistics"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/PaddingLarge"
+            android:background="@drawable/bg_address_add"
+            android:paddingBottom="@dimen/PaddingMedium"
+            android:paddingTop="@dimen/PaddingMedium"
+            android:text="@string/orders_logistics"
+            android:textColor="@color/white"
+            android:textSize="@dimen/TextSizeMedium"
+            android:visibility="gone" />
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@+id/account_orders_item_affirm"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/PaddingLarge"
+            android:background="@drawable/bg_address_add"
+            android:paddingBottom="@dimen/PaddingMedium"
+            android:paddingTop="@dimen/PaddingMedium"
+            android:text="@string/orders_affirm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/TextSizeMedium"
+            android:visibility="gone" />
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@+id/account_orders_item_pay"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/PaddingLarge"
+            android:background="@drawable/bg_address_add"
+            android:paddingBottom="@dimen/PaddingMedium"
+            android:paddingTop="@dimen/PaddingMedium"
+            android:text="@string/orders_pay_but"
+            android:textColor="@color/white"
+            android:textSize="@dimen/TextSizeMedium"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

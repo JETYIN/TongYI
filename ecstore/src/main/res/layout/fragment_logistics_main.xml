@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:id="@+id/account_logistics_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <com.qianseit.westore.ui.MyListView
+                    android:id="@+id/top_list"
+                    style="@style/min_listview"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                     />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginTop="@dimen/PaddingLarge"
+                    android:background="@color/westore_divider_bgcolor" />
+
+                <com.qianseit.westore.ui.CommonTextView
+                    android:id="@+id/account_logistics_info_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/PaddingXXLarge"
+                    android:layout_marginTop="@dimen/PaddingXXLarge"
+                    android:paddingLeft="@dimen/PaddingXXLarge"
+                    android:text="@string/account_logitics_info_title"
+                    android:textColor="@color/default_scanner_bgcolor"
+                    android:textSize="@dimen/TextSizeMedium" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/westore_divider_bgcolor" />
+            </LinearLayout>
+
+            <com.qianseit.westore.ui.MyListView
+                android:id="@android:id/list"
+                style="@style/logistics_listview"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

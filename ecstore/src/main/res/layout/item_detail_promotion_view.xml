@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    android:orientation="horizontal" >
+    
+    <com.qianseit.westore.ui.CommonTextView 
+        android:id="@+id/item_detail_promotion_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/westore_color"
+        android:textColor="#ffffff"
+        />
+    
+    <com.qianseit.westore.ui.CommonTextView 
+        android:id="@+id/item_detail_promotion_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        />
+
+</LinearLayout>

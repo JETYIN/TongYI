@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/category_sublevel_itembg"
+    android:padding="@dimen/PaddingLarge" >
+
+    <ImageView
+        android:id="@android:id/icon"
+        android:layout_width="90dip"
+        android:layout_height="90dip"
+        android:layout_marginRight="@dimen/PaddingMedium"
+        android:background="@drawable/goods_list_image_border"
+        android:scaleType="fitCenter" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@android:id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@android:id/icon"
+        android:maxLines="2"
+        android:textColor="@color/text_textcolor_gray1"
+        android:textSize="@dimen/TextSizeMedium" />
+
+    <LinearLayout
+        android:id="@+id/goods_list_item_list_prices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@android:id/title"
+        android:layout_toRightOf="@android:id/icon"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@android:id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/westore_red"
+            android:textSize="@dimen/TextSizeLarge" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@android:id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/PaddingMedium"
+            android:textColor="@color/westore_secondary_textcolor"
+            android:textSize="@dimen/TextSizeSmall" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/goods_list_item_list_prices"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@android:id/icon" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/goods_list_item_list_sales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/westore_secondary_textcolor"
+            android:textSize="@dimen/TextSizeBigSmall" />
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@+id/add_buy_car"
+            style="@style/button_pink"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/add_to_shoping_car"
+            android:textSize="@dimen/TextSizeSmall" />
+    </RelativeLayout>
+
+</RelativeLayout>

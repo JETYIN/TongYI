@@ -1,0 +1,7 @@
+.idea/
+.gradle/
+build/
+cropper/build/
+ysShopex/build/
+*.iml
+local.properties

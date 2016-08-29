@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_popup_window_item_parent"
+    android:layout_width="120dip"
+    android:layout_height="44dip"
+    android:background="@drawable/category_sublevel_itembg"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@android:id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/PaddingMedium" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/list_popup_window_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="44dip"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:minWidth="120dip"
+        android:paddingLeft="@dimen/PaddingMedium"
+        android:paddingRight="@dimen/PaddingMedium"
+        android:singleLine="true"
+        android:textColor="@color/actionbar_title_textcolor"
+        android:textSize="@dimen/TextSizeBigSmall" />
+
+</LinearLayout>

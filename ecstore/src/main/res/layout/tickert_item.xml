@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/PaddingLarge"
+    android:paddingRight="@dimen/PaddingLarge"
+    android:paddingTop="@dimen/PaddingLarge" >
+
+    <LinearLayout
+        android:id="@+id/ticket_item_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_tickert_item"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.4"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/PaddingXLarge" >
+
+            <ImageView
+                android:id="@+id/ticket_item_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/PaddingMedium"
+                android:padding="@dimen/PaddingLarge"
+                android:src="@drawable/my_address_book_not_default" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/PaddingXLarge"
+                android:paddingTop="25dp" >
+
+                <TextView
+                    android:id="@+id/ticket_item_value_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/PaddingMedium"
+                    android:text="￥"
+                    android:textColor="@color/fragment_top_bg"
+                    android:textSize="25sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/ticket_item_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="5"
+                    android:textColor="@color/fragment_top_bg"
+                    android:textSize="55sp" />
+
+                <com.qianseit.westore.ui.CommonTextView
+                    android:id="@+id/ticket_item_discount_value_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="@dimen/PaddingLarge"
+                    android:text="折"
+                    android:textColor="@color/fragment_top_bg"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/PaddingXLarge"
+            android:paddingLeft="@dimen/PaddingMedium"
+            android:paddingRight="@dimen/PaddingLarge" >
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/ticket_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/default_scanner_bgcolor"
+                android:textSize="15sp" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/ticket_item_explain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/PaddingMedium"
+                android:layout_marginTop="@dimen/PaddingMedium"
+                android:maxLines="2"
+                
+                android:textColor="@color/fragment_top_bg"
+                android:textSize="@dimen/TextSizeSmall" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-33dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/PaddingLarge" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/ticket_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:singleLine="true"
+            android:textColor="@color/text_textcolor_gray2"
+            android:textSize="@dimen/TextSizeSmall" />
+    </LinearLayout>
+
+</LinearLayout>

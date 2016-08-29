@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/PaddingXLarge" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/goods_season_special_date"
+            android:textColor="#666666"
+            android:textSize="@dimen/TextSizeBigSmall" />
+
+        <TextView
+            android:id="@+id/season_special_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/PaddingSmall"
+            android:textColor="@color/fragment_top_bg"
+            android:textSize="@dimen/TextSizeBigSmall" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/season_special_time_top_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:textColor="#333333" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/season_special_time_top_frist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/PaddingLarge"
+        android:layout_marginTop="@dimen/PaddingXLarge"
+        android:textSize="@dimen/TextSizeXLarge" />
+
+    <WebView
+        android:id="@+id/season_special_time_top_Two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/PaddingXXLarge" />
+
+</LinearLayout>

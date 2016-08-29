@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/com.Yingtaoshe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.qianseit.westore.ui.CircleImageView
+        android:id="@+id/attention_item_avd"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/PaddingXLarge"
+        android:layout_marginTop="@dimen/PaddingXLarge"
+        android:src="@drawable/shopping_null_car"
+        app:border_color="@color/white"
+        app:border_width="1dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/PaddingLarge"
+        android:layout_marginTop="25dp" >
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@+id/account_click_but"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/PaddingSmall"
+            android:paddingBottom="@dimen/PaddingSmall"
+            android:background="@drawable/bg_user_statue"
+            android:textColor="@color/white"
+            android:text="已关注"
+            android:textSize="@dimen/TextSizeBigSmall" />
+      <RelativeLayout
+            android:id="@+id/account_attention_linear"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_personal_attention"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal" >
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/account_attention_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#999999"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/PaddingSmall"
+                android:textSize="17sp"
+                android:text="+"/>
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/account_person_attention"
+                android:layout_toRightOf="@id/account_attention_add"
+                android:layout_centerVertical="true"
+                android:textColor="@color/fragment_top_bg"
+                android:textSize="@dimen/TextSizeBigSmall" />
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/account_user_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/account_user_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/PaddingMedium"
+        android:orientation="horizontal"
+        android:textColor="#999999" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/account_user_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50个推荐"
+            android:textColor="#999999"
+            android:textSize="@dimen/TextSizeBigSmall" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/account_user_fans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/PaddingMedium"
+            android:text="50个粉丝"
+            android:textColor="#999999"
+            android:textSize="@dimen/TextSizeBigSmall" />
+    </LinearLayout>
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/account_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/attention_item_avd"
+        android:text="你好"
+        android:textColor="#333333"
+        android:textSize="@dimen/TextSizeBigSmall" />
+
+</RelativeLayout>

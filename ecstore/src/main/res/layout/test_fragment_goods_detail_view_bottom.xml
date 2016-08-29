@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/goods_list_bgimage"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/goods_detail_point_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/PaddingXLarge"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/goods_detail_ratebar_avg_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <com.qianseit.westore.ui.CommonTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/comments_avg_points"
+                    android:textColor="@color/westore_secondary_textcolor"
+                    android:textSize="@dimen/TextSizeMedium" />
+
+                <com.qianseit.westore.ui.CommonTextView
+                    android:id="@+id/goods_detail_ratebar_avg_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.8"
+                    android:textColor="@color/westore_red"
+                    android:textSize="@dimen/TextSizeXLarge" />
+
+                <RatingBar
+                    android:id="@+id/goods_detail_ratebar_avg_rating"
+                    style="@style/small_rating_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/PaddingSmall"
+                    android:numStars="5" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/PaddingLarge"
+                android:layout_marginRight="@dimen/PaddingLarge"
+                android:background="@color/westore_divider_bgcolor" />
+
+            <TableLayout
+                android:id="@+id/goods_detail_points_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/PaddingXLarge" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/westore_divider_bgcolor" />
+
+        <FrameLayout
+            android:id="@+id/goods_detail_showarea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            
+            <com.qianseit.westore.ui.CommonTextView 
+                android:id="@+id/goods_detail_entyview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/text_textcolor_gray2"
+                android:text="数据为空"/>
+
+            <!-- <WebView -->
+            <!-- android:id="@+id/goods_detail_webview_images" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:visibility="gone" /> -->
+
+
+            <!-- <com.qianseit.westore.ui.viewpager.GoodsDetailListView -->
+            <!-- android:id="@android:id/list" -->
+            <!-- style="@style/listview" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:paddingBottom="@dimen/PaddingMedium" -->
+            <!-- android:visibility="gone" /> -->
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

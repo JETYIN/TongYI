@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/PaddingLarge" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@android:id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/westore_dark_textcolor"
+            android:textSize="@dimen/TextSizeLarge" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@android:id/icon1"
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/PaddingSmall"
+            android:layout_toLeftOf="@android:id/toggle"
+            android:background="@drawable/red_point_bgimage"
+            android:gravity="center"
+            android:paddingBottom="3dip"
+            android:paddingLeft="@dimen/PaddingMedium"
+            android:paddingRight="@dimen/PaddingMedium"
+            android:text="new"
+            android:textColor="@color/white"
+            android:textSize="@dimen/TextSizeSmall"
+            android:textStyle="bold" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@android:id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/westore_red"
+            android:textSize="@dimen/TextSizeMedium"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@android:id/icon"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/PaddingLarge"
+            android:layout_toLeftOf="@android:id/toggle" />
+
+        <ImageView
+            android:id="@android:id/toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_right_pink"
+            android:tint="@color/westore_secondary_textcolor" />
+    </RelativeLayout>
+
+</RelativeLayout>

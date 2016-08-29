@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/account_login_bgcolor"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/unlogin_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/PaddingXLarge" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="42dip"
+                android:background="@drawable/account_login_list_topbg"
+                android:gravity="center_vertical" >
+
+                <com.qianseit.westore.ui.CommonTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right"
+                    android:paddingLeft="@dimen/PaddingXXLarge"
+                    android:paddingRight="@dimen/PaddingLarge"
+                    android:text="@string/account_profile_nickname"
+                    android:textColor="@color/account_login_primary_textcolor"
+                    android:textSize="@dimen/TextSizeMedium" />
+
+                <com.qianseit.westore.ui.CommonEditText
+                    android:id="@+id/account_profile_nickname"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/transparent"
+                    android:gravity="center_vertical"
+                    android:inputType="none"
+                    android:paddingLeft="@dimen/PaddingLarge"
+                    android:paddingRight="@dimen/PaddingLarge"
+                    android:singleLine="true"
+                    android:textColor="@color/westore_pink"
+                    android:textSize="@dimen/TextSizeMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="42dip"
+                android:background="@drawable/account_login_list_bottombg"
+                android:gravity="center_vertical" >
+
+                <com.qianseit.westore.ui.CommonTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right"
+                    android:paddingLeft="@dimen/PaddingXXLarge"
+                    android:paddingRight="@dimen/PaddingLarge"
+                    android:text="@string/account_profile_sex"
+                    android:textColor="@color/account_login_primary_textcolor"
+                    android:textSize="@dimen/TextSizeMedium" />
+
+                <RadioGroup
+                    android:id="@+id/account_profile_sex_radios"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/PaddingLarge"
+                    android:paddingRight="@dimen/PaddingLarge" >
+
+                    <RadioButton
+                        android:id="@+id/account_profile_male"
+                        style="@style/checkbox"
+                        android:button="@drawable/account_profile_radiobutton"
+                        android:checked="true"
+                        android:text="男"
+                        android:textColor="@color/account_login_primary_textcolor" />
+
+                    <RadioButton
+                        android:id="@+id/account_profile_female"
+                        style="@style/checkbox"
+                        android:layout_marginLeft="@dimen/PaddingXXLarge"
+                        android:button="@drawable/account_profile_radiobutton"
+                        android:text="女"
+                        android:textColor="@color/account_login_primary_textcolor" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="42dip"
+                android:layout_marginTop="@dimen/PaddingLarge"
+                android:background="@drawable/account_login_list_single"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right"
+                    android:paddingLeft="@dimen/PaddingXXLarge"
+                    android:paddingRight="@dimen/PaddingLarge"
+                    android:text="@string/westore"
+                    android:textColor="@color/account_login_primary_textcolor"
+                    android:textSize="@dimen/TextSizeMedium" />
+
+                <EditText
+                    android:id="@+id/account_profile_nickname"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/transparent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/PaddingLarge"
+                    android:paddingRight="@dimen/PaddingLarge"
+                    android:singleLine="true"
+                    android:textColor="@color/westore_pink"
+                    android:textSize="@dimen/TextSizeMedium" />
+            </LinearLayout>
+            -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="120dip"
+                android:layout_marginTop="@dimen/PaddingLarge"
+                android:background="@drawable/account_login_list_single"
+                android:gravity="top" >
+
+                <com.qianseit.westore.ui.CommonTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dip"
+                    android:gravity="center_vertical|right"
+                    android:paddingLeft="@dimen/PaddingXXLarge"
+                    android:paddingRight="@dimen/PaddingLarge"
+                    android:text="@string/account_profile_intro"
+                    android:textColor="@color/account_login_primary_textcolor"
+                    android:textSize="@dimen/TextSizeMedium" />
+
+                <com.qianseit.westore.ui.CommonEditText
+                    android:id="@+id/account_profile_intro"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/transparent"
+                    android:gravity="top|left"
+                    android:hint="@string/account_profile_intro_hint"
+                    android:padding="@dimen/PaddingLarge"
+                    android:textColor="@color/account_login_primary_textcolor"
+                    android:textSize="@dimen/TextSizeMedium" />
+            </LinearLayout>
+
+            <com.qianseit.westore.ui.CommonButton
+                android:id="@+id/account_profile_submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="42dip"
+                android:layout_marginTop="@dimen/PaddingXLarge"
+                android:background="@drawable/account_login_button"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/TextSizeLarge" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

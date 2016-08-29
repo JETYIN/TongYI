@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/cn.shopex.ecstore"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/fragment_uploading_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingLeft="@dimen/PaddingXLarge"
+            android:paddingRight="@dimen/PaddingXLarge"
+            android:paddingTop="@dimen/PaddingXXLarge"
+            android:textColor="@color/text_textcolor_gray1"
+            android:textSize="@dimen/TextSizeBigSmall" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/westore_divider_bgcolor" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/PaddingXLarge"
+            android:paddingRight="@dimen/PaddingXLarge"
+            android:paddingTop="@dimen/PaddingXXLarge" >
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:background="@drawable/account_upload_image"
+                android:textColor="@color/fragment_top_bg"
+                android:textSize="@dimen/TextSizeXLarge" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account_uploading_id_positive"
+                android:textColor="@color/text_textcolor_gray1"
+                android:textSize="@dimen/TextSizeMedium" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp" >
+
+            <com.qianseit.westore.ui.RoundAngleImageView
+                android:id="@+id/fragment_uploading_front"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/account_uploading_id_bg"
+                android:scaleType="centerCrop"
+                app:roundHeight="10dp"
+                app:roundWidth="10dp" />
+
+            <TextView
+                android:id="@+id/tv_uploading_front"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.8"
+                android:background="@drawable/shape_no_color"
+                android:gravity="center"
+                android:text="樱淘社\n清关专用"
+                android:textColor="#D4D1CA"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/PaddingXLarge"
+            android:paddingRight="@dimen/PaddingXLarge"
+            android:paddingTop="@dimen/PaddingXLarge" >
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:background="@drawable/account_upload_image"
+                android:textColor="@color/fragment_top_bg"
+                android:textSize="@dimen/TextSizeXLarge" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account_uploading_id_bg"
+                android:textColor="@color/text_textcolor_gray1"
+                android:textSize="@dimen/TextSizeMedium" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp" >
+
+            <com.qianseit.westore.ui.RoundAngleImageView
+                android:id="@+id/fragment_uploading_contrary"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/account_uploading_id_bg"
+                android:scaleType="centerCrop"
+                app:roundHeight="10dp"
+                app:roundWidth="10dp" />
+
+            <TextView
+                android:id="@+id/tv_uploading_contrary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.8"
+                android:background="@drawable/shape_no_color"
+                android:gravity="center"
+                android:text="樱淘社\n清关专用"
+                android:textColor="#D4D1CA"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dip"
+            android:background="@color/fragment_top_bg" />
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@+id/uploading_image_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/PaddingMedium"
+            android:background="@drawable/bg_address_add"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingLeft="@dimen/PaddingXXLarge"
+            android:paddingRight="@dimen/PaddingXXLarge"
+            android:paddingTop="@dimen/PaddingLarge"
+            android:text="@string/account_uploading_submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/TextSizeLarge" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">同蚁商城</string>
+    <string name="app_channel_name">应用宝</string>
+    <string name="ok">确定</string>
+    <string name="share">分享</string>
+    <string name="back">返回</string>
+    <string name="close">关闭</string>
+    <string name="reset">重置</string>
+    <string name="cancel">取消</string>
+    <string name="open">打开</string>
+    <string name="save">保存</string>
+    <string name="more">更多</string>
+    <string name="setting">设置</string>
+    <string name="complete">完成</string>
+    <string name="select_all">全选</string>
+    <string name="loading_text">请稍等...</string>
+    <string name="exit_message">再按一次返回键退出应用</string>
+    <string name="update">更新</string>
+    <string name="update_newest_app">更新应用</string>
+
+    <!--  -->
+    <string name="shop_service_query_card">美通卡查询</string>
+    <string name="shop_service_query_card_hint">请输入你的美通卡账号</string>
+    <string name="charge">充值</string>
+    <string name="meitong_card_charge_title">美通券充值</string>
+    <string name="meitong_card_charge_no">请输入美通券券号</string>
+    <string name="meitong_card_charge_secret">请输入美通券密码</string>
+    <string name="charge_online_charge">在线充值</string>
+    <string name="charge_withdraw">提现</string>
+
+    <!--  -->
+    <string name="actionbar_button_scanner">扫一扫</string>
+    <string name="actionbar_button_assort">分类</string>
+    <string name="actionbar_search_keywords">搜索商品</string>
+    <string name="tabbar_title1">商店</string>
+    <string name="tabbar_title2">推荐</string>
+    <string name="tabbar_filter">美化</string>
+    <string name="tabbar_title3"> 购物车</string>
+    <string name="tabbar_title4">我</string>
+    <string name="account_center">个人中心</string>
+    <string name="sec_killed">秒杀</string>
+    <string name="group_buy">秒杀</string>
+    <string name="pre_sell">新鲜预售</string>
+    <string name="mei_toon_ka">美通卡特卖</string>
+    <string name="regist_gift">注册有礼</string>
+    <string name="my_favorite">我喜欢的</string>
+
+    <!-- 商品搜索 -->
+    <string name="search">搜索</string>
+    <string name="search_history">搜索记录</string>
+    <string name="search_history_clear">清除历史记录</string>
+    <string name="search_history_closely">最近搜过:</string>
+    <string name="search_hot_goods">热门搜索</string>
+    <string name="search_hot_goods_refresh">换一批</string>
+
+    <!-- 商品列表 -->
+    <string name="filter">筛选</string>
+    <string name="list">列表</string>
+    <string name="small_picture">小图</string>
+    <string name="big_picture">大图</string>
+    <string name="price">价格</string>
+    <string name="sales">销量</string>
+    <string name="tabbar_aecommend">推荐语</string>
+    <string name="hot">最新</string>
+    <string name="sort_by_default">精选</string>
+    <string name="goods_list_empty">未搜索到相关宝贝</string>
+    <string name="goods_list_sales">月销量：%s件</string>
+
+    <!-- 商品详情 -->
+    <string name="goods_detail_recommend">推荐:</string>
+    <string name="goods_detail_tip">购物提示:</string>
+    <string name="goods_detail">商品详情</string>
+    <string name="goods_shooseg">选择商品</string>
+    <string name="tabbar_lable">标签</string>
+    <string name="goods_ptotoss">裁图</string>
+    <string name="goods_mrecommend">精选</string>
+    <string name="tabbar_renqi">人气</string>
+    <string name="goods_guanzhu">关注</string>
+    <string name="tabbar_comment">评论</string>
+    
+    
+    
+    <string name="goods_photos">相册</string>
+    <string name="total_sales">销量</string>
+    <string name="total_sales_unit">件</string>
+    <string name="total_rates">评价</string>
+    <string name="total_rates_unit">人</string>
+    <string name="total_quantity">总库存</string>
+    <string name="free_express">全国包邮</string>
+    <string name="like">收藏</string>
+    <string name="just_buy">立即购买</string>
+    <string name="add_to_westore">加入微店</string>
+    <string name="add_to_shoping_car">加入购物车</string>
+    <string name="add_to_shoping_car_success">已加入购物车</string>
+    <string name="goods_detail_buy_stock">(库存%s件)</string>
+    <string name="goods_detail_stock_not_enough">库存不足，最多购买%s件</string>
+    <string name="goods_detail_button_onsale">商品优惠</string>
+    <string name="goods_detail_order_button_onsale">订单优惠</string>
+    <string name="goods_detail_button_images">图文详情</string>
+    <string name="goods_detail_button_imagess">精选</string>
+    <string name="goods_detail_button_props">规格参数</string>
+    <string name="goods_detail_button_propss">人气</string>
+    <string name="goods_detail_button_comments">口碑推荐</string>
+    <string name="goods_detail_button_commentss">关注</string>
+    <string name="goods_detail_button_recommend">你可能还喜欢</string>
+    <string name="please_choose_goods_properties">请选择商品属性</string>
+    <string name="comments_avg_points">综合评分</string>
+    <!-- 购物车 -->
+    <string name="shopping_car">购物车</string>
+    <string name="shopping_car_checkout">支付</string>
+    <string name="shopping_car_quantity">数量: </string>
+    <string name="shopping_car_price">￥%s </string>
+    <string name="shopping_car_total_price">合计:￥%s</string>
+    <string name="shopping_car_save_price">为你节省:￥%.2f</string>
+    <string name="shopping_car_empty">没有添加商品到购物车</string>
+    <string name="shopping_car_delete">确定要将该商品移出购物车吗？</string>
+
+    <!-- 登录、注册 -->
+    <string name="username">用户名</string>
+    <string name="account_regist_email">电子邮箱</string>
+    <string name="account_regist_passwd_hint">6-20位字母+数字或符号密码</string>
+    <string name="account_login_username_hint">请输入手机号码</string>
+    <string name="account_login_passwd">密码</string>
+    <string name="account_login_passwd_hint">6-20位字母+数字或符号</string>
+    <string name="account_login_vcode">验证码</string>
+    <string name="account_login_submit">登录</string>
+    <string name="account_login_forget_passwd">忘记密码？</string>
+    <string name="account_login_regist">注册</string>
+    <string name="account_login_fast_regist"><u>快速注册</u></string>
+    <string name="account_login_third_party_account">社交账号登录:</string>
+    <string name="account_login_third_party_message">使用以上账号登录</string>
+    <string name="account_regist_input_phone_number">请输入手机号码</string>
+    <string name="account_regist_offline_member">您已是线下注册会员,请填写密码。</string>
+    <string name="account_regist_input_password">请设置密码</string>
+    <string name="account_reset_password">重置密码</string>
+    <string name="account_reset_conform_password">确认重置密码</string>
+    <string name="account_regist_get_verify_code">获取验证码</string>
+    <string name="account_regist_input_verify_code">请输入验证码</string>
+    <string name="account_regist_input_inv_code">请输入邀请码</string>
+    <string name="account_regist_verify_code_countdown">%s秒</string>
+    <string name="account_regist_phone_number_invalid">请正确填写手机号码</string>
+    <string name="account_regist_verify_code_error">请正确填写验证码</string>
+    <string name="account_regist_password_error">请输入6-20位密码</string>
+    <string name="account_regist_inv_code_error">请正确填写邀请码</string>
+    <string name="account_regist_success">恭喜你，注册成功！</string>
+    <string name="account_regist_upgrade_profile">注册成功请完善一下资料！</string>
+    <string name="account_forget_password_phone_hint">用户名，手机号码或邮箱</string>
+    <string name="next_step">下一步</string>
+    <string name="account_forget_password_step2_message">我们已发送验证码到\n%s</string>
+    <string name="account_forget_password_step2_countdown">%s</string>
+    <string name="account_forget_password_step3_message">重置密码后，可以使用用户名+密码进行登录</string>
+    <string name="submit">提交</string>
+    <!-- 地址簿 -->
+    <string name="my_address_book">地址本</string>
+    <string name="accout_select_address_book">选择收货地址</string>
+    <string name="accout_my_address_book">我的地址</string>
+    <string name="my_address_book_editor">编辑收货地址</string>
+    <string name="my_address_book_editor_username">收货人不能为空。</string>
+    <string name="my_address_book_editor_phone">手机号码不能为空</string>
+    <string name="my_address_book_editor_postal">邮政编码</string>
+    <string name="my_address_book_editor_district">所在区域(必填)</string>
+    <string name="my_address_book_editor_address">详细地址不能为空</string>
+    <string name="please_improve_infomation">请完善信息</string>
+    <string name="please_input_address">请输入地址</string>
+    <string name="confirm_delete_address">确定要删除收货人「%s」吗？</string>
+    <string name="please_input">请填写%s</string>
+    <string name="set_default">设为默认</string>
+    <string name="province">省份</string>
+    <string name="delete">删除</string>
+    <string name="edit">编辑</string>
+    <string name="add">新增</string>
+    <string name="select_addr_tips">（请完善详细地址信息）</string>
+    <string name="zone">街道、区域</string>
+    <!-- 发票 -->
+    <string name="invoice_info">发票信息</string>
+    <string name="invoice_type">发票类型</string>
+    <string name="invoice_type_personal">个人发票</string>
+    <string name="invoice_type_company">公司发票</string>
+    <string name="invoice_type_null">不开发票</string>
+    <string name="invoice_title">发票抬头</string>
+    <string name="invoice_title_summary">可输入个人或单位名称</string>
+    <string name="invoice_content">发票内容</string>
+    <!-- 优惠券 -->
+    <string name="ticket">优惠券</string>
+    <string name="ticket_add_useit">立即使用</string>
+    <string name="ticket_add_message">输入站外获得的优惠券号码</string>
+    <string name="ticket_unused">未使用</string>
+    <string name="ticket_used">已使用</string>
+    <string name="ticket_expired">已过期</string>
+    <string name="ticket_number">优惠券号：%1$s</string>
+    <string name="ticket_name">名称</string>
+    <string name="ticket_valid_period">有效期至：%1$s</string>
+    <string name="ticket_state">状态</string>
+    <string name="ticket_empty">该单没有可以使用的优惠券</string>
+    <string name="ticket_how_to"><u>如何获取优惠券</u></string>
+    <!-- 用户中心 -->
+    <string name="balance">余额: </string>
+    <string name="money_unit">元</string>
+    <string name="me_item_orders">我的订单</string>
+    <string name="me_item_back">申请退换货</string>
+    <string name="me_item_back_order">退换货订单</string>
+    <string name="me_item_balance">我的余额</string>
+    <string name="me_item_recomment">我的推荐</string>
+    <string name="me_item_collect">我的收藏</string>
+    <string name="me_item_address">我的地址</string>
+    <string name="me_item_score">我的积分</string>
+    <string name="me_item_coupon">我的优惠券</string>
+    <string name="me_item_yingbang">我的积分</string>
+    <string name="me_item_mymsg">我的消息</string>
+    <string name="me_item_setting">设置 </string>
+    <string name="me_item_help">帮助中心 </string>
+    <string name="account_trade_paying">待付款</string>
+    <string name="account_trade_shipping">待发货</string>
+    <string name="account_trade_receiving">待收货</string>
+    <string name="account_trade_return">退款/售后</string>
+    <string name="account_trade_rating">待评论</string>
+    <string name="account_my_store">我的微店</string>
+    <string name="account_favorites">我的收藏</string>
+    <string name="account_favorites_empty">暂无收藏的商品</string>
+    <string name="account_logout">退出登录</string>
+    <string name="account_logout_confirm">确定要退出当前登录的账号吗？</string>
+    <string name="account_header_noname">未设置昵称</string>
+    <string name="account_header_fans">%s\n粉丝</string>
+    <string name="account_header_followed">%s\n关注</string>
+    <string name="account_info_reset_password">修改登录密码</string>
+    <string name="account_info_reset_phone">修改手机号码</string>
+    <string name="account_info_reset_email">绑定邮箱号码</string>
+    <string name="account_info_title">账户</string>
+    <string name="account_score_online">线上积分</string>
+    <string name="account_score_offline">门店积分</string>
+    <string name="account_nickname_change">修改昵称</string>
+    <string name="account_nickname_label">用户名:</string>
+    <!-- 重置密码 -->
+    <string name="account_reset_passwd">更改密码</string>
+    <string name="account_reset_passwd_old">当前密码</string>
+    <string name="account_reset_passwd_new">新密码</string>
+    <string name="account_reset_passwd_renew">确认新的密码</string>
+    <string name="account_reset_passwd_visible">显示密码</string>
+    <string name="account_reset_passwd_message">密码由6-20位英文字母、数字或符号组成</string>
+    <string name="account_reset_passwd_confirm_failed">两次输入密码不一致</string>
+    <!-- 个人资料 -->
+    <string name="account_profile_title">编辑个人资料</string>
+    <string name="account_profile_nickname">昵称</string>
+    <string name="account_profile_sex">性别</string>
+    <string name="account_profile_intro">简介</string>
+    <string name="account_profile_intro_hint">随便写点什么，让大家了解你吧。</string>
+    <!-- 订单 -->
+    <string name="account_orders_title">我的订单</string>
+    <string name="account_orders_latest_month">近一个月的订单</string>
+    <string name="account_orders_before_month">一个月前的订单</string>
+    <string name="account_orders_order_number">订单号:</string>
+    <string name="account_orders_order_sum_label">实付:</string>
+    <string name="account_orders_order_sum_quantity">共%s件商品</string>
+    <string name="account_orders_order_pay">支付</string>
+    <string name="account_orders_order_cancel">取消</string>
+    <string name="account_orders_order_delete">删除订单</string>
+    <string name="account_orders_order_rate_again">评论</string>
+    <string name="account_orders_order_receive_cofirm">确认收货</string>
+    <string name="account_orders_state_complete">交易完成</string>
+    <string name="account_orders_state_tuotou">已妥投</string>
+    <string name="account_orders_state_cancel">交易取消</string>
+    <string name="account_orders_state_paying">待付款</string>
+    <string name="account_orders_state_shipping">待发货</string>
+    <string name="account_orders_state_receive">待收货</string>
+    <string name="account_orders_state_part_shipping">部分发货</string>
+    <string name="account_orders_state_part_refund">部分退款</string>
+    <string name="account_orders_state_refund">已退货</string>
+    <string name="account_orders_cancel_order_confirm">"确定取消该订单吗？"</string>
+    <string name="account_orders_delete_order_confirm">"确定删除该订单吗？"</string>
+    <string name="account_orders_canceled_order_ok">"该订单已取消"</string>
+    <string name="account_orders_complete_order_ok">"该订单已确认收货"</string>
+    <string name="account_orders_rebuy_succeed">再次购买成功</string>
+    <string name="account_orders_rebuy_part">成功购买%1$d件商品</string>
+    <string name="account_orders_rebuy_fail">再次购买失败</string>
+    <string name="account_orders_send_type">配送方式  : %1$s</string>
+    <!-- 确认订单 -->
+    <string name="confirm_order_title"> 确认订单</string>
+    <string name="confirm_order_express">配送方式</string>
+    <string name="confirm_order_express_delivery">送货上门</string>
+    <string name="confirm_order_express_self">门店自提</string>
+    <string name="confirm_order_express_delivery_time">送货时间</string>
+    <string name="confirm_order_express_delivery_shop">自提门店</string>
+    <string name="confirm_order_express_self_time">自提时间</string>
+    <string name="confirm_order_invoice">发票信息</string>
+    <string name="confirm_order_ticket">优惠券</string>
+    <string name="confirm_order_ticket_available">有可用优惠券</string>
+    <string name="confirm_order_ticket_unavailable">无可用优惠券</string>
+    <string name="confirm_order_paytype">支付方式</string>
+    <string name="confirm_order_paytype_online">在线支付</string>
+    <string name="confirm_order_paytype_offline">门店支付</string>
+    <string name="confirm_order_total_price">实付款:</string>
+    <string name="confirm_order_pick_address">请选择收货人</string>
+    <string name="confirm_order_pay_success">恭喜你付款成功</string>
+    <string name="confirm_order_pay_failed">付款失败了</string>
+    <string name="confirm_order_pay_offline">恭喜你下单成功</string>
+    <string name="confirm_order_buy_continue">查看订单</string>
+    <string name="confirm_order_address_empty">请选择收货人信息</string>
+    <string name="confirm_order_express_empty">请选择配送方式</string>
+    <string name="confirm_order_payment_empty">请选择支付方式</string>
+    <string name="confirm_order_goto_order_detail">查看订单</string>
+    <string name="confirm_order_submit">提交订单</string>
+    <string name="confirm_order_totals_price">总价:</string>
+    <string name="confirm_order_express_fee">邮费:</string>
+    <string name="confirm_order_coupon">优惠:</string>
+    <string name="confirm_order_fee">￥%s</string>
+    <!-- 用户设置 -->
+    <string name="account_setting_clear_cache">清除</string>
+    <string name="account_setting_clear_cache_summary">清除缓存后，可能会耗费更多流量</string>
+    <!-- 关于 -->
+    <string name="about_us">关于我们</string>
+    <string name="about_version">Android %s</string>
+    <string name="about_version_update">检查更新</string>
+    <string name="about_license_info">版权信息</string>
+    <!-- feedback -->
+    <string name="feedback">意见反馈</string>
+    <string name="feedback_phone">手机号</string>
+    <string name="feedback_success">尊敬的客户，您的意见我们已收到，谢谢！</string>
+    <string name="feedback_message_hint">您的反馈是对我们最大的帮助与鼓励，谢谢！</string>
+    <string name="feedback_phone_hint">手机/电子邮箱（选填）</string>
+    <!-- 订单详情 -->
+    <string name="order_detail_title">订单详情</string>
+    <string name="change_pay_type">修改付款方式</string>
+    <string name="order_detail_goods_total_price">商品总价:</string>
+    <string name="order_detail_discount_amount">优惠金额:</string>
+    <string name="order_detail_express_fee">运费:</string>
+    <string name="order_detail_payment_money">实付金额:</string>
+    <string name="order_detail_verify">审核中...</string>
+    <string name="order_detail_rating">评价</string>
+    <string name="order_detail_service_rating">服务评价</string>
+    <string name="order_detail_rating_hint">长度在5-150字之间</string>
+    <string name="order_detail_state">订单状态: </string>
+    <string name="order_detail_create_time">下单时间: </string>
+    <string name="order_detail_order_no">订单编号: </string>
+    <string name="order_detail_payinfo">支付方式: </string>
+    <string name="order_detail_payed_fee">实付款(含运费): </string>
+    <string name="order_detail_address">收货地址</string>
+    <string name="order_detail_buy_again">再次购买</string>
+    <string name="order_detail_apply_return">申请退换货</string>
+    <!-- 分享 -->
+    <string name="choose_share_platform">分享给好友</string>
+    <string name="share_wechat_chat">微信好友</string>
+    <string name="share_wechat_circle">微信朋友圈</string>
+    <string name="share_weibo">新浪微博</string>
+    <string name="share_qqblog">腾讯微博</string>
+    <string name="share_qzone">QQ空间</string>
+    <string name="share_qq">QQ好友</string>
+    <string name="share_copy">短信</string>
+    <string name="share_save">保存到相册</string>
+    <string name="share_success">%s成功</string>
+    <string name="share_failed">%s失败</string>
+    <!-- 我的收入 -->
+    <string name="account_earning_title">我的收入</string>
+    <string name="account_earning_total_money">累计总收入:</string>
+    <string name="account_earning_order_no">订单号</string>
+    <string name="account_earning_source">来源</string>
+    <string name="account_earning_money">收入</string>
+    <string name="account_earning_date">日期</string>
+    <string name="account_earning_empty">没有收入记录</string>
+    <!-- 提现 -->
+    <string name="checkout_money_title">提现</string>
+    <string name="checkout_money_empty">没有提现记录</string>
+    <string name="can_checkout_money">当前可提现金额:</string>
+    <string name="checkout_to_alipay">提现到支付宝:</string>
+    <string name="input_checkout_money">输入提现金额</string>
+    <string name="note_checkout_money">(以百元为单位)</string>
+    <string name="history_checkout_money">提现记录:</string>
+    <string name="checkout_money_date">日期</string>
+    <string name="checkout_money_amount">提现金额</string>
+    <string name="checkout_money_state">状态</string>
+    <string name="checkout_money_total">累计提现:</string>
+    <string name="checkout_money_success">恭喜你，提现成功！</string>
+    <string name="unit_money">元</string>
+    <!-- 团购 -->
+    <string name="group_buy_remain_time">%1$s天%2$s小时%3$s分</string>
+    <string name="group_buy_detail_remain_time">剩余时间:%s</string>
+    <string name="group_buy_discount">%s折</string>
+    <string name="group_buy_empty">本场团购活动已结束，敬请期待下一场活动</string>
+    <!-- 秒杀 -->
+    <string name="second_kill_item_price">秒杀价: ￥%s</string>
+    <string name="second_kill_item_oldprice">原价: ￥%s</string>
+    <string name="second_kill_item_buycount">%s人已购买</string>
+    <string name="second_kill_item_more">查看更多</string>
+    <string name="second_kill_timeline">场次</string>
+    <string name="second_kill_empty">本场秒杀活动已结束，敬请期待下一场活动</string>
+    <!-- 下拉刷新 -->
+    <string name="pull_to_refresh_pull_label">下拉刷新...</string>
+    <string name="pull_to_refresh_release_label">松开即可刷新...</string>
+    <string name="pull_to_refresh_refreshing_label">加载中...</string>
+
+    <!-- 扫一扫 -->
+    <string name="scanner_code_buy">扫码购</string>
+    <string name="scanner_bottom_message">将二维码/条形码放入扫描框内\n自动识别不安全链接，请放心扫码</string>
+    <!-- 二维码扫描 -->
+    <string name="msg_default_status">请将条码置于取景框内扫描。</string>
+    <string name="msg_camera_framework_bug">抱歉，Android相机出现问题。您可能需要重启设备。</string>
+    <string name="msg_intent_failed">抱歉，无法打开所需软件。 条码内容可能无效。</string>
+    <string name="result_text">找到纯文本</string>
+    <string name="scan_help_title">扫描帮助</string>
+    <string name="scan_help_msg">如何扫描商品的条形码？\n\n 扫描时，请将条码的黑线放置与框内红线垂直，并保持稳定一段时间。扫描成功会发出提示音，并返回搜索结果页。
+        \n此条码扫描功能基于ZXing开源条码引擎，如果您手机上的摄像头没有自动对焦功能，或者环境光线非常昏暗，可能会出现无法识别条形码或识别有误的情况，建议您换到光线良好的环境中试一试。</string>
+
+    <!-- 客服热线 -->
+    <string name="service_phone"></string>
+
+    <!-- 帮助中心 -->
+    <string name="using_help">使用帮助</string>
+    <string name="self_twilling_help">自提帮助</string>
+    <string name="about">关于</string>
+    <string name="self_twilling_flow">自提流程</string>
+    <string name="need_attention">注意事项</string>
+    <string name="special_remark">特殊说明</string>
+    <string name="friendship_prompt">友情提示</string>
+    <string name="safe_pay">安全支付</string>
+    <string name="arrive_pay">货到付款</string>
+    <string name="online_pay">线上付款</string>
+    <string name="delivery_flow">配送流程</string>
+    <string name="delivery_zone_time">配送范围和时间</string>
+    <string name="qian_shou">商品签收</string>
+    <string name="saled_service">售后服务</string>
+    <string name="exchange_tip">退换货说明</string>
+
+    <!-- 退换货 -->
+    <string name="exchange_reason"><![CDATA[<span>退款原因 <font color="#FC3131">*</span>]]></string>
+    <string name="exchange_money"><![CDATA[<span>退款金额 <font color="#FC3131">*</span>]]></string>
+    <string name="exchange_explain">退款说明(可不填)</string>
+    <string name="exchange_submit">提交申请</string>
+    <string name="exchange_complete">完成</string>
+    <string name="exchange_please_select_reason">请选择退款原因</string>
+    <string name="exchange_please_select_way">请选择退款金额返回路径</string>
+    <string name="exchange_please_add_explain">请填写退款说明</string>
+    <string name="please_select_change">请选择要退货的商品</string>
+    <string name="please_select_return">请选择要换货的商品</string>
+
+    <!-- 积分 -->
+    <string name="myscore">我的积分</string>
+    <string name="myscore_recored">积分记录</string>
+    <string name="myscore_online">线上积分</string>
+    <string name="myscore_offline">门店积分</string>
+
+    <item name="tag_first" type="id"/>
+    <item name="tag_second" type="id"/>
+
+    <!-- 选择送货方式 -->
+    <string name="express_tips">温馨提示</string>
+    <string name="express_tips_content">主人，你的地址小优送不到啊~您可以到就近的店铺带走您心爱的宝贝哦~</string>
+    <string name="express_change_addr">修改收货地址</string>
+    <string name="express_picker_self">选择门店自提</string>
+    <string name="activity_limit_quantity">每人限购%1$d件</string>
+    <string name="card_Num">卡号：%1$s</string>
+    <string name="card_Status">卡状态：%1$s</string>
+    <string name="card_balance">卡余额：￥%1$s</string>
+    <string name="card_endData">余额有效期至：%1$s</string>
+    <string name="charge_methods">在线充值</string>
+    <string name="charge_amt_hint">请输入充值金额</string>
+    <string name="goods_item_time_end">距离结束还有</string>
+    <string name="goods_item_time_start">距离开始还有</string>
+    <string name="flash_sale_new">本期特卖</string>
+    <string name="flash_sale_tomorrow">下期预告</string>
+    <string name="flash_sale_title">限时特卖</string>
+    <string name="new_product_title">新品专区</string>
+    <string name="goods_season_special_title">季节特供</string>
+    <string name="goods_season_special_date">特供日期:</string>
+    <string name="account_address_add_text">新增收货地址</string>
+    <string name="account_address_save_text">保存收货信息</string>
+    <string name="account_address_name">收货人：</string>
+    <string name="account_address_province">省份:</string>
+    <string name="account_address_city">城市：</string>
+    <string name="account_address_town">区/县：</string>
+    <string name="account_address_tel">联系电话：</string>
+    <string name="account_address_area">街道：</string>
+    <string name="account_address_detailed">详细地址：</string>
+    <string name="account_address_id_name">身份证号码：</string>
+    <string name="account_address_id_prompt">* 根据政策要求，用户必须填写收货人身份证号</string>
+    <string name="account_ticket_add_num_hint">输入优惠码</string>
+    <string name="account_ticket_add_title">优惠券兑换</string>
+    <string name="account_ticket_get">生成优惠券</string>
+    <string name="history_ticket">历史优惠券</string>
+    <string name="history_ticket_null">没有历史优惠券</string>
+    <string name="account_ticket_history"><u>查看历史优惠券</u></string>
+    <string name="account_uploading_require">* 根据海关政策要求，海外直邮商品需要收件人的身份证正反面照片进行清关，照片要求清晰完整。我们会对你的照片严格保密，请放心。</string>
+    <string name="account_uploading_id_positive">上传正面照片</string>
+    <string name="account_uploading_id_bg">上传背面照片</string>
+    <string name="account_uploading_submit">确认上传</string>
+    <string name="account_uploading_title">上传身份证照片</string>
+    <string name="account_select_title">选择身份证照片</string>
+    <string name="account_select_add">新增身份证信息</string>
+    <string name="recommend_title">移动商城</string>
+    <string name="recommend_selection_title">精品</string>
+    <string name="recommend_popularity_title">人气</string>
+    <string name="recommend_attention_title">关注</string>
+   <string name="intent_key_type">type</string>
+   <string name="intent_key_image_name">imagename</string>
+    <string name="intent_key_serializable">serializable</string>
+    <string name="intent_key_chooses">chooses</string>
+    <string name="intent_key_image">image</string>
+    <string name="intent_key_thumbnail">thumbnail</string>
+    
+    <string name="orders_all">全部</string>
+    <string name="orders_recommend">待推荐</string>
+    <string name="orders_complete">已完成</string>
+    <string name="orders_freight_title">运费： </string>
+    <string name="orders_total_price">合计： </string>
+    <string name="orders_pay">支付： </string>
+    <string name="orders_affirm">确认收货</string>
+    <string name="orders_cancel">取消</string>
+    <string name="orders_cancel_complete">已取消</string>
+    <string name="orders_logistics">查看物流</string>
+    <string name="orders_pay_but">支付</string>
+    <string name="photo_album_title">相册</string>
+    <string name="select_id_photo">选择身份证照片</string>
+    <string name="orders_goods_rating">评价</string>
+    <string name="orders_goods_rating_complete">已评价</string>
+    <string name="orders_goods_recommend">推荐</string>
+    <string name="orders_orders_cancel">已取消</string>
+    <string name="orders_orders_info">结算信息</string>
+    <string name="orders_orders_pay">支付方式</string>
+    <string name="orders_orders_price">商品价格：</string>
+    <string name="orders_orders_deduction">积分抵扣：</string>
+    <string name="orders_orders_cope_money">应付总额：</string>
+    <string name="orders_orders_pay_type">支付方式：</string>
+    <string name="orders_orders_total_money">总额：</string>
+    <string name="orders_orders_ticket_price">运费及优惠券减免：</string>
+    <string name="account_logitics_info_title">物流详情</string>
+    <string name="account_person_attention">关注</string>
+    <string name="account_person_collect">收藏</string>
+    <string name="account_person_recommend">推荐</string>
+    <string name="account_person_liked">被赞</string>
+    <string name="account_person_fans">粉丝</string>
+    <string name="account_person_title">个人主页</string>
+    <string name="account_attention_title">点赞的用户</string>
+    <string name="account_add_attention_title">添加关注</string>
+    
+    <string name="account_add_attention_search">搜索用户</string>
+    <string name="account_add_attention_web">微博好友</string>
+    <string name="account_add_attention_book">通信录好友</string>
+    <string name="account_signature_title">个性签名</string>
+    <string name="account_signature_submit">提交</string>
+    <string name="account_signature_hint">签名最多只能输入30个字哦！</string>
+    <string name="account_personal_collect_title">收藏</string>
+    <string name="account_personal_calcel_collect_title">取消收藏</string>
+    
+    
+    
+    <!--camera 360  -->
+    <string name="pg_sdk_edit_sample_edit">编辑</string>
+    <string name="pg_sdk_edit_sample_choose_photo">选择照片</string>
+    <string name="pg_sdk_edit_sample_re_edit">再次编辑</string>
+    
+</resources>

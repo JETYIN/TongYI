@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/invoice_bgimage"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/fragment_vip_avatar"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:layout_centerVertical="true"
+            android:src="@drawable/account_avatar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/fragment_vip_avatar"
+            android:orientation="vertical"
+            android:paddingLeft="10dp" >
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/fragment_vip_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/fragment_vip_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/fragment_vip_next_lv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+        </LinearLayout>
+
+    </RelativeLayout>
+    
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:background="#ffffff"
+         android:paddingLeft="10dp"
+         android:paddingTop="20dp"
+         android:paddingRight="10dp"
+         android:paddingBottom="20dp" >
+        
+        <com.qianseit.westore.ui.LevelView
+            android:id="@+id/fragment_vip_levelView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#ffffff"
+        >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="会员等级" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textStyle="bold"
+            android:text="成长范围" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dddddd" />
+
+    <ListView
+        android:id="@+id/fragment_vip_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="#ffffff"
+        android:background="#ffffff" />
+
+</LinearLayout>

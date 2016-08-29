@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chekout_itemview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ticket_list_item_bgimage"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/chekout_itemview_text1"
+        style="@style/account_earning_item_text"
+        android:layout_weight="1"
+        android:text="@string/checkout_money_date" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/chekout_itemview_text2"
+        style="@style/account_earning_item_text"
+        android:layout_weight="1"
+        android:text="@string/checkout_money_amount" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/chekout_itemview_text3"
+        style="@style/account_earning_item_text"
+        android:layout_weight="1"
+        android:text="@string/checkout_money_state" />
+
+</LinearLayout>

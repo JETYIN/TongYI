@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/taotal_orders_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@color/transparent" >
+
+        <RelativeLayout
+            android:id="@+id/taotal_orders_all"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/transparent" >
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/orders_all"
+                android:textColor="@color/goods_tag_textcolor"
+                android:textSize="@dimen/TextSizeMedium" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="2dip"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/fragment_top_bg"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/PaddingXLarge"
+            android:layout_marginTop="@dimen/PaddingXLarge"
+            android:background="@color/fragment_top_bg" >
+        </View>
+
+        <RelativeLayout
+            android:id="@+id/taotal_orders_paying"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/transparent" >
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/account_trade_paying"
+                android:textColor="@color/goods_tag_textcolor"
+                android:textSize="@dimen/TextSizeMedium" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="2dip"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/fragment_top_bg"
+                android:visibility="invisible" >
+            </View>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/PaddingXLarge"
+            android:layout_marginTop="@dimen/PaddingXLarge"
+            android:background="@color/fragment_top_bg" >
+        </View>
+
+        <RelativeLayout
+            android:id="@+id/taotal_orders_shipping"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/transparent" >
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/account_trade_shipping"
+                android:textColor="@color/goods_tag_textcolor"
+                android:textSize="@dimen/TextSizeMedium" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="2dip"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/fragment_top_bg"
+                android:visibility="invisible" >
+            </View>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/PaddingXLarge"
+            android:layout_marginTop="@dimen/PaddingXLarge"
+            android:background="@color/fragment_top_bg" >
+        </View>
+
+        <RelativeLayout
+            android:id="@+id/taotal_orders_receiving"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/transparent" >
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/account_trade_receiving"
+                android:textColor="@color/goods_tag_textcolor"
+                android:textSize="@dimen/TextSizeMedium" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="2dip"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/fragment_top_bg"
+                android:visibility="invisible" >
+            </View>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/PaddingXLarge"
+            android:layout_marginTop="@dimen/PaddingXLarge"
+            android:background="@color/fragment_top_bg" >
+        </View>
+
+        <RelativeLayout
+            android:id="@+id/taotal_orders_recommend"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/transparent" >
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/orders_recommend"
+                android:textColor="@color/goods_tag_textcolor"
+                android:textSize="@dimen/TextSizeMedium" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="2dip"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/fragment_top_bg"
+                android:visibility="invisible" >
+            </View>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/taotal_orders_topbar"
+        android:layout_marginTop="-1dp"
+        android:background="@color/westore_divider_bgcolor" />
+  
+    <com.qianseit.westore.ui.pulltorefresh.lib.PullToRefreshListView
+        android:id="@+id/taotal_orders_listview"
+        style="@style/listview"
+        android:layout_below="@id/taotal_orders_topbar"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false" />
+   <com.qianseit.westore.ui.CommonTextView 
+       android:id="@+id/total_orders_hint"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:textSize="@dimen/TextSizeMedium" 
+       android:textColor="#999999" 
+       android:visibility="gone"
+       android:paddingTop="@dimen/PaddingXLarge"
+       android:text="暂无订单"   
+       />
+
+</RelativeLayout>

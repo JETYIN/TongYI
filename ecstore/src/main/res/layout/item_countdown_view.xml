@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="5dp"
+     >
+    
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/tv_day_count"
+        style="@style/RushBuyCountDownTimerViewStyle"
+        android:visibility="visible" />
+    
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/tv_day_decade"
+        style="@style/RushBuyCountDownTimerViewStyle"
+        android:layout_marginLeft="1dp"
+        android:visibility="visible"
+        android:text="天" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/tv_hour_decade"
+        style="@style/RushBuyCountDownTimerViewStyle"
+        android:layout_marginLeft="1dp" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/tv_hour_unit"
+        style="@style/RushBuyCountDownTimerViewStyle"
+        android:layout_marginLeft="1dp" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/tv_hour_spit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textColor="#4F4242"
+        android:textSize="20sp" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/tv_min_decade"
+        style="@style/RushBuyCountDownTimerViewStyle" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/tv_min_unit"
+        style="@style/RushBuyCountDownTimerViewStyle"
+        android:layout_marginLeft="1dp" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/tv_minute_spit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textColor="#4F4242"
+        android:textSize="20sp" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/tv_sec_decade"
+        style="@style/RushBuyCountDownTimerViewStyle" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/tv_sec_unit"
+        style="@style/RushBuyCountDownTimerViewStyle"
+        android:layout_marginLeft="1dp" />
+    
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/tv_text_util"
+        style="@style/RushBuyCountDownTimerViewStyle"
+        android:layout_marginLeft="1dp"
+        android:visibility="visible"
+        android:text="时" />
+    
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/tv_text1"
+        style="@style/RushBuyCountDownTimerViewStyle"
+        android:layout_marginLeft="1dp"
+        android:visibility="visible"
+        android:text="后" />
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/tv_text2"
+        style="@style/RushBuyCountDownTimerViewStyle"
+        android:layout_marginLeft="1dp"
+        android:visibility="visible"
+        android:text="结" />
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/tv_text3"
+        style="@style/RushBuyCountDownTimerViewStyle"
+        android:layout_marginLeft="1dp"
+        android:visibility="visible"
+        android:text="束" />
+
+</LinearLayout>

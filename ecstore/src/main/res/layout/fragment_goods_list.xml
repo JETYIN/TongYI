@@ -1,0 +1,171 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/goods_list_bgimage" >
+
+        <LinearLayout
+            android:id="@+id/goods_list_topbar"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:background="#f0f0f0" >
+
+            <RelativeLayout
+                android:id="@+id/goods_list_topbar_sort_default"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/category_sublevel_itembg" >
+
+                <com.qianseit.westore.ui.CommonTextView
+                    style="@style/goods_list_topbar_textview"
+                    android:drawableRight="@null"
+                    android:text="@string/sort_by_default" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/goods_list_topbar_sort_price"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/category_sublevel_itembg" >
+
+                <com.qianseit.westore.ui.CommonTextView
+                    style="@style/goods_list_topbar_textview"
+                    android:text="@string/price" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/goods_list_topbar_sort_sales"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/category_sublevel_itembg" >
+
+                <com.qianseit.westore.ui.CommonTextView
+                    style="@style/goods_list_topbar_textview"
+                    android:text="@string/sales" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/goods_list_topbar_sort_hot"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/category_sublevel_itembg" >
+
+                <com.qianseit.westore.ui.CommonTextView
+                    style="@style/goods_list_topbar_textview"
+                    android:text="@string/hot" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.qianseit.westore.ui.pulltorefresh.lib.PullToRefreshListView
+            android:id="@+id/goods_list_listview"
+            style="@style/listview"
+            android:layout_below="@id/goods_list_topbar"
+            android:dividerHeight="0dip" />
+
+        <RelativeLayout
+            android:id="@+id/fragment_goods_list_top_adsview_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.qianseit.westore.ui.FlowView
+                android:id="@+id/fragment_goods_list_top_adsview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.qianseit.westore.ui.CircleFlowIndicator
+                android:id="@+id/fragment_goods_list_top_adsview_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="@dimen/PaddingLarge"
+                android:paddingLeft="@dimen/PaddingLarge"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@android:id/empty"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goods_list_topbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/PaddingXXLarge"
+            android:visibility="gone" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@android:id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goods_list_topbar"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/PaddingXXLarge"
+            android:text="@string/goods_list_empty"
+            android:textColor="@color/goods_list_secondary_textcolor"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/translucent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/translucent"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/goods_list_shoppingcar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/goods_list_shoppingcar_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/goods_detail_shopcar" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/goods_list_shoppingcar_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-10dp"
+                android:layout_toRightOf="@id/goods_list_shoppingcar_img"
+                android:background="@drawable/reddot"
+                android:contentDescription="@string/app_name"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/goods_list_animation_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/goods_list_topbar" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@color/white"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <include layout="@layout/fragment_filter_view" />
+    </FrameLayout>
+
+</android.support.v4.widget.DrawerLayout>

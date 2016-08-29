@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@android:id/title"
+        android:padding="@dimen/PaddingLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/PaddingMedium"
+        android:background="@android:color/white"
+        android:textColor="@color/westore_dark_textcolor"
+        android:textSize="@dimen/TextSizeMedium" />
+
+    <RelativeLayout
+        android:id="@+id/fragment_main_ads_group4"
+        android:layout_width="match_parent"
+        android:layout_height="0dip" >
+
+        <ImageView
+            android:id="@+id/fragment_main_ads_group4_bigimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/fragment_main_ads_group4_small_images"
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+
+</LinearLayout>

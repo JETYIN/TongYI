@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/com.Yingtaoshe"
+    android:id="@+id/account_home_headerview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/account_header_view_login_view"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/account_header_view_avatar1"
+                android:layout_width="60dip"
+                android:layout_height="25dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/shopping_null_car" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/account_header_view_avatar1"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp" >
+
+                <com.qianseit.westore.ui.CommonButton
+                    android:id="@+id/account_header_view_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bg_semicircle_selector"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:paddingTop="5dp"
+                    android:text="登录"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/TextSizeMedium" />
+
+                <com.qianseit.westore.ui.CommonButton
+                    android:id="@+id/account_header_view_regist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/bg_semicircle_selector"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:paddingTop="5dp"
+                    android:text="注册"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/TextSizeMedium" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/account_header_view_logined_view"
+            android:layout_width="match_parent"
+            android:layout_height="130dp" >
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/account_header_view_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/account_edit"
+                android:drawablePadding="3dp"
+                android:text="修改"
+                android:textColor="@color/text_textcolor_gray1"
+                android:textSize="@dimen/TextSizeBigSmall" />
+
+            <com.qianseit.westore.ui.CircleImageView
+                android:id="@+id/account_header_view_avatar"
+                android:layout_width="80dip"
+                android:layout_height="80dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/shopping_null_car"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/account_header_view_avatar"
+                android:orientation="vertical"
+                android:paddingRight="10dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <com.qianseit.westore.ui.CommonTextView
+                        android:id="@+id/account_header_view_uname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/TextSizeMedium" />
+
+                    <ImageView
+                        android:id="@+id/account_header_view_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/PaddingMedium" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/account_header_view_lv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_semicircle_norm"
+                    android:paddingBottom="1dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="1dp"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <com.qianseit.westore.ui.CommonTextView
+                    android:id="@+id/account_header_view_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/text_textcolor_gray1"
+                    android:textSize="@dimen/TextSizeSmall" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/help_button_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/account_header_buttons_bgimage"
+        android:paddingBottom="@dimen/PaddingMedium"
+        android:paddingTop="@dimen/PaddingMedium"
+        android:visibility="gone" >
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@id/account_orders_paying"
+            style="@style/account_header_view_bottom_button"
+            android:drawableTop="@drawable/account_home_trade_paying"
+            android:text="@string/account_trade_paying" />
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@id/account_orders_shipping"
+            style="@style/account_header_view_bottom_button"
+            android:drawableTop="@drawable/account_home_trade_shipping"
+            android:text="@string/account_trade_shipping" />
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@id/account_orders_receiving"
+            style="@style/account_header_view_bottom_button"
+            android:drawableTop="@drawable/account_home_trade_receiving"
+            android:text="@string/account_trade_receiving" />
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@id/account_orders_rating"
+            style="@style/account_header_view_bottom_button"
+            android:drawableTop="@drawable/account_home_trade_rating"
+            android:text="@string/account_trade_rating" />
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@id/account_orders_return"
+            style="@style/account_header_view_bottom_button"
+            android:drawableTop="@drawable/account_home_trade_return"
+            android:text="@string/account_trade_return" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.qianseit.westore.ui.pulltorefresh.lib.PullToRefreshListView
+        android:id="@+id/flash_sentiment_listviews"
+        style="@style/listview"
+        android:layout_marginLeft="@dimen/PaddingMedium"
+        android:layout_marginRight="@dimen/PaddingMedium"
+        android:layout_marginTop="@dimen/PaddingMedium"
+        android:background="@null"
+        android:divider="#F8F9FB"
+        android:dividerHeight="10dip" />
+
+</RelativeLayout>

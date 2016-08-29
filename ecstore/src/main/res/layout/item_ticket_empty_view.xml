@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingTop="40dip" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/counpon_empty"
+        tools:ignore="ContentDescription" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/PaddingLarge"
+        android:paddingTop="@dimen/PaddingXXLarge"
+        android:text="@string/ticket_empty"
+        android:textColor="@color/westore_secondary_textcolor"
+        android:textSize="@dimen/TextSizeMedium"
+        android:visibility="gone" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/ticket_how_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/PaddingLarge"
+        android:text="@string/ticket_how_to"
+        android:textColor="@color/westore_red"
+        android:textSize="@dimen/TextSizeMedium"
+        android:visibility="visible" />
+
+</LinearLayout>

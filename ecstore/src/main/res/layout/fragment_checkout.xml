@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_page_bgcolor"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/PaddingLarge"
+        android:paddingRight="@dimen/PaddingLarge"
+        android:paddingTop="@dimen/PaddingLarge" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/account_login_list_topbg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/PaddingXLarge" >
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/PaddingSmall"
+                android:text="@string/can_checkout_money"
+                android:textColor="@color/text_textcolor_gray1"
+                android:textSize="@dimen/TextSizeBigSmall" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/checkout_available_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/westore_pink"
+                android:textSize="@dimen/TextSizeBigSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/account_login_list_middlebg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/PaddingXLarge" >
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/PaddingSmall"
+                android:text="@string/can_checkout_money"
+                android:textColor="@color/text_textcolor_gray1"
+                android:textSize="@dimen/TextSizeBigSmall" />
+
+            <com.qianseit.westore.ui.CommonEditText
+                android:id="@+id/checkout_input_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/checkout_input_edittext"
+                android:inputType="numberSigned"
+                android:paddingLeft="@dimen/PaddingSmall"
+                android:paddingRight="@dimen/PaddingSmall"
+                android:textColor="@color/westore_pink"
+                android:textSize="@dimen/TextSizeBigSmall" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/PaddingSmall"
+                android:text="@string/unit_money"
+                android:textColor="@color/text_textcolor_gray1"
+                android:textSize="@dimen/TextSizeBigSmall" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/PaddingSmall"
+                android:text="@string/note_checkout_money"
+                android:textColor="@color/text_textcolor_gray1"
+                android:textSize="@dimen/TextSizeSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/account_login_list_bottombg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/PaddingXLarge" >
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/PaddingSmall"
+                android:text="@string/checkout_to_alipay"
+                android:textColor="@color/text_textcolor_gray1"
+                android:textSize="@dimen/TextSizeBigSmall" />
+
+            <com.qianseit.westore.ui.CommonEditText
+                android:id="@+id/checkout_alipay_user"
+                android:layout_width="120dip"
+                android:layout_height="24dip"
+                android:background="@drawable/checkout_input_edittext"
+                android:enabled="false"
+                android:paddingLeft="@dimen/PaddingSmall"
+                android:paddingRight="@dimen/PaddingSmall"
+                android:singleLine="true"
+                android:textColor="@color/westore_pink"
+                android:textSize="@dimen/TextSizeBigSmall" />
+
+            <com.qianseit.westore.ui.CommonButton
+                android:id="@+id/checkout_submit"
+                style="@style/button_pink_small_radius"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/PaddingLarge"
+                android:paddingBottom="@dimen/PaddingSmall"
+                android:paddingLeft="@dimen/PaddingXLarge"
+                android:paddingRight="@dimen/PaddingXLarge"
+                android:paddingTop="@dimen/PaddingSmall"
+                android:text="@string/submit" />
+        </LinearLayout>
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/PaddingSmall"
+            android:paddingTop="@dimen/PaddingLarge"
+            android:text="@string/history_checkout_money"
+            android:textColor="@color/westore_pink"
+            android:textSize="@dimen/TextSizeBigSmall" />
+
+        <include layout="@layout/fragment_checkout_item" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ListView
+                android:id="@android:id/list"
+                style="@style/listview" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@android:id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/PaddingXXLarge"
+                android:text="@string/checkout_money_empty"
+                android:textColor="@color/goods_list_secondary_textcolor"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/checkout_money_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shopping_car_bottom_bar_bgimage"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal"
+        android:padding="@dimen/PaddingLarge" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/PaddingMedium"
+            android:singleLine="true"
+            android:text="@string/checkout_money_total"
+            android:textColor="@color/text_textcolor_gray1"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/checkout_money_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/PaddingLarge"
+            android:singleLine="true"
+            android:textColor="@color/goods_detail_pink_textcolor"
+            android:textSize="@dimen/TextSizeLarge"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

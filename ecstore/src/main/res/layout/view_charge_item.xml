@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/view_charge_item_wechat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_sublevel_itembg"
+        android:duplicateParentState="true"
+        android:paddingBottom="@dimen/PaddingLarge"
+        android:paddingLeft="@dimen/PaddingMedium"
+        android:paddingTop="@dimen/PaddingLarge" >
+
+        <ImageView
+            android:id="@+id/view_charge_item_pay_icon"
+            android:layout_width="40dip"
+            android:layout_height="30dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/PaddingMedium"
+            android:layout_marginRight="@dimen/PaddingMedium"
+            android:background="@drawable/confirm_order_pay_wechat" />
+
+        <ImageView
+            android:id="@+id/item_help_centre_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/arrow_right_pink"
+            android:tint="@color/westore_secondary_textcolor" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/view_charge_item_pay_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/view_charge_item_pay_icon"
+            android:textColor="@color/goods_detail_primary_textcolor"
+            android:textSize="@dimen/TextSizeMedium"
+            android:layout_centerVertical="true"
+            android:text="12" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/account_login_thirdparty_line_bgcolor" />
+    
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/PaddingXXLarge"
+    android:paddingLeft="@dimen/PaddingMedium"
+    android:paddingRight="@dimen/PaddingMedium"
+    android:paddingTop="@dimen/PaddingLarge" >
+
+    <ImageView
+        android:id="@android:id/icon"
+        android:layout_width="90dip"
+        android:layout_height="90dip" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@android:id/text1"
+        android:layout_width="90dip"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@color/text_textcolor_gray1"
+        android:textSize="@dimen/TextSizeMedium" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@android:id/text2"
+        android:layout_width="90dip"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@color/westore_red"
+        android:textSize="@dimen/TextSizeMedium" />
+
+</LinearLayout>

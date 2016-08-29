@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/account_earning_itemview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/account_earning_text1"
+        style="@style/account_earning_item_text"
+        android:layout_weight="5" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/account_earning_text2"
+        style="@style/account_earning_item_text"
+        android:layout_weight="3" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/account_earning_text3"
+        style="@style/account_earning_item_text"
+        android:layout_weight="3" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/account_earning_text4"
+        style="@style/account_earning_item_text"
+        android:layout_weight="3" />
+
+</LinearLayout>

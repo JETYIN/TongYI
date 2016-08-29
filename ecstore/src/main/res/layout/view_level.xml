@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <com.qianseit.westore.ui.CommonTextView 
+        android:id="@+id/view_level_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/level_progress"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:textColor="#ffffff"
+        android:text="0"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="9dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/level_normal" />
+
+        <View
+            android:id="@+id/view_level_progress"
+            android:layout_width="1dp"
+            android:layout_height="9dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/level_progress" />
+
+        <ImageView
+            android:id="@+id/view_level_img"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/level_p" />
+    </RelativeLayout>
+
+    <com.qianseit.westore.ui.CommonTextView 
+        android:id="@+id/view_level_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:textColor="#e10011"
+        android:text="非会员"/>
+    
+</LinearLayout>

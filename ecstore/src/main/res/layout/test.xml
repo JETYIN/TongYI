@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/fragment_main_content_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/action_bar_titlebar"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/action_bar_titlebar"
+        >
+
+        <com.qianseit.westore.ui.FlowView
+            android:id="@+id/main_top_adsview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.qianseit.westore.ui.CircleFlowIndicator
+            android:id="@+id/main_top_adsview_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingLeft="@dimen/PaddingLarge" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/main_top_adsview_foot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="#E1E4E6"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/main_top_adsview_foot_season"
+            android:layout_width="0dp"
+            android:layout_height="80dp "
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mian_adv_frist" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_line_hor" />
+
+        <ImageView
+            android:id="@+id/main_top_adsview_foot_flash_Sale"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mian_adv_two" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_line_hor" />
+
+        <ImageView
+            android:id="@+id/main_top_adsview_foot_new_product"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mian_adv_three" />
+    </LinearLayout>
+</LinearLayout>

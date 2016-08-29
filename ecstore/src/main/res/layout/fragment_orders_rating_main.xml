@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/account_rating_goods_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="@dimen/PaddingLarge"
+        android:background="@color/westore_divider_bgcolor" />
+
+    <RelativeLayout
+        android:id="@+id/account_rating_goods_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/account_rating_goods_line1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/PaddingXLarge" >
+
+        <ImageView
+            android:id="@+id/account_rating_goods_icon"
+            android:layout_width="65dip"
+            android:layout_height="65dip"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/account_rating_goods_icon"
+            android:layout_alignTop="@+id/account_rating_goods_icon"
+            android:layout_marginLeft="@dimen/PaddingMedium"
+            android:layout_toRightOf="@+id/account_rating_goods_icon" >
+
+            <TextView
+                android:id="@+id/account_rating_goods_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:textColor="#333333"
+                android:textSize="@dimen/TextSizeMedium" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true" >
+
+                <TextView
+                    android:id="@+id/account_rating_goods_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fragment_top_bg"
+                    android:textSize="@dimen/TextSizeMedium" />
+
+                <TextView
+                    android:id="@+id/account_rating_goods_market"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/PaddingSmall"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/TextSizeBigSmall" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/account_rating_goods_line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/account_rating_goods_rel"
+        android:layout_marginTop="@dimen/PaddingLarge"
+        android:background="@color/westore_divider_bgcolor" />
+
+    <EditText
+        android:id="@+id/account_rating_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="140dp"
+        android:layout_below="@+id/account_rating_goods_line2"
+        android:layout_marginLeft="@dimen/PaddingLarge"
+        android:layout_marginRight="@dimen/PaddingLarge"
+        android:layout_marginTop="@dimen/PaddingLarge"
+        android:background="@drawable/account_rating_edit_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:freezesText="true"
+        android:gravity="top|left"
+        android:hint="使用后的感受如何呢？"
+        android:inputType="textShortMessage|textAutoCorrect|textCapSentences|textMultiLine"
+        android:isScrollContainer="false"
+        android:maxLength="140"
+        android:padding="@dimen/PaddingLarge"
+        android:textColor="#666666"
+        android:textSize="@dimen/TextSizeMedium" />
+
+    <TextView
+        android:id="@+id/account_rating_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/account_rating_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/PaddingXLarge"
+        android:layout_marginTop="-20dp"
+        android:text="140"
+        android:textColor="#999999"
+        android:textSize="@dimen/TextSizeBigSmall" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_above="@+id/account_rating_submit"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/PaddingLarge"
+        android:background="@color/fragment_top_bg" />
+
+    <Button
+        android:id="@+id/account_rating_submit"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/PaddingLarge"
+        android:layout_marginTop="@dimen/PaddingMedium"
+        android:background="@drawable/bg_semicircle_selector"
+        android:paddingBottom="@dimen/PaddingSmall"
+        android:paddingTop="@dimen/PaddingSmall"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/TextSizeMedium" />
+
+</RelativeLayout>

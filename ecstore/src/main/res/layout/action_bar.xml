@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/action_bar_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- 主内容 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/action_bar_titlebar_margin"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/action_titlebar_height" />
+
+        <FrameLayout
+            android:id="@+id/action_bar_container"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+             />
+    </LinearLayout>
+
+    <!-- 标题栏 -->
+
+    <FrameLayout
+        android:id="@+id/action_bar_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp" >
+
+        <LinearLayout
+            android:id="@+id/action_bar_titlebar"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/action_titlebar_height"
+            android:background="@drawable/navigation_bar_new"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:id="@+id/action_bar_titlebar_left_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" >
+
+                <ImageButton
+                    android:id="@+id/action_bar_titlebar_left"
+                    android:layout_width="@dimen/action_titlebar_height"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/transparent"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/button_back"
+                    android:textColor="@color/actionbar_button_textcolor"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/action_bar_titlebar_titleview"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <com.qianseit.westore.ui.CommonTextView
+                    android:id="@+id/action_bar_titlebar_title"
+                    style="@style/actionbar_titlebar_title"
+                    android:shadowColor="@color/actionbar_title_shadowcolor"
+                    android:textColor="@color/actionbar_title_textcolor" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/action_bar_titlebar_right_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" >
+				<ImageButton
+                    android:id="@+id/action_bar_titlebar_right_ib"
+                    android:layout_width="@dimen/action_titlebar_height"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/button_back"
+                    android:textColor="@color/actionbar_button_textcolor"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    android:textStyle="bold" />
+                <com.qianseit.westore.ui.CommonButton
+                    android:id="@+id/action_bar_titlebar_right"
+                    android:layout_width="@dimen/action_titlebar_height"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:textColor="@color/actionbar_button_textcolor"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.qianseit.westore.ui.CommonTextView
+                    android:id="@+id/action_bar_titlebar_rightsearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingRight="10dip"
+                    android:text="筛选"
+                    android:textColor="@color/actionbar_button_textcolor"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="50dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/action_bar_home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_launcher" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/action_bar_tabbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RadioGroup
+            android:id="@+id/action_bar_radiogroup"
+            android:layout_width="fill_parent"
+            android:layout_height="46dip"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/tabbar1"
+                style="@style/tabbar_menu"
+                android:drawableTop="@drawable/tabbar_logo1"
+                android:text="@string/tabbar_title1" />
+
+            <RadioButton
+                android:id="@+id/tabbar2"
+                style="@style/tabbar_menu"
+                android:drawableTop="@drawable/tabbar_logo2"
+                android:text="@string/tabbar_title2" />
+
+            <RadioButton
+                android:id="@+id/tabbar3"
+                style="@style/tabbar_menu"
+                android:drawableTop="@drawable/tabbar_logo3"
+                android:text="@string/tabbar_title3" />
+
+            <RadioButton
+                android:id="@+id/tabbar4"
+                style="@style/tabbar_menu"
+                android:drawableTop="@drawable/tabbar_logo4"
+                android:text="@string/tabbar_title4" /> 
+        </RadioGroup>
+    </LinearLayout>
+
+
+</RelativeLayout>

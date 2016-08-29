@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="pg_sdk_edit_sample_edit">แก้ไข</string>
+    <string name="pg_sdk_edit_sample_choose_photo">เลือกภาพถ่าย</string>
+    <string name="pg_sdk_edit_sample_re_edit">แก้ไขอีกครั้ง</string>
+
+</resources>

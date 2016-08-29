@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qianseit.westore.ui.CommonTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="@dimen/PaddingXLarge"
+    android:text="@string/goods_list_empty"
+    android:textColor="@color/goods_list_secondary_textcolor" />

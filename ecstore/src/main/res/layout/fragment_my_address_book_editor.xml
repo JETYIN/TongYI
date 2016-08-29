@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/account_login_bgcolor"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/PaddingLarge" >
+
+    <LinearLayout
+        android:id="@+id/unlogin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <com.qianseit.westore.ui.CommonEditText
+            android:id="@+id/my_address_book_editor_username"
+            style="@style/my_address_book_edittext"
+            android:background="@drawable/account_login_list_topbg"
+            android:hint="@string/my_address_book_editor_username" />
+
+        <com.qianseit.westore.ui.CommonEditText
+            android:id="@+id/my_address_book_editor_phone"
+            style="@style/my_address_book_edittext"
+            android:hint="@string/my_address_book_editor_phone" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_sublevel_itembg" >
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/my_address_book_editor_district"
+                style="@style/my_address_book_edittext"
+                android:drawableRight="@drawable/arrow_right_pink"
+                android:hint="@string/my_address_book_editor_district" />
+        </FrameLayout>
+
+        <com.qianseit.westore.ui.CommonEditText
+            android:id="@+id/my_address_book_editor_address"
+            style="@style/my_address_book_edittext"
+            android:hint="@string/my_address_book_editor_address" />
+
+        <com.qianseit.westore.ui.CommonEditText
+            android:id="@+id/my_address_book_editor_postal"
+            style="@style/my_address_book_edittext"
+            android:background="@drawable/account_login_list_bottombg"
+            android:hint="@string/my_address_book_editor_postal" />
+    </LinearLayout>
+
+</LinearLayout>

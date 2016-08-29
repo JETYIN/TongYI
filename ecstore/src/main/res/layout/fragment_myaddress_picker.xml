@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/account_header_buttons_bgimage"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@android:id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="150dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:background="@drawable/text_green_backgroud"
+            android:padding="3dp"
+            android:textColor="#ffffff"
+            android:visibility="gone" />
+
+        <com.qianseit.westore.ui.CommonEditText
+            android:id="@android:id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="42dip"
+            android:background="@drawable/account_header_buttons_bgimage"
+            android:hint="@string/search"
+            android:padding="@dimen/PaddingMedium"
+            android:textColor="@color/text_textcolor_gray1"
+            android:singleLine="true"
+            android:textSize="@dimen/TextSizeMedium"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="15dp" >
+    
+    <com.qianseit.westore.ui.CommonTextView 
+        android:id="@+id/item_system_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/text_textcolor_gray2"/>
+    
+    <com.qianseit.westore.ui.CommonTextView 
+        android:id="@+id/item_system_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_system_date"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text_textcolor_gray1"
+        android:textSize="13sp"/>
+    
+    <ImageView 
+        android:id="@+id/item_system_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:src="@drawable/arrow_right_pink_n"/>
+    
+    <com.qianseit.westore.ui.CommonTextView 
+        android:id="@+id/item_system_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:visibility="gone"
+        android:layout_toLeftOf="@id/item_system_arrow"
+        android:textColor="@color/theme_color"
+        android:text="●" />
+
+</RelativeLayout>

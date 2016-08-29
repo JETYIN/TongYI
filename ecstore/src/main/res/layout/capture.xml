@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/default_scanner_bgcolor" >
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+     <com.google.zxing.view.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/transparent" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/capture_scanner_code_buy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/PaddingMedium"
+        android:drawableTop="@drawable/sacanner_code_buy"
+        android:gravity="center"
+        android:text="@string/scanner_code_buy"
+        android:textColor="#3f5e81"
+        android:textSize="@dimen/TextSizeMedium" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/capture_scanner_code_buy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/PaddingLarge"
+        android:gravity="center"
+        android:text="@string/scanner_bottom_message"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/TextSizeBigSmall" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/capture_status_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip" />
+    <!--
+         <TextView
+        android:id="@id/capture_status_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/PaddingLarge"
+        android:layout_marginLeft="@dimen/action_titlebar_button_width"
+        android:layout_marginRight="@dimen/action_titlebar_button_width"
+        android:background="@drawable/scanner_black_bgimage"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/scanner_status_scanning"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/TextSizeMedium" />
+    -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/scanner_back"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="10dip"
+            android:src="@drawable/button_back" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/scanner_logo" />
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@+id/scanner_flashlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dip"
+            android:paddingBottom="7dip"
+            android:paddingLeft="30dip"
+            android:text="@string/close"
+            android:textSize="@dimen/TextSizeMedium"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout>

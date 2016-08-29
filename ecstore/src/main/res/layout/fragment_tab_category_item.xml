@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/PaddingLarge" >
+
+        <ImageView
+            android:id="@android:id/icon"
+            android:layout_width="70dip"
+            android:layout_height="50dip"
+            android:scaleType="centerInside" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/PaddingMedium"
+            android:paddingRight="@dimen/PaddingLarge" >
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@android:id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/westore_dark_textcolor"
+                android:textSize="@dimen/TextSizeLarge" />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@android:id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/PaddingSmall"
+                android:singleLine="true"
+                android:textColor="@color/westore_secondary_textcolor"
+                android:textSize="@dimen/TextSizeMedium" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@android:id/icon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_right_pink"
+            android:tint="@color/westore_secondary_textcolor" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/category_sublevel_itembg"
+    android:padding="10dp"
+    android:orientation="vertical" >
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/express_picker_shop_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_textcolor_gray1"
+        android:textSize="@dimen/TextSizeMedium"
+        />
+    
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/express_picker_shop_addr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_textcolor_gray1"
+        android:textSize="@dimen/TextSizeBigSmall"
+        />
+
+</LinearLayout>

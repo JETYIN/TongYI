@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/account_login_thirdparty_line_bgcolor" />
+
+    <RelativeLayout
+        android:id="@+id/confirm_order_pay_wechat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_sublevel_itembg"
+        android:duplicateParentState="true"
+        android:paddingBottom="@dimen/PaddingLarge"
+        android:paddingLeft="@dimen/PaddingXLarge"
+        android:paddingTop="@dimen/PaddingLarge" >
+
+        <ImageView
+            android:id="@+id/confirm_order_pay_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/PaddingMedium"
+            />
+
+        <com.qianseit.westore.ui.CommonCheckBox
+            android:id="@+id/confirm_order_pay_checkbox"
+            style="@style/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/PaddingLarge"
+            android:layout_marginRight="@dimen/PaddingXLarge"
+            android:button="@drawable/account_profile_radiobutton"
+            android:clickable="false"
+            android:enabled="false"
+            android:focusable="false"
+            android:focusableInTouchMode="true" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/confirm_order_pay_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/confirm_order_pay_icon"
+            android:textColor="@color/text_textcolor_gray1"
+            android:layout_centerVertical="true"
+            />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/confirm_order_pay_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/confirm_order_pay_name"
+            android:layout_toLeftOf="@id/confirm_order_pay_checkbox"
+            android:layout_toRightOf="@id/confirm_order_pay_icon"
+            android:textColor="@color/text_textcolor_gray1"
+            android:textSize="@dimen/TextSizeBigSmall"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/goods_detail_action_radios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/PaddingLarge" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.2" />
+
+        <com.qianseit.westore.ui.CommonRadioButton
+            android:id="@+id/goods_detail_radio_images"
+           	style="@style/tab_radio_button_new"
+            android:layout_marginRight="1dip"
+            android:layout_marginTop="1dip"
+            android:drawableBottom="@drawable/order_radio_selector"
+            android:drawablePadding="10dp"
+            android:paddingTop="@dimen/PaddingMedium"
+            android:text="@string/goods_detail_button_images"
+            android:textColor="@color/goods_detail_tab_radio_button_textcolor"
+            android:checked="false" />
+
+        <com.qianseit.westore.ui.CommonRadioButton
+            android:id="@+id/goods_detail_radio_props"
+            style="@style/tab_radio_button_new"
+            android:layout_margin="1dip"
+            android:drawableBottom="@drawable/order_radio_selector"
+            android:drawableLeft="@drawable/icon_red_line_vertical"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/icon_red_line_vertical"
+            android:paddingTop="@dimen/PaddingMedium"
+            android:text="@string/goods_detail_button_props"
+            android:textColor="@color/goods_detail_tab_radio_button_textcolor" />
+
+        <com.qianseit.westore.ui.CommonRadioButton
+            android:id="@+id/goods_detail_radio_comments"
+            style="@style/tab_radio_button_new"
+            android:layout_marginRight="1dip"
+            android:layout_marginTop="1dip"
+            android:drawableBottom="@drawable/order_radio_selector"
+            android:drawablePadding="10dp"
+            android:paddingTop="@dimen/PaddingMedium"
+            android:text="@string/goods_detail_button_comments"
+            android:textColor="@color/goods_detail_tab_radio_button_textcolor" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.2" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/text_textcolor_gray2" 
+        />
+
+</LinearLayout>

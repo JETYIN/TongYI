@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/transparent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/new_product_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fragment_top_bg" >
+
+        <ImageView
+            android:id="@+id/new_product_back"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingLeft="@dimen/PaddingXLarge"
+            android:paddingRight="@dimen/PaddingXLarge"
+            android:paddingTop="@dimen/PaddingLarge"
+            android:src="@drawable/button_back" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/new_product_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/PaddingLarge"
+            android:paddingLeft="@dimen/PaddingXLarge"
+            android:paddingRight="@dimen/PaddingXLarge"
+            android:paddingTop="@dimen/PaddingLarge"
+            android:text="@string/new_product_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/TextSizeLarge" />
+    </RelativeLayout>
+
+    <com.qianseit.westore.ui.pulltorefresh.lib.PullToRefreshListView
+        android:id="@+id/new_product_listview"
+        style="@style/listview"
+        android:layout_below="@+id/new_product_top"
+        android:dividerHeight="0dip" />
+
+    <ImageView
+        android:id="@+id/fragment_main_goto_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/goto_top"
+        android:visibility="gone" />
+
+</RelativeLayout>

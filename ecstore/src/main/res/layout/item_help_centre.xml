@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/account_home_item_divider_martop"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <View
+        android:id="@+id/account_home_item_divider_t"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="#aaaaaaaa" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/item_help_centre_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/account_home_item_divider_t"
+            android:layout_marginLeft="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="213"
+            android:textSize="@dimen/TextSizeLarge" />
+
+        <View
+            android:id="@+id/account_home_item_divider_b1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_below="@id/item_help_centre_title"
+            android:layout_marginLeft="20dp"
+            android:background="#aaaaaaaa" />
+        
+        <ImageView
+            android:id="@+id/item_help_centre_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            android:src="@drawable/arrow_right_pink"
+            android:tint="@color/westore_secondary_textcolor" />
+
+        <View
+            android:id="@+id/account_home_item_divider_b2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_below="@id/item_help_centre_title"
+            android:background="#aaaaaaaa"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

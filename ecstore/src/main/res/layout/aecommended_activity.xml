@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res/cn.shopex.ecstore"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_weight="0.03"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/picture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" >
+
+            <com.qianseit.westore.ui.RoundAngleImageView
+                android:id="@+id/fragment_uploading_front"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:layout_marginTop="14dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/about_wechat"
+                app:roundHeight="10dp"
+                app:roundWidth="10dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <com.qianseit.westore.ui.CommonEditText
+            android:id="@+id/text_edit"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:autoText="true"
+            android:background="@drawable/account_rating_edit_bg"
+            android:capitalize="sentences"
+            android:ems="10"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:gravity="left|top"
+            android:hint="使用后的感受如何呢？"
+            android:inputType="textShortMessage|textAutoCorrect|textCapSentences|textMultiLine"
+            android:isScrollContainer="false"
+            android:maxLength="140"
+            android:minHeight="24dip"
+            android:minLines="5"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:textSize="@dimen/TextSizeMedium" >
+
+            <requestFocus />
+        </com.qianseit.westore.ui.CommonEditText>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-20dp" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/textview_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:text="140"
+            android:textSize="@dimen/TextSizeMedium" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/main_top_adsview_foot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/main_top_adsview_foot_season"
+            android:layout_width="40dp"
+            android:layout_height="40dp "
+            android:layout_weight="1"
+            android:src="@drawable/showweibos" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="新浪微博"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <ImageView
+            android:id="@+id/main_top_adsview_foot_flash_Sale"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/show_weixings" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="微信朋友圈"
+            android:textSize="@dimen/TextSizeMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="visible" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whites"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/fragment_top_bg" />
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@+id/aecomend_sures"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/PaddingMedium"
+            android:layout_marginTop="@dimen/PaddingMedium"
+            android:background="@drawable/bg_address_add"
+            android:paddingBottom="@dimen/PaddingSmall"
+            android:paddingLeft="@dimen/PaddingXLarge"
+            android:paddingRight="@dimen/PaddingXLarge"
+            android:paddingTop="@dimen/PaddingSmall"
+            android:text="发布"
+            android:textColor="@color/white"
+            android:textSize="@dimen/TextSizeLarge" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/invoice_bgimage"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/PaddingLarge" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="42dip"
+            android:background="@drawable/account_header_buttons_bgimage"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/PaddingLarge"
+            android:paddingRight="@dimen/PaddingLarge" >
+
+            <com.qianseit.westore.ui.CommonEditText
+                android:id="@+id/charge_card_no"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/meitong_card_charge_no"
+                android:inputType="none"
+                android:paddingLeft="@dimen/PaddingLarge"
+                android:paddingRight="@dimen/PaddingLarge"
+                android:singleLine="true"
+                android:textSize="@dimen/TextSizeMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dip"
+            android:layout_marginTop="@dimen/PaddingMedium"
+            android:background="@drawable/account_header_buttons_bgimage"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/PaddingLarge"
+            android:paddingRight="@dimen/PaddingLarge"
+            android:visibility="gone" >
+
+            <com.qianseit.westore.ui.CommonEditText
+                android:id="@+id/charge_card_secret"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/meitong_card_charge_secret"
+                android:paddingLeft="@dimen/PaddingLarge"
+                android:paddingRight="@dimen/PaddingLarge"
+                android:singleLine="true"
+                android:textSize="@dimen/TextSizeMedium" />
+        </LinearLayout>
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@+id/charge_card_submit"
+            style="@style/button_pink_small_radius"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="@dimen/PaddingLarge"
+            android:layout_marginRight="@dimen/PaddingLarge"
+            android:layout_marginTop="@dimen/PaddingLarge"
+            android:text="@string/charge" />
+    </LinearLayout>
+
+</LinearLayout>

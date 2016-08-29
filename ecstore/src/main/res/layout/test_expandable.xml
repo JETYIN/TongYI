@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.qianseit.westore.ui.pulltorefresh.lib.PullToRefreshExpandableListView
+        android:id="@+id/expandable"
+        style="@style/listview"
+        android:groupIndicator="@null"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:id="@+id/shopping_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/PaddingLarge"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/shopping_hint_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/shopping_null_car" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_title"
+            android:textColor="#666666"
+            android:layout_below="@+id/shopping_hint_icon"
+            android:layout_centerHorizontal="true"
+            android:text="购物车暂时没有商品哦"
+            android:layout_marginTop="@dimen/PaddingLarge"
+            android:textSize="@dimen/TextSizeBigSmall" />
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@+id/shopping_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/PaddingLarge"
+            android:background="@drawable/bg_verify_code_red"
+            android:padding="@dimen/PaddingMedium"
+            android:text="去商店逛逛"
+            android:textColor="@color/white"
+            android:textSize="@dimen/TextSizeBigSmall" />
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/PaddingXXLarge" >
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/dialog_create_album_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/PaddingLarge"
+        android:text="@string/add_to_album_create_summary"
+        android:textColor="@color/westore_pink"
+        android:textSize="@dimen/TextSizeMedium" />
+
+    <com.qianseit.westore.ui.CommonEditText
+        android:id="@+id/dialog_create_album_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_edittext"
+        android:maxLength="40"
+        android:paddingLeft="@dimen/PaddingMedium"
+        android:paddingRight="@dimen/PaddingMedium"
+        android:textColor="@color/westore_pink"
+        android:textSize="@dimen/TextSizeMedium" />
+
+</LinearLayout>

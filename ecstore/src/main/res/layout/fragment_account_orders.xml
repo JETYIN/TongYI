@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/invoice_bgimage"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/goods_detail_action_radios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/account_orders_all"
+            style="@style/tab_radio_button_new"
+            android:layout_marginLeft="1dip"
+            android:layout_marginTop="1dip"
+            android:drawableBottom="@drawable/order_radio_selector"
+            android:drawablePadding="10dp"
+            android:paddingTop="@dimen/PaddingMedium"
+            android:text="全部"
+            android:textColor="@color/goods_detail_tab_radio_button_textcolor" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="9dp"
+            android:background="@drawable/icon_red_line_vertical" />
+
+        <RadioButton
+            android:id="@+id/account_orders_needpay"
+            style="@style/tab_radio_button_new"
+            android:layout_marginLeft="1dip"
+            android:layout_marginTop="1dip"
+            android:drawableBottom="@drawable/order_radio_selector"
+            android:drawablePadding="10dp"
+            android:paddingTop="@dimen/PaddingMedium"
+            android:text="待付款"
+            android:textColor="@color/goods_detail_tab_radio_button_textcolor" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="9dp"
+            android:background="@drawable/icon_red_line_vertical" />
+
+        <RadioButton
+            android:id="@+id/account_orders_needshipping"
+            style="@style/tab_radio_button_new"
+            android:layout_marginRight="1dip"
+            android:layout_marginTop="1dip"
+            android:drawableBottom="@drawable/order_radio_selector"
+            android:drawablePadding="10dp"
+            android:paddingTop="@dimen/PaddingMedium"
+            android:text="待发货"
+            android:textColor="@color/goods_detail_tab_radio_button_textcolor" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="9dp"
+            android:background="@drawable/icon_red_line_vertical" />
+
+        <RadioButton
+            android:id="@+id/account_orders_hadshipping"
+            style="@style/tab_radio_button_new"
+            android:layout_marginLeft="1dip"
+            android:layout_marginTop="1dip"
+            android:drawableBottom="@drawable/order_radio_selector"
+            android:drawablePadding="10dp"
+            android:paddingTop="@dimen/PaddingMedium"
+            android:text="待收货"
+            android:textColor="@color/goods_detail_tab_radio_button_textcolor" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="9dp"
+            android:background="@drawable/icon_red_line_vertical" />
+
+        <RadioButton
+            android:id="@+id/account_orders_needrecommend"
+            style="@style/tab_radio_button_new"
+            android:layout_marginLeft="1dip"
+            android:layout_marginTop="1dip"
+            android:drawableBottom="@drawable/order_radio_selector"
+            android:drawablePadding="10dp"
+            android:paddingTop="@dimen/PaddingMedium"
+            android:text="待推荐"
+            android:textColor="@color/goods_detail_tab_radio_button_textcolor"
+            android:checked="false" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <RadioButton
+            android:id="@+id/account_orders_latest_month"
+            style="@style/tab_radio_button_new"
+            android:background="@drawable/tab_radiobutton"
+            android:checked="true"
+            android:text="@string/account_orders_latest_month" />
+
+        <RadioButton
+            android:id="@+id/account_orders_earlier_month"
+            style="@style/tab_radio_button_new"
+            android:background="@drawable/tab_radiobutton"
+            android:text="@string/account_orders_before_month" />
+    </RadioGroup>
+
+    <ListView
+        android:id="@android:id/list"
+        style="@style/listview"
+        android:divider="@null"
+        android:dividerHeight="@dimen/PaddingLarge" />
+
+</LinearLayout>

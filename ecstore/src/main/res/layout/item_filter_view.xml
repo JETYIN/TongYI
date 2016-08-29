@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/PaddingXLarge" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/item_filter_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/item_filter_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_right_pink"
+            android:tint="@color/westore_secondary_textcolor" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/item_filter_name_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/PaddingLarge"
+            android:layout_toLeftOf="@id/item_filter_arrow" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/item_filter_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/PaddingXLarge"
+        android:background="@color/westore_divider_bgcolor" />
+
+</LinearLayout>

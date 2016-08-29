@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+    
+    <com.qianseit.westore.ui.CommonTextView 
+        android:id="@+id/item_timeline_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        />
+    
+    <com.qianseit.westore.ui.CommonTextView 
+        android:id="@+id/item_timeline_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:layout_toRightOf="@id/item_timeline_name"
+        android:layout_alignBottom="@id/item_timeline_name"/>
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/navigation_bar_new" >
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@+id/fragment_filter_reset"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/fragment_filter_sure"
+            android:background="@null"
+            android:padding="@dimen/PaddingLarge"
+            android:text="@string/reset"
+            android:textColor="@color/white"
+            android:textSize="@dimen/TextSizeLarge" />
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@+id/fragment_filter_sure"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/PaddingXXLarge"
+            android:background="@null"
+            android:padding="@dimen/PaddingLarge"
+            android:text="@string/ok"
+            android:textColor="#f83131"
+            android:textSize="@dimen/TextSizeLarge" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_filter_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/account_header_buttons_bgimage"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/fragment_filter_noresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/PaddingMedium"
+        android:text="暂无筛选条件"
+        android:textSize="@dimen/TextSizeLarge"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="westore">微店</string>
+    <string name="hot_store">热门微店</string>
+    <string name="watch_westore">查看微店</string>
+    <string name="share_westore">%1$s的小店:%2$s </string>
+    <string name="share_album">%s:</string>
+    <string name="follow_shop_success">关注微店成功！</string>
+    <string name="change_westore_wallpaper">更改微店封面</string>
+    <string name="change_westore_title">更改微店名称</string>
+    <string name="change_westore_avatar">更改微店头像</string>
+    <string name="mine_albums">我的专辑</string>
+    <string name="ask_open_store_message">立刻开启微店，轻松挣外快！</string>
+    <string name="open_store_bind_message">请输入邀请您开店者的手机号</string>
+    <string name="open_store_name_message">请输入您的微店名称</string>
+    <string name="open_store_success">您已经开通微店</string>
+    <string name="open_store_xieyi">我已阅读并同意&lt;font color=#ff518f&gt;《哈淘微店服务协议》&lt;/font&gt;</string>
+
+    <!-- 添加专辑 -->
+    <string name="add_to_album">添加到专辑...</string>
+    <string name="add_to_album_create">新建专辑</string>
+    <string name="add_to_album_create_summary">给专辑取一个名字</string>
+    <string name="add_to_album_success">成功添加到专辑</string>
+    <string name="add_to_album_disabled">很抱歉，本帐户不允许开设微店和创建专辑</string>
+
+    <!-- 专辑列表 -->
+    <string name="shop_album_see_num">访问量:%s</string>
+    <string name="shop_album_sale_num">销量:%s</string>
+    <string name="shop_thumb_large_size">上传图片不能大于1MB</string>
+    <string name="empty_rating_goods">暂无待评价商品</string>
+
+</resources>

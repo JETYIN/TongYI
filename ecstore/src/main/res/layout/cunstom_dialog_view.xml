@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="15dp" >
+
+    <com.qianseit.westore.ui.CommonTextView
+        android:id="@+id/dialog_message"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5dp"
+        android:text="df"
+        android:textColor="@color/text_textcolor_gray1"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="#cacaca" />
+
+    <LinearLayout
+        android:id="@+id/dialog_cancel_gender"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/dialog_gender1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="男"
+            android:textColor="@color/text_textcolor_gray1"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cacaca" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/dialog_gender2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="女"
+            android:textColor="@color/text_textcolor_gray1"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cacaca" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/dialog_gender3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="其他"
+            android:textColor="@color/text_textcolor_gray1"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@+id/dialog_cancel_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/text_textcolor_gray1"
+            android:text="取消"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/dialog_line"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="#cacaca"
+            android:visibility="gone" />
+
+        <com.qianseit.westore.ui.CommonButton
+            android:id="@+id/dialog_conform_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/ok"
+            android:textColor="@color/theme_color"
+            android:textSize="16sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</LinearLayout>

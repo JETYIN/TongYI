@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/PaddingLarge"
+    android:orientation="vertical" >
+  <com.qianseit.westore.ui.CommonEditText 
+      android:id="@+id/account_signature_edit"
+      android:layout_width="match_parent"
+      android:layout_height="100dp"
+      android:textColor="#333333"
+      android:gravity="top|left"
+      android:padding="@dimen/PaddingMedium"
+      android:background="@drawable/bg_signauer_edit"
+      android:hint="@string/account_signature_hint"
+      android:textSize="@dimen/TextSizeMedium"
+      />  
+
+</LinearLayout>

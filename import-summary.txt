@@ -1,0 +1,96 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From Cropper:
+* .DS_Store
+* build.gradle
+* proguard-project.txt
+From ysShopex:
+* .DS_Store
+* README.md
+* keystore/
+* keystore/.DS_Store
+* keystore/keystore
+* keystore/password
+* proguard/
+* proguard/.DS_Store
+* proguard/dump.txt
+* proguard/mapping.txt
+* proguard/seeds.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.1.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In Cropper:
+* AndroidManifest.xml => cropper/src/main/AndroidManifest.xml
+* res/ => cropper/src/main/res/
+* src/ => cropper/src/main/java/
+In ysShopex:
+* AndroidManifest.xml => ysShopex/src/main/AndroidManifest.xml
+* assets/ => ysShopex/src/main/assets/
+* libs/MobTools.jar => ysShopex/libs/MobTools.jar
+* libs/PG_Edit_Base_SDK.jar => ysShopex/libs/PG_Edit_Base_SDK.jar
+* libs/ShareSDK-Core-2.6.0.jar => ysShopex/libs/ShareSDK-Core-2.6.0.jar
+* libs/ShareSDK-QQ-2.6.0.jar => ysShopex/libs/ShareSDK-QQ-2.6.0.jar
+* libs/ShareSDK-QZone-2.6.0.jar => ysShopex/libs/ShareSDK-QZone-2.6.0.jar
+* libs/ShareSDK-ShortMessage-2.6.0.jar => ysShopex/libs/ShareSDK-ShortMessage-2.6.0.jar
+* libs/ShareSDK-SinaWeibo-2.6.0.jar => ysShopex/libs/ShareSDK-SinaWeibo-2.6.0.jar
+* libs/ShareSDK-TencentWeibo-2.6.0.jar => ysShopex/libs/ShareSDK-TencentWeibo-2.6.0.jar
+* libs/ShareSDK-Wechat-2.6.0.jar => ysShopex/libs/ShareSDK-Wechat-2.6.0.jar
+* libs/ShareSDK-Wechat-Core-2.6.0.jar => ysShopex/libs/ShareSDK-Wechat-Core-2.6.0.jar
+* libs/ShareSDK-Wechat-Favorite-2.6.0.jar => ysShopex/libs/ShareSDK-Wechat-Favorite-2.6.0.jar
+* libs/ShareSDK-Wechat-Moments-2.6.0.jar => ysShopex/libs/ShareSDK-Wechat-Moments-2.6.0.jar
+* libs/Xg_sdk_v2.40_20150616_1030.jar => ysShopex/libs/Xg_sdk_v2.40_20150616_1030.jar
+* libs/alipaySDK-20150602.jar => ysShopex/libs/alipaySDK-20150602.jar
+* libs/core-2.3.0.jar => ysShopex/libs/core-2.3.0.jar
+* libs/httpTool.jar => ysShopex/libs/httpTool.jar
+* libs/jg_filter_sdk_1.1.jar => ysShopex/libs/jg_filter_sdk_1.1.jar
+* libs/libammsdk.jar => ysShopex/libs/libammsdk.jar
+* libs/mid-sdk-2.10.jar => ysShopex/libs/mid-sdk-2.10.jar
+* libs/umeng-analytics-v5.5.3.jar => ysShopex/libs/umeng-analytics-v5.5.3.jar
+* libs/universal-image-loader-1.9.3.jar => ysShopex/libs/universal-image-loader-1.9.3.jar
+* libs/volley.jar => ysShopex/libs/volley.jar
+* libs/wup-1.0.0.E-SNAPSHOT.jar => ysShopex/libs/wup-1.0.0.E-SNAPSHOT.jar
+* proguard-project.txt => ysShopex/proguard-project.txt
+* res/ => ysShopex/src/main/res/
+* src/ => ysShopex/src/main/java/
+* src/.DS_Store => ysShopex/src/main/resources/.DS_Store
+* src/android/os/IHardwareService.aidl => ysShopex/src/main/aidl/android/os/IHardwareService.aidl
+* src/com/.DS_Store => ysShopex/src/main/resources/com/.DS_Store
+* src/com/qianseit/.DS_Store => ysShopex/src/main/resources/com/qianseit/.DS_Store
+* src/com/ysshopex/.DS_Store => ysShopex/src/main/resources/com/ysshopex/.DS_Store
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

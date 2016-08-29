@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dip" >
+
+    <FrameLayout
+        android:id="@+id/account_personal_list_item_one"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <include layout="@layout/fragment_attention_gridview_item" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="10dip"
+        android:layout_height="0dip" />
+
+    <FrameLayout
+        android:id="@+id/account_personal_list_item_two"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <include layout="@layout/fragment_attention_gridview_item" />
+    </FrameLayout>
+
+</LinearLayout>

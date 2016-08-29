@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   <com.qianseit.westore.ui.pulltorefresh.lib.PullToRefreshListView
+        android:id="@+id/flash_sentiment_listviews"
+        style="@style/listview"
+        android:dividerHeight="0dip"
+        />
+   
+   <LinearLayout 
+       android:id="@+id/empty_view"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center_horizontal"
+       android:orientation="vertical">
+       
+       <ImageView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="50dp"
+           android:src="@drawable/no_recommend"/>
+       
+       <com.qianseit.westore.ui.CommonTextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:textColor="@color/text_textcolor_gray1"
+           android:text="你目前还没有商品可供选择哦"/>
+       
+       <com.qianseit.westore.ui.CommonTextView 
+           android:id="@+id/empty_view_goto_shop"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:paddingTop="5dp"
+           android:paddingLeft="10dp"
+           android:paddingRight="10dp"
+           android:paddingBottom="5dp"
+           android:background="@drawable/btn_bg"
+           android:textColor="@color/white"
+           android:text="去商店逛逛"/>
+       
+   </LinearLayout>
+
+</FrameLayout>

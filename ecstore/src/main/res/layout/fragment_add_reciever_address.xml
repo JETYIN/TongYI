@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <com.qianseit.westore.ui.CommonEditText
+            android:id="@+id/fragment_add_reciver_address_name"
+            style="@style/my_address_editor_edittext"
+            android:hint="@string/my_address_book_editor_username" />
+
+        <com.qianseit.westore.ui.CommonEditText
+            android:id="@+id/fragment_add_reciver_address_tel"
+            style="@style/my_address_editor_edittext"
+            android:hint="@string/my_address_book_editor_phone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/PaddingMedium"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.qianseit.westore.ui.CommonTextView
+                    android:id="@+id/fragment_add_reciver_address_province"
+                    style="@style/my_address_editor_spinner"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:hint="省份" />
+
+                <com.qianseit.westore.ui.CommonTextView
+                    android:id="@+id/fragment_add_reciver_address_city"
+                    style="@style/my_address_editor_spinner"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="@dimen/PaddingMedium"
+                    android:layout_weight="1"
+                    android:hint="城市" />
+            </LinearLayout>
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/fragment_add_reciver_address_town"
+                style="@style/my_address_editor_spinner"
+                android:hint="区/县"
+                android:visibility="gone"  />
+
+            <com.qianseit.westore.ui.CommonTextView
+                android:id="@+id/fragment_add_reciver_address_area"
+                style="@style/my_address_editor_spinner"
+                android:hint="街道"
+                android:visibility="gone"  />
+        </LinearLayout>
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/fragment_add_reciver_address_addr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/account_login_primary_textcolor"
+            android:textSize="@dimen/TextSizeBigSmall" />
+        
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/fragment_add_reciver_address_detail_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/account_login_primary_textcolor"
+            android:textSize="@dimen/TextSizeBigSmall"
+            android:visibility="gone" />
+
+        <com.qianseit.westore.ui.CommonEditText
+            android:id="@+id/fragment_add_reciver_address_detail"
+            style="@style/my_address_editor_edittext"
+            android:hint="@string/my_address_book_editor_address"
+            />
+
+        <com.qianseit.westore.ui.CommonEditText
+            android:id="@+id/fragment_add_reciver_address_postnum"
+            style="@style/my_address_editor_edittext"
+            android:hint="@string/my_address_book_editor_postal" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="white">#ffffff</drawable>
+    <drawable name="black">#000000</drawable>
+    <drawable name="red">#ff0000</drawable>
+    <drawable name="transparent">#00000000</drawable>
+
+    <!-- Holo AlertDialog按钮颜色 -->
+    <item name="background_holo_dark" type="drawable">#000000</item>
+    <item name="bright_foreground_holo_dark" type="drawable">#f3f3f3</item>
+    <item name="bright_foreground_disabled_holo_dark" type="drawable">#4c4c4c</item>
+    <item name="dialog_button_divider_light" type="drawable">#55dcdcdc</item>
+    <item name="dialog_button_divider_dark" type="drawable">#559d9d9d</item>
+    <item name="custom_dialog_holo_blue" type="color">#33B5E5</item>
+
+    <!-- 分类 -->
+    <drawable name="category_sublevel_item_pressed">#fee7ed</drawable>
+
+    <!-- ListPopupWindow -->
+    <item name="popupwindow_divider_holo_light" type="drawable">#00000000</item>
+    <item name="popupwindow_full_holo_light" type="drawable">#55000000</item>
+    <item name="popupwindow_full_holo_light" type="color">#99ff518f</item>
+    <item name="menu_popup_maxwidth" type="dimen">320dp</item>
+
+</resources>

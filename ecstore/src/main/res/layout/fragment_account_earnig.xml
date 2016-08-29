@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/default_page_bgcolor"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/PaddingXLarge" >
+
+    <include layout="@layout/fragment_account_earnig_item" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <ListView
+            android:id="@android:id/list"
+            style="@style/listview"
+            android:divider="@color/account_login_thirdparty_line_bgcolor"
+            android:dividerHeight="1dip" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@android:id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/PaddingXXLarge"
+            android:text="@string/account_earning_empty"
+            android:textColor="@color/goods_list_secondary_textcolor"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/account_earning_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shopping_car_bottom_bar_bgimage"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal"
+        android:padding="@dimen/PaddingLarge" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/account_earning_total_money"
+            android:textColor="@color/text_textcolor_gray1"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/account_earning_total_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/PaddingLarge"
+            android:singleLine="true"
+            android:textColor="@color/goods_detail_pink_textcolor"
+            android:textSize="@dimen/TextSizeLarge"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

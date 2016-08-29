@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+ 	android:paddingTop="@dimen/PaddingMedium"
+ 	android:paddingBottom="@dimen/PaddingMedium"
+    android:orientation="vertical"
+   >
+
+    <com.qianseit.westore.ui.CircleImageView
+        android:id="@+id/iv_head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/shopping_null_car" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_head"
+        android:orientation="vertical" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/tv_nikename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="#666666"
+            android:textSize="@dimen/TextSizeBigSmall" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@+id/tv_comtent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/PaddingMedium"
+            android:textColor="#9b9b9b"
+            android:paddingRight="@dimen/PaddingMedium"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:singleLine="true"
+        android:layout_marginRight="@dimen/PaddingLarge"
+        android:textColor="#9b9b9b"
+        android:textSize="12sp" />
+</RelativeLayout>

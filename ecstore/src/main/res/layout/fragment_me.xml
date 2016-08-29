@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.qianseit.westore.ui.CircleImageView
+        android:id="@+id/fragment_me_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/fragment_me_image_photo_bg"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="20dp" >
+
+        <TextView
+            android:id="@+id/fragment_me_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xiaomi"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/fragment_me_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/home_nan" />
+
+        <TextView
+            android:id="@+id/fragment_me_sex"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/fragment_me_rank_bg"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="lv.3"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fragment_me_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/icon_add_attention" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/fragment_me_recommend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推荐" />
+
+            <TextView
+                android:id="@+id/fragment_me_recommend_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_me_recommend"
+                android:layout_marginTop="10dp"
+                android:text="321" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@color/red" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/fragment_me_praise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="被赞" />
+
+            <TextView
+                android:id="@+id/fragment_me_praise_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_me_praise"
+                android:layout_marginTop="10dp"
+                android:text="222" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@color/red" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/fragment_me_attention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关注" />
+
+            <TextView
+                android:id="@+id/fragment_me_attention_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_me_attention"
+                android:layout_marginTop="10dp"
+                android:text="231" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@color/red" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/fragment_me_fans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="粉丝" />
+
+            <TextView
+                android:id="@+id/fragment_me_fans_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_me_fans"
+                android:layout_marginTop="10dp"
+                android:text="1200" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/fragment_me_personality_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:text="简历设计规范肯定价格肯定就发生控股国家宽带费时间 " />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/fragment_me_personality_signature"
+            android:background="@android:color/background_dark" />
+
+        <RadioGroup
+            android:id="@+id/fragment_me_rg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fragment_me_personality_signature"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <RadioButton
+                android:id="@+id/fragment_me_rb1"
+                style="@style/fragment_me_rg_style"
+                android:text="收藏" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@color/red" />
+
+            <RadioButton
+                android:id="@+id/fragment_me_rb2"
+                style="@style/fragment_me_rg_style"
+                android:text="推荐" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/fragment_me_rg"
+            android:background="@android:color/background_dark" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_me_fl"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

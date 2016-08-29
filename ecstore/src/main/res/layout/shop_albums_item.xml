@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:foreground="@drawable/goods_list_item_small_image_border" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@android:id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="@dimen/PaddingLarge"
+            android:textColor="@color/text_textcolor_gray1"
+            android:textSize="@dimen/TextSizeMedium" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="40dip" >
+
+            <ImageView
+                android:id="@android:id/icon"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:scaleType="centerCrop" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/goods_list_item_small_bottom_bgimage"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="5dip" >
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@android:id/text1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textColor="@color/goods_list_price_textcolor"
+            android:textSize="@dimen/TextSizeSmall" />
+
+        <com.qianseit.westore.ui.CommonTextView
+            android:id="@android:id/text2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/goods_list_secondary_textcolor"
+            android:textSize="@dimen/TextSizeSmall" />
+    </LinearLayout>
+
+</LinearLayout>
